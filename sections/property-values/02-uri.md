@@ -1,0 +1,37 @@
+### URI
+
+Value Name
+:  URI
+
+Purpose
+:
+  This value type defines values that are represented by data referenced by
+  a uniform resource identifier (URI), the value is what the URI points to, not
+  the URI itself.
+
+Format Definition
+:
+
+```abnf
+uri = <As defined in Section 3 of [@!RFC3986]>
+```
+
+Description
+:
+  When a property parameter value is a URI value type, the URI **MUST**
+  be specified as a quoted-string value.
+
+Example
+:
+  This value for the PHOTO property of vCard:
+
+    PHOTO:http://www.example.com/pub/photos/jqpublic.gif
+
+    PHOTO:data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
+     AQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bm
+     ljYXRpb25zIENvcnBvcmF0aW9uMRwwGgYDVQQLExNJbmZvcm1hdGlvbiBTeXN0
+     <...remainder of base64-encoded data...>
+
+#### Normalization
+
+No normalization procedures are needed.

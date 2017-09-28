@@ -1,0 +1,69 @@
+### ISO-INTERVAL
+
+Value Name
+: ISO-INTERVAL-COMPLETE
+
+Purpose
+:
+  Representation of a time interval.
+
+Format Definition
+:
+
+```abnf
+iso-interval     = iso-interval-explicit / iso-interval-start
+
+iso-interval-explicit = iso-date-time "/" iso-date-time
+iso-interval-start    = iso-date-time "/" iso-duration-no-sign
+```
+
+Description
+:
+
+  This value format accepts a time interval representation, specified in [@ISO.8601.2004] Section 4.4. "Time Interval".
+
+  The value can be represented by:
+
+  a) a start and an end;
+
+  * "YYYYMMDDThhmmss/YYYYMMDDThhmmss" [@ISO.8601.2004] 4.4.4.1 Complete representation, "Representations of time intervals identified by start and end", basic format, first entry. The start **MUST** be before the end.
+
+  c) a start and a duration;
+
+  * "YYYYMMDDThhmmss/PnnYnnMnnDTnnHnnMnnS" [@ISO.8601.2004] 4.4.4.3 Complete representation, "Representations of time interval identified by start and duration", first basic format. The duration component **MUST** be positive.
+
+  * "YYYYMMDDThhmmss/PnnW" [@ISO.8601.2004] 4.4.4.5 Other complete representations, third item, allowing the expression "PnnYnnMnnDTnnHnnMnnS" to be substituted with "PnnW" [@ISO.8601.2004] 4.4.3.2.
+
+  d) a duration and an end.
+
+  * "PnnYnnMnnDTnnHnnMnnS/YYYYMMDDThhmmss" [@ISO.8601.2004] 4.4.4.4 Complete representation, "Representations of time interval identified by duration and end", first basic format. The start of the interval can be determined by subtracting the duration component from the end of the interval.
+
+  * "PnnW/YYYYMMDDThhmmss" [@ISO.8601.2004] 4.4.4.5 Other complete representations, third item, allowing the expression "PnnYnnMnnDTnnHnnMnnS" to be substituted with "PnnW" [@ISO.8601.2004] 4.4.3.2.
+
+  In accordance with [@ISO.8601.2004] Section 4.4.4.5:
+
+  * where representations using local time in a time point component are shown, a complete representation
+    of UTC ([@ISO.8601.2004] Section 4.2.4) or local time and the difference from UTC
+    ([@ISO.8601.2004] Section 4.2.5.2) **MAY** be substituted for local time, i.e. representations using the
+    expression "YYYYMMDDThhmmss" could be substituted with any of these:
+
+    * "YYYYMMDDThhmmssZ" 4.3.2 Complete representation basic format, second entry.
+    * "YYYYMMDDThhmmss±hhmm" 4.3.2 Complete representation basic format, third entry.
+    * "YYYYMMDDThhmmss±hh" [@ISO.8601.2004] 4.3.2 Complete representation basic format, fourth entry.
+
+  In accordance with [@ISO.8601.2004] Section 4.4.5:
+
+  * representations for UTC included with the component preceding the solidus shall be assumed to apply to
+    the component following the solidus, unless a corresponding alternative is included.
+
+Example
+:
+
+    19850412T232050/P1Y2M15DT12H30M0S
+    19850412T232050Z/P1Y2M15DT12H30M0S
+    19850412T232050Z/19850612T232050
+    P1Y2M15DT12H30M0S/19850412T232050
+
+#### Normalization
+
+No normalization procedures are needed.

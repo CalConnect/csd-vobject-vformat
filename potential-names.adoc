@@ -1,0 +1,55 @@
+= Potential names for data model
+
+== Keywords Considered
+
+* CalConnect
+* Calendar
+* Contacts
+* Scheduling
+* Data
+* Interexchange
+* Exchange
+* Model
+* Object
+* Standard
+
+
+== Acronym Candidates
+
+
+=== Trademarkable
+
+* CACOSA Calendar Contacts Standard/Shared Architecture
+* CACOMO Calendar cOntacts MOdel
+* CASOMO Contacts cAlendar Scheduling Object MOdel
+* COSOM Calendar, cOntact Standard Object Model
+* COSSOM Calendar, cOntact, Scheduling Standard Object Model
+* CESM (CalConnect Exchange Standard Model)
+* CEMACO (Common Exchange Model For Calendar And cOntacts)
+* CODM (Calendaring cOntacts Data Model)
+* CODIM (Calendar, cOntacts Data Interexchange Model)
+* CODOM (Calendar, cOntacts Data Object Model)
+* COSDOM (Calendar, cOntacts, Scheduling Data Object Model)
+
+
+=== Rest
+
+* COMO CalConnect/Calendar/Contacts Object MOdel
+* COCA Calendar cOntacts Common Architecture
+* CACOA Calendar Contacts Architecture
+* COM (CalConnect Object Model)
+* COS (CalConnect Object Standard)
+* CDM (CalConnect Data Model)
+* CDAM (CalConnect Data Model)
+* CSM (CalConnect Standard Model)
+* CSMO (CalConnect Standard Model)
+* CESO (CalConnect Exchange Standard Object)
+* CEMCO (Common Exchange Model For Calendar and cOntacts)
+* CMDS (CalConnect / Calendar / Contacts Model Data Standard)
+* CDMS (CalConnect / Calendar / Contacts Data Model Standard)
+* COMOS (CalcOnnect / Calendar, cOntacts Model Standard)
+* CODIS (Calendar, cOntacts Data Interexchange Standard model)
+* COMIX (Calendar and cOntacts Model for IntereXchange)
+* COSMOS (Calendar, cOntact, Scheduling Model Object Standard)
+* COSMIC (Calendar, cOntact, Scheduling Model for InterexChange)
+* CODIX (Calendar, cOntacts Data InterExchange model)

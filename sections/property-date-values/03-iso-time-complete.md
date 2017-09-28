@@ -1,0 +1,61 @@
+### ISO-TIME-COMPLETE
+
+<!--This is the Time portion of 6350 TIMESTAMP -->
+
+Value Name
+: ISO-TIME-COMPLETE
+
+Purpose
+: Representation of a complete time of day with a UTC offset [@ISO.8601.2004].
+
+Format Definition
+:
+
+``` abnf
+iso-time = time-hour time-minute time-second
+           [iso-time-utc / iso-utc-offset]
+
+iso-time-hour    = 2DIGIT        ;00-23
+iso-time-minute  = 2DIGIT        ;00-59
+iso-time-second  = 2DIGIT        ;00-60
+;The "60" value is used to account for positive "leap" seconds.
+
+iso-time-utc     = "Z"
+```
+
+Description
+:
+
+  This value format accepts a time of day value specified as:
+
+  * "hhmmss", the basic format of [@ISO.8601.2004] Section 4.2.2.2 "Complete representations".
+  * "hhmmssZ", the first basic format of [@ISO.8601.2004] Section 4.2.4 "UTC of day".
+  * "hhmmss±hhmm", "hhmmss±hh", the basic formats of [@ISO.8601.2004] Section 4.2.5.2 "Local time and the difference from UTC"
+
+  The components mean:
+  "hh" a two-digit, 24-hour of the day (00-23),
+  "mm" a two-digit minute in the hour (00-59), and
+  "ss" a two-digit second in the minute (00-60).
+
+  The seconds value of 60 *MUST* only be used to account for positive "leap" seconds.
+  Fractions of a second are not supported by this format.
+
+  This value indicates "local time" as specified in [@ISO.8601.2004] 2.1.16.
+  To indicate UTC time, a "Z" character **MUST** be appended to the basic
+  format as described in [@ISO.8601.2004] Section 4.2.4 "UTC of day".
+  To indicate a UTC offset, the "utc-offset" section **MUST** be specified
+  in accordance with [@ISO.8601.2004] Section 4.2.5.2.
+
+  The value of "hhmmssZ" **MUST** be used instead of the equivalent "hhmmss+0000" or "hhmmss-0000".
+
+<!--TODO EXAMPLES -->
+Example:
+
+    140000
+    140000Z
+    140000-05
+    140000-0500
+
+#### Normalization
+
+No normalization procedures are needed.

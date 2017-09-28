@@ -1,0 +1,25 @@
+# vObject Property Value
+
+A vObject property **MAY** have one or multiple values.
+The property's value(s) are defined as the content after the
+property name and colon delimiter, until the end of the
+unfolded content line.
+
+vObject property values are strongly typed, just like in [@RFC5545] and
+[@RFC6350]. Basic value types accepted in vObject properties are defined in [vobject-value-types].
+
+If a property accepts multiple values, the definition of delimitation is defined in [vobject-value-types].
+
+vObject compliant formats **MAY** define additional value types
+that are not provided in this document, and **MAY** require separate validation rules,
+such as the "RECUR" property value type from iCalendar [@RFC5545].
+
+Each property **MUST** define a default value type, and **MAY** accept
+alternative, defined, value types. If the property value type of a property value
+is not the default value type, the "VALUE" parameter **MUST** be present
+to specify the type of the property value.
+
+## Normalizing Property Values
+
+The property value generally does not require any normalization. Please consult individual
+normalization instructions in each value type's definition.

@@ -1,0 +1,40 @@
+### ISO-DATE-COMPLETE
+
+<!-- This is the 5545 DATE -->
+
+Value Name
+: ISO-DATE-COMPLETE
+
+Purpose
+: Representation of a complete calendar date defined in [@ISO.8601.2004].
+
+Format Definition
+:
+
+``` abnf
+iso-date               = iso-date-value
+iso-date-value         = iso-date-fullyear iso-date-month iso-date-mday
+iso-date-fullyear      = 4DIGIT
+iso-date-month         = 2DIGIT   ;01-12
+iso-date-mday          = 2DIGIT   ;01-28, 01-29, 01-30, 01-31
+                                  ;based on month/year
+```
+
+Description
+:
+  This value format is based on the "basic format" calendar date
+  (specified in [@ISO.8601.2004] Section 4.1.2.2 "Complete representations").
+
+  The value **MUST** be represented textually as "YYYYMMDD", with its components
+  "YYYY" a four-digit year, "MM" a two-digit month, and "DD" a two-digit day
+  of the month as described in the definition.
+
+Example
+:  The following represents July 1, 1997:
+
+    19970701
+
+
+#### Normalization
+
+No normalization procedures are needed.

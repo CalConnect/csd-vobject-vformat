@@ -1,0 +1,35 @@
+#  Introduction {#introduction}
+
+The ubiquitous vCard [@RFC6350] and iCalendar [@RFC5545] standards have been
+known as the "vObject" or "VCOMPONENT" family of standards,
+powers digital contact exchanges, calendaring and scheduling on
+over 2.5 billion devices today.
+
+Different implementations of these standards may generate different
+output given identical content, causing interoperability concerns and
+the general inability to determine equivalence of vObjects for integrity
+concerns (Section 2.1.2 of [@RFC3552]).
+
+A normalization procedure can be applied to vObjects (in its various
+representations) to make them compatible prior to comparison, allowing
+for consistent results. The result of normalization processing of a
+vObject, is an equivalent vObject in vObject native representation.
+
+This document defines the general vObject data format, a normalization
+form and method as a basis for vObject comparison.
+
+The normalization method has the following properties:
+
+* stable across different implementations generating the same output
+  from the same input
+* compatible with alternative representation formats such as xCard
+  [@RFC6351] / jCard [@RFC7095] and xCal [@RFC6321] / jCal [@RFC7265]
+* generates output adhering to the original vObject format allowing
+  interoperability with existing implementations
+* generates output compatible with protocols that utilize these
+  vObject, such as CardDAV [@!RFC6352] and CalDAV [@!RFC4791] systems.
+
+This work is produced by the CalConnect TC-VCARD committee
+[@CALCONNECT-VCARD]. The normalization form and method described in this
+document is compatible with the vCard 4.0 [@RFC6350] and iCalendar
+[@RFC5545] standards.

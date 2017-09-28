@@ -1,0 +1,42 @@
+#  Mapping Of Data Value Types For Existing RFCs
+
+## RFC 6350
+
+Data Type            | Original Data Type
+:-----               | :--------
+BOOLEAN              | BOOLEAN
+ISO-DATE-FLEX        | DATE
+ISO-DATE-AND-OR-TIME | DATE-AND-OR-TIME
+ISO-DATE-TIME-FLEX   | DATE-TIME
+FLOAT                | FLOAT
+INTEGER-64           | INTEGER
+LANGUAGE-TAG         | LANGUAGE-TAG
+TEXT                 | TEXT
+ISO-TIME-FLEX        | TIME
+ISO-TIME-COMPLETE    | TIMESTAMP
+URI                  | URI
+ISO-UTC-OFFSET       | UTC-OFFSET
+
+
+
+## RFC 5545
+
+Data Type             | Original Data Type
+:-----                | :--------
+BOOLEAN               | BOOLEAN
+URI                   | CAL-ADDRESS
+ISO-DATE-COMPLETE     | DATE
+ISO-DATE-TIME-NO-ZONE | DATE-TIME
+CAL-DURATION          | DURATION
+FLOAT                 | FLOAT
+INTEGER-32            | INTEGER
+CAL-DURATION          | PERIOD
+TEXT                  | TEXT
+ISO-TIME-BASIC        | TIME
+URI                   | URI
+CAL-UTC-OFFSET        | UTC-OFFSET
+N/A                   | BINARY
+N/A                   | RECUR
+
+
+BINARY and RECUR do not have equivalent vObject data types.

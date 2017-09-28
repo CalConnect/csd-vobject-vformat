@@ -1,0 +1,64 @@
+### ISO-DATE-TIME-NO-ZONE
+
+<!-- 5545-Date-Time, without UTC offset -->
+
+Value Name
+: ISO-DATE-TIME-NO-ZONE
+
+Purpose
+: A date and time of day combination without non-UTC timezone as specified in
+   [@ISO.8601.2004], Section 4.3.2.
+
+Format Definition
+:
+
+``` abnf
+iso-date-time-no-zone  = iso-date "T" iso-time-basic
+```
+
+Description
+:
+  This value format accepts a complete date and time of day representation,
+  specified in [@ISO.8601.2004] Section 4.3.2 "Complete representations",
+  identical with ISO-DATE-TIME, except that the "utc-offset" portion is
+  disallowed.
+
+  The value can be represented in these ways:
+
+  * "YYYYMMDDThhmmss" 4.3.2 Complete representation basic format, first entry.
+  * "YYYYMMDDThhmmssZ" 4.3.2 Complete representation basic format, second entry.
+
+  Due to the lack of "utc-offset", properties that use this value type
+  **SHOULD** handle time zone information with other methods such as in
+  property parameters, such as using the "TZID" property parameter defined in
+  [@RFC5545].
+
+Example:
+
+    19980118T230000
+    19980118T230000Z
+
+<!-- If, based on the definition of the referenced time zone, the local
+time described occurs more than once (when changing from daylight
+to standard time), the DATE-TIME value refers to the first
+occurrence of the referenced time.  Thus, TZID=America/
+New_York:20071104T013000 indicates November 4, 2007 at 1:30 A.M.
+EDT (UTC-04:00).  If the local time described does not occur (when
+changing from standard to daylight time), the DATE-TIME value is
+interpreted using the UTC offset before the gap in local times.
+Thus, TZID=America/New_York:20070311T023000 indicates March 11,
+2007 at 3:30 A.M. EDT (UTC-04:00), one hour after 1:30 A.M. EST
+(UTC-05:00).
+
+A time value MUST only specify the second 60 when specifying a
+positive leap second.  For example:
+
+19970630T235960Z
+
+Implementations that do not support leap seconds SHOULD interpret
+the second 60 as equivalent to the second 59. -->
+
+
+#### Normalization
+
+No normalization procedures are needed.

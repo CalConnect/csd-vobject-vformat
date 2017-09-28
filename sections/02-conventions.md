@@ -1,0 +1,38 @@
+#  Conventions Used in This Document
+
+The key words "**MUST**", "**MUST NOT**", "**REQUIRED**", "**SHALL**",
+"**SHALL NOT**", "**SHOULD**", "**SHOULD NOT**", "**RECOMMENDED**",
+"**MAY**", and "**OPTIONAL**" in this document are to be interpreted as
+described in [@!RFC2119].
+
+Notation in this document is described in ABNF [@RFC5234] as used by
+[@!RFC6350].
+
+Definitions from [@!RFC6350] apply to this specification except when
+explicitly overridden.
+
+All names of properties, property parameters, enumerated property
+values, and property parameter values are case-insensitive.  However,
+all property values are case-sensitive, unless otherwise stated.
+
+##  Definitions
+
+vObject, VCOMPONENT
+: a generalized format of the vCard component (VCARD) and iCalendar
+  (VCALENDAR) component.
+
+vObject Native Format
+: the textual format representation using the "BEGIN:" and "END:"
+component keywords
+
+inner vObject, sub-component
+: a vObject located within a vObject.
+
+outer vObject, super-component
+: a vObject that this vObject is located within.
+
+Client User Application (CUA)
+: the vObject client implementation that interfaces with the user
+
+Calendar Date
+: as defined in [@ISO.8601.2004]2.1.8

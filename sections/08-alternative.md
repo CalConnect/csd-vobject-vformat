@@ -1,0 +1,17 @@
+#  Alternative vCard representations
+
+The normalization procedure applies to alternative vObject
+representations as well, including:
+
+* xCard [@RFC6351]
+* jCard [@RFC7095]
+* xCal [@RFC6321]
+* jCal [@RFC7265]
+
+##  xCard
+
+TODO
+
+## jCard
+
+TODO
