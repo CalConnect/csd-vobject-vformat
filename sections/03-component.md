@@ -89,23 +89,32 @@ Should be normalized to:
 
 ### Sorted Component Properties
 
-All properties within a component **MUST** be sorted alphabetically by
-their Property Name. If a property spans multiple content lines, the
-content lines **MUST NOT** be separated after sorting.
+Properties **MUST** be first normalized and before sorted, meaning
+that the property's values, and its parameters and its values, have been
+normalized.
 
-Properties **MUST** be first normalized and then sorted.
-The sorting between properties **MUST** be treating entire normalized properties
-(with its parameters) as long strings, and then sorting them alphabetically.
+The sorting of component properties **MUST** be performed according to the
+following order:
 
-Properties **MUST** be placed closer to inner components.
+* alphabetically by the property name. If a property spans multiple content
+  lines, the content lines **MUST NOT** be separated after sorting.
+* alphabetically by their normalized value.
+* alphabetically by treating its parameters as long strings
 
+<!--TODO: have to define how to sort parameters as long strings... -->
+
+Properties **MUST** be placed before inner components are listed.
 
 ### Sorted Inner Components
 
 Inner components within a vObject must be placed in a sorted order.
-The sorting between components **MUST** be performed by sorting the
-values of their uniqueness identifying properties ((#uniqueness-identifier))
-in alphabetical order.
+
+The sorting between components **MUST** be performed according to the
+following order:
+
+* alphabetically according to component name, such as "VCALENDAR"; then
+* if of the same component name, alphabetically according to the
+  uniqueness identifying properties ((#uniqueness-identifier)).
 
 
 ### Normalized Inner Components

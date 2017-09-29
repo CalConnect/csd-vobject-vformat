@@ -1,9 +1,9 @@
 %%%
 
-Title = "The Contact Data Model and vFormat"
-abbrev = "draft-calconnect-cdm-vformat"
+Title = "The Calendar and Contacts Object Model and vFormat"
+abbrev = "draft-calconnect-model-vformat"
 category = "std"
-docName = "draft-calconnect-cdm-vformat-00"
+docName = "draft-calconnect-model-vformat-00"
 updates = [5545,6321,6350,6351,7953]
 ipr= "trust200902"
 area = "Internet"

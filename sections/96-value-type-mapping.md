@@ -26,7 +26,7 @@ Data Type             | Original Data Type
 BOOLEAN               | BOOLEAN
 URI                   | CAL-ADDRESS
 ISO-DATE-COMPLETE     | DATE
-ISO-DATE-TIME-NO-ZONE | DATE-TIME
+ISO-DATE-TIME-BASIC | DATE-TIME
 CAL-DURATION          | DURATION
 FLOAT                 | FLOAT
 INTEGER-32            | INTEGER

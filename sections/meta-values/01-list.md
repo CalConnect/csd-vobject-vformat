@@ -1,16 +1,25 @@
 ### LIST
 
 Some properties and parameters allow an unordered list of values. Values in a
-list of values MUST be separated by a COMMA character. There is no
+list of values **MUST** be separated by a COMMA character. There is no
 significance to the order of values in a list.
 
-This value type is called the "LIST". Each value in the list **MUST** have the same
+This construct is called the "LIST". Each value in the LIST **MUST** have the same
 value type.
 
-Example.
+In vFormat syntax, an element within any LIST element **MUST NOT** contain
+an unescaped the COMMA character to prevent breaking of the LIST syntax.
 
-The "NICKNAME" property of [@RFC6350] defines its value to be an unordered list of TEXT.
-In vObject notation its value type is defined to be:
+Syntax
+:
+  When used to describe a value type, the `LIST(value-type)` function is defined as
+  a list of elements separated by the COMMA character, where each of its elements
+  is of value type `value-type`.
+
+Example
+:
+  The "NICKNAME" property of [@RFC6350] defines its value to be an unordered list of TEXT.
+  In vObject notation its value type is defined to be:
 
 ```abnf
 LIST(TEXT)

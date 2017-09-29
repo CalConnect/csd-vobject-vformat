@@ -1,9 +1,9 @@
-### ISO-DATE-TIME-NO-ZONE
+### ISO-DATE-TIME-BASIC
 
 <!-- 5545-Date-Time, without UTC offset -->
 
 Value Name
-: ISO-DATE-TIME-NO-ZONE
+: ISO-DATE-TIME-BASIC
 
 Purpose
 : A date and time of day combination without non-UTC timezone as specified in
@@ -20,7 +20,7 @@ Description
 :
   This value format accepts a complete date and time of day representation,
   specified in [@ISO.8601.2004] Section 4.3.2 "Complete representations",
-  identical with ISO-DATE-TIME, except that the "utc-offset" portion is
+  identical with ISO-DATE-TIME-COMPLETE, except that the "utc-offset" portion is
   disallowed.
 
   The value can be represented in these ways:

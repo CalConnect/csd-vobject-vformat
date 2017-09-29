@@ -1,4 +1,4 @@
-#  Mapping Of Property Value Types For Existing RFCs
+#  Mapping Of Component Property Value Types For Existing RFCs
 
 ## VCARD Component (RFC 6350)
 
@@ -78,11 +78,11 @@ BDAY        | ISO-DATE-AND-OR-TIME | TEXT            | date-and-or-time, text
 ANNIVERSARY | ISO-DATE-AND-OR-TIME | TEXT            | date-and-or-time, text
 
 
-Properties with ISO-DATE-TIME.
+Properties with ISO-DATE-TIME-COMPLETE.
 
 Property  | Default Data Type | Alt. Data Types | Original Data Type
 :-------- | :-----            | :----           | :----
-REV       | ISO-DATE-TIME     |                 | timestamp
+REV       | ISO-DATE-TIME-COMPLETE     |                 | timestamp
 
 
 Properties with LANGUAGE-TAG.
@@ -109,14 +109,14 @@ IANA-REGed/X- | TEXT              |                 | 1\*TEXT
 
 Property      | Default Data Type                                               | Alt. Data Types   | Original Data Type
 :--------     | :-----                                                          | :----             | :----
-DTSTAMP       | ISO-DATE-TIME-NO-ZONE                                           |                   | DATE-TIME
+DTSTAMP       | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
 UID           | TEXT                                                            |                   | 1\*TEXT
-DTSTART       | ISO-DATE-TIME-NO-ZONE                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+DTSTART       | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 CLASS         | TEXT                                                            |                   | 1\*TEXT
-CREATED       | ISO-DATE-TIME-NO-ZONE                                           |                   | DATE-TIME
+CREATED       | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
 DESCRIPTION   | TEXT                                                            |                   | 1\*TEXT
 GEO           | FIELDSET(2\*FLOAT)                                              |                   | FLOAT ";" FLOAT
-LAST-MODIFIED | ISO-DATE-TIME-NO-ZONE                                           |                   | DATE-TIME
+LAST-MODIFIED | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
 LOCATION      | TEXT                                                            |                   | 1\*TEXT
 ORGANIZER     | URI                                                             |                   | cal-address
 PRIORITY      | INTEGER-32                                                      |                   | INTEGER
@@ -125,19 +125,19 @@ STATUS        | TEXT                                                            
 SUMMARY       | TEXT                                                            |                   | 1\*TEXT
 TRANSP        | TEXT                                                            |                   | 1\*TEXT
 URL           | URI                                                             |                   | URI
-RECURRENCE-ID | ISO-DATE-TIME-NO-ZONE                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+RECURRENCE-ID | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 RRULE         | RECUR                                                           |                   | RECUR
-DTEND         | ISO-DATE-TIME-NO-ZONE                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+DTEND         | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 DURATION      | DURATION                                                        |                   | DURATION
 ATTACH        | URI                                                             | BINARY            | URI, BINARY
 ATTENDEE      | URI                                                             |                   | cal-address
 CATEGORIES    | LIST(TEXT)                                                      |                   | TEXT
 COMMENT       | TEXT                                                            |                   | 1\*TEXT
 CONTACT       | TEXT                                                            |                   | 1\*TEXT
-EXDATE        | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE )               |                   | DATE-TIME, DATE
+EXDATE        | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE )               |                   | DATE-TIME, DATE
 RELATED-TO    | TEXT                                                            |                   | 1\*TEXT
 RESOURCES     | LIST(TEXT)                                                      |                   | TEXT
-RDATE         | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
+RDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
 IANA-REGed/X- | TEXT                                                            |                   | 1\*TEXT
 
 RRULE uses the RECUR data value type, which is a special construct
@@ -146,38 +146,38 @@ defined in [@RFC5545] with no equivalent in this document.
 
 ## VTODO Component (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-DTSTAMP | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-UID | TEXT | | 1\*TEXT
-CLASS | TEXT | | 1\*TEXT
-CREATED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-COMPLETED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-DESCRIPTION | TEXT | | 1\*TEXT
-DTSTART | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-GEO | FIELDSET(2\*FLOAT) | | FLOAT ";" FLOAT
-LAST-MODIFIED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-LOCATION | TEXT | | 1\*TEXT
-ORGANIZER | URI | | cal-address
-PRIORITY | INTEGER-32 | | INTEGER
-SEQUENCE | INTEGER-32 | | INTEGER
-STATUS | TEXT | | 1\*TEXT
-SUMMARY | TEXT | | 1\*TEXT
-URL | URI |  | URI
-RRULE | RECUR | | RECUR
-DUE | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-DURATION | DURATION | | DURATION
-ATTACH | URI | BINARY | URI, BINARY
-ATTENDEE | URI | | cal-address
-CATEGORIES | LIST(TEXT) | | TEXT
-COMMENT | TEXT | | 1\*TEXT
-CONTACT | TEXT | | 1\*TEXT
-EXDATE | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE ) | | DATE-TIME, DATE
-REQUEST-STATUS | TEXT | | 1\*TEXT
-RELATED-TO | TEXT | | 1\*TEXT
-RESOURCES | LIST(TEXT) | | TEXT
-RDATE | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE / CAL-INTERVAL) | | DATE-TIME, DATE, PERIOD
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property       | Default Data Type                                               | Alt. Data Types   | Original Data Type
+:--------      | :-----                                                          | :----             | :----
+DTSTAMP        | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+UID            | TEXT                                                            |                   | 1\*TEXT
+CLASS          | TEXT                                                            |                   | 1\*TEXT
+CREATED        | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+COMPLETED      | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+DESCRIPTION    | TEXT                                                            |                   | 1\*TEXT
+DTSTART        | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+GEO            | FIELDSET(2\*FLOAT)                                              |                   | FLOAT ";" FLOAT
+LAST-MODIFIED  | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+LOCATION       | TEXT                                                            |                   | 1\*TEXT
+ORGANIZER      | URI                                                             |                   | cal-address
+PRIORITY       | INTEGER-32                                                      |                   | INTEGER
+SEQUENCE       | INTEGER-32                                                      |                   | INTEGER
+STATUS         | TEXT                                                            |                   | 1\*TEXT
+SUMMARY        | TEXT                                                            |                   | 1\*TEXT
+URL            | URI                                                             |                   | URI
+RRULE          | RECUR                                                           |                   | RECUR
+DUE            | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+DURATION       | DURATION                                                        |                   | DURATION
+ATTACH         | URI                                                             | BINARY            | URI, BINARY
+ATTENDEE       | URI                                                             |                   | cal-address
+CATEGORIES     | LIST(TEXT)                                                      |                   | TEXT
+COMMENT        | TEXT                                                            |                   | 1\*TEXT
+CONTACT        | TEXT                                                            |                   | 1\*TEXT
+EXDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE )               |                   | DATE-TIME, DATE
+REQUEST-STATUS | TEXT                                                            |                   | 1\*TEXT
+RELATED-TO     | TEXT                                                            |                   | 1\*TEXT
+RESOURCES      | LIST(TEXT)                                                      |                   | TEXT
+RDATE          | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
+IANA-REGed/X-  | TEXT                                                            |                   | 1\*TEXT
 
 RRULE uses the RECUR data value type, which is a special construct
 defined in [@RFC5545] with no equivalent in this document.
@@ -185,31 +185,31 @@ defined in [@RFC5545] with no equivalent in this document.
 
 ## VJOURNAL Component (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-DTSTAMP | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-UID | TEXT | | 1\*TEXT
-CLASS | TEXT | | 1\*TEXT
-CREATED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-DTSTART | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-LAST-MODIFIED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-ORGANIZER | URI | | cal-address
-SEQUENCE | INTEGER-32 | | INTEGER
-STATUS | TEXT | | 1\*TEXT
-SUMMARY | TEXT | | 1\*TEXT
-URL | URI |  | URI
-RRULE | RECUR | | RECUR
-ATTACH | URI | BINARY | URI, BINARY
-ATTENDEE | URI | | cal-address
-CATEGORIES | LIST(TEXT) | | TEXT
-COMMENT | TEXT | | 1\*TEXT
-CONTACT | TEXT | | 1\*TEXT
-DESCRIPTION | TEXT | | 1\*TEXT
-EXDATE | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE ) | | DATE-TIME, DATE
-RELATED-TO | TEXT | | 1\*TEXT
-RDATE | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE / CAL-INTERVAL) | | DATE-TIME, DATE, PERIOD
-REQUEST-STATUS | TEXT | | 1\*TEXT
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property       | Default Data Type                                               | Alt. Data Types   | Original Data Type
+:--------      | :-----                                                          | :----             | :----
+DTSTAMP        | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+UID            | TEXT                                                            |                   | 1\*TEXT
+CLASS          | TEXT                                                            |                   | 1\*TEXT
+CREATED        | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+DTSTART        | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+LAST-MODIFIED  | ISO-DATE-TIME-BASIC                                           |                   | DATE-TIME
+ORGANIZER      | URI                                                             |                   | cal-address
+SEQUENCE       | INTEGER-32                                                      |                   | INTEGER
+STATUS         | TEXT                                                            |                   | 1\*TEXT
+SUMMARY        | TEXT                                                            |                   | 1\*TEXT
+URL            | URI                                                             |                   | URI
+RRULE          | RECUR                                                           |                   | RECUR
+ATTACH         | URI                                                             | BINARY            | URI, BINARY
+ATTENDEE       | URI                                                             |                   | cal-address
+CATEGORIES     | LIST(TEXT)                                                      |                   | TEXT
+COMMENT        | TEXT                                                            |                   | 1\*TEXT
+CONTACT        | TEXT                                                            |                   | 1\*TEXT
+DESCRIPTION    | TEXT                                                            |                   | 1\*TEXT
+EXDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE )               |                   | DATE-TIME, DATE
+RELATED-TO     | TEXT                                                            |                   | 1\*TEXT
+RDATE          | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
+REQUEST-STATUS | TEXT                                                            |                   | 1\*TEXT
+IANA-REGed/X-  | TEXT                                                            |                   | 1\*TEXT
 
 RRULE uses the RECUR data value type, which is a special construct
 defined in [@RFC5545] with no equivalent in this document.
@@ -217,60 +217,60 @@ defined in [@RFC5545] with no equivalent in this document.
 
 ## VFREEBUSY Component (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-DTSTAMP | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-UID | TEXT | | 1\*TEXT
-CONTACT | TEXT | | 1\*TEXT
-DTSTART | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-DTEND | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-ORGANIZER | URI | | cal-address
-URL | URI |  | URI
-ATTENDEE | URI | | cal-address
-COMMENT | TEXT | | 1\*TEXT
-FREEBUSY | LIST(CAL-INTERVAL) | | LIST(PERIOD)
-REQUEST-STATUS | TEXT | | 1\*TEXT
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property       | Default Data Type     | Alt. Data Types   | Original Data Type
+:--------      | :-----                | :----             | :----
+DTSTAMP        | ISO-DATE-TIME-BASIC |                   | DATE-TIME
+UID            | TEXT                  |                   | 1\*TEXT
+CONTACT        | TEXT                  |                   | 1\*TEXT
+DTSTART        | ISO-DATE-TIME-BASIC | ISO-DATE-COMPLETE | DATE-TIME, DATE
+DTEND          | ISO-DATE-TIME-BASIC | ISO-DATE-COMPLETE | DATE-TIME, DATE
+ORGANIZER      | URI                   |                   | cal-address
+URL            | URI                   |                   | URI
+ATTENDEE       | URI                   |                   | cal-address
+COMMENT        | TEXT                  |                   | 1\*TEXT
+FREEBUSY       | LIST(CAL-INTERVAL)    |                   | LIST(PERIOD)
+REQUEST-STATUS | TEXT                  |                   | 1\*TEXT
+IANA-REGed/X-  | TEXT                  |                   | 1\*TEXT
 
 
 ## VTIMEZONE Component (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-TZID | TEXT | | 1\*TEXT
-LAST-MODIFIED | ISO-DATE-TIME-NO-ZONE | | DATE-TIME
-TZURL | URI |  | URI
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property      | Default Data Type     | Alt. Data Types | Original Data Type
+:--------     | :-----                | :----           | :----
+TZID          | TEXT                  |                 | 1\*TEXT
+LAST-MODIFIED | ISO-DATE-TIME-BASIC |                 | DATE-TIME
+TZURL         | URI                   |                 | URI
+IANA-REGed/X- | TEXT                  |                 | 1\*TEXT
 
 
 ## STANDARD / DAYLIGHT Components (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-DTSTART | ISO-DATE-TIME-NO-ZONE | ISO-DATE-COMPLETE | DATE-TIME, DATE
-TZOFFSETFROM | CAL-UTC-OFFSET | | UTC-OFFSET
-TZOFFSETTO | CAL-UTC-OFFSET | | UTC-OFFSET
-RRULE | RECUR | | RECUR
-COMMENT | TEXT | | 1\*TEXT
-RDATE | LIST( ISO-DATE-TIME-NO-ZONE / ISO-DATE-COMPLETE / CAL-INTERVAL) | | DATE-TIME, DATE, PERIOD
-TZNAME | TEXT | | 1\*TEXT
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property      | Default Data Type                                               | Alt. Data Types   | Original Data Type
+:--------     | :-----                                                          | :----             | :----
+DTSTART       | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
+TZOFFSETFROM  | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
+TZOFFSETTO    | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
+RRULE         | RECUR                                                           |                   | RECUR
+COMMENT       | TEXT                                                            |                   | 1\*TEXT
+RDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
+TZNAME        | TEXT                                                            |                   | 1\*TEXT
+IANA-REGed/X- | TEXT                                                            |                   | 1\*TEXT
 
 RRULE uses the RECUR data value type, which is a special construct
 defined in [@RFC5545] with no equivalent in this document.
 
 ## VALARM Component (RFC 5545)
 
-Property | Default Data Type | Alt. Data Types | Original Data Type
-:--------|:-----|:----|:----
-ACTION | TEXT | | 1\*TEXT
-DESCRIPTION | TEXT | | 1\*TEXT
-SUMMARY | TEXT | | 1\*TEXT
-TRIGGER | DURATION | ISO-DATE-TIME-NO-ZONE | DURATION, DATE-TIME
-DURATION | DURATION | | DURATION
-REPEAT | INTEGER-32 | | INTEGER
-ATTACH | URI | BINARY | URI, BINARY
-ATTENDEE | URI | | cal-address
-IANA-REGed/X- | TEXT | | 1\*TEXT
+Property      | Default Data Type | Alt. Data Types       | Original Data Type
+:--------     | :-----            | :----                 | :----
+ACTION        | TEXT              |                       | 1\*TEXT
+DESCRIPTION   | TEXT              |                       | 1\*TEXT
+SUMMARY       | TEXT              |                       | 1\*TEXT
+TRIGGER       | DURATION          | ISO-DATE-TIME-BASIC | DURATION, DATE-TIME
+DURATION      | DURATION          |                       | DURATION
+REPEAT        | INTEGER-32        |                       | INTEGER
+ATTACH        | URI               | BINARY                | URI, BINARY
+ATTENDEE      | URI               |                       | cal-address
+IANA-REGed/X- | TEXT              |                       | 1\*TEXT
 
 

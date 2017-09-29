@@ -1,9 +1,9 @@
-### ISO-DATE-TIME
+### ISO-DATE-TIME-COMPLETE
 
 <!-- This is "TIMESTAMP" of 6350 -->
 
 Value Name
-: ISO-DATE-TIME
+: ISO-DATE-TIME-COMPLETE
 
 Purpose
 : A complete date and time of day combination as specified in

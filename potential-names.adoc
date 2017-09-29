@@ -19,8 +19,9 @@
 
 === Trademarkable
 
-* CACOSA Calendar Contacts Standard/Shared Architecture
-* CACOMO Calendar cOntacts MOdel
+* CACOSA CAlendar COntacts Standard/Shared Architecture
+* CACOMO CAlendar COntacts MOdel
+* CACOM CAlendar COntacts Model
 * CASOMO Contacts cAlendar Scheduling Object MOdel
 * COSOM Calendar, cOntact Standard Object Model
 * COSSOM Calendar, cOntact, Scheduling Standard Object Model
@@ -30,6 +31,7 @@
 * CODIM (Calendar, cOntacts Data Interexchange Model)
 * CODOM (Calendar, cOntacts Data Object Model)
 * COSDOM (Calendar, cOntacts, Scheduling Data Object Model)
+* COCAM (Calendar, cOntacts Architecture Model)
 
 
 === Rest

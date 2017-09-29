@@ -25,8 +25,10 @@
 
 {{sections/95-examples.md}}
 {{sections/96-value-type-mapping.md}}
-{{sections/97-parameter-value-type-mapping.md}}
 {{sections/97-property-value-type-mapping.md}}
+{{sections/97-parameter-value-type-mapping.md}}
 {{sections/98-references.md}}
+
 {backmatter}
+
 {{sections/99-acknowledgements.md}}
