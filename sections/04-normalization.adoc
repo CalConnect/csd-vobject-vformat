@@ -1,0 +1,64 @@
+= Normalization Method
+
+== Approach
+
+The goals of the normalization procedure are:
+
+* A normalized vObject will be a valid vObject in vObject Native
+  Representation. Therefore the normalization procedure requires
+  knowledge of the source specific vObject format.
+
+* A normalized vObject is stable across alternative representation
+  formats, such as xCal and jCal of iCalendar, and xCard and jCard of
+  vCard. This allows comparision of vObject content regardless of the
+  representation format.
+
+* Allows comparison of equivalence of content rather than formatting.
+  E.g., addition of new-lines within a vCard and order of listed
+  properties do not affect the resulting normalized form.
+
+* A normalized vObject **MUST** maintain validity under the original
+  format rules, such as in the case of VCARD <<RFC6350>> and
+  VCALENDAR <<RFC5545>> components, the "VERSION" property line
+  **MUST** be located immediately after the "BEGIN" property line.
+
+== Steps
+
+1. Normalize the vObject
+
+  1. Normalize properties
+
+    1. Normalize property parameters
+
+      1. Normalize property parameter types
+
+      1. Normalize property parameter values
+
+        1. Sort property parameter values alphabetically.
+
+        1. Concatenate property parameter values.
+
+      1. Normalize property parameter key: cast to uppercase.
+
+      1. Concatenate string form of property parameter key, value type
+         and values.
+
+    1. Normalize property values
+
+  1. Normalize inner vObjects (sub-components)
+
+    1. Perform the same function as (1)
+
+
+== Functions
+
+=== Sorting
+
+Sorts an list according to alphabetical order (A-Z) of its elements.
+
+
+=== Upcase
+
+Characters in lower case **SHOULD** be replaced with its corresponding
+upper case character. The input is expected to be in UTF-8 ASCII.
+

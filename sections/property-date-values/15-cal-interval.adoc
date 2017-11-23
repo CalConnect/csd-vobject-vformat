@@ -1,0 +1,64 @@
+=== CAL-INTERVAL
+
+// This is the 5545 PERIOD, multiple values allowed separated by COMMA 
+
+Value Name::
+  CAL-INTERVAL
+
+Purpose::
+  Representation of a time interval for calendaring.
+
+Format Definition::
+
+[source,abnf]
+----
+cal-interval     = cal-interval-explicit / cal-interval-start
+
+cal-interval-explicit = iso-date-time-no-zone "/" iso-date-time-no-zone
+cal-interval-start    = iso-date-time-no-zone "/" cal-duration-no-sign
+----
+
+Description::
+
+  This value format accepts a time interval representation, specified in <<ISO.8601.2004>> Section 4.4. "Time Interval" tailored for calendaring purposes.
+
+  The value can be represented in two ways.
+
+  As an interval with start and end:
+
+  * "YYYYMMDDThhmmss/YYYYMMDDThhmmss" <<ISO.8601.2004>> 4.4.4.1 Complete representation, "Representations of time intervals identified by start and end", basic format, first entry. The start **MUST** be before the end.
+
+  As an interval with start and duration (positive duration only):
+
+  * "YYYYMMDDThhmmss/PnnDTnnHnnMnnS" <<ISO.8601.2004>> 4.4.4.3 Complete representation, "Representations of time interval identified by start and duration", first basic format, modified to omit the "nnYnnM", which is the "cal-duration" period format.
+
+  * "YYYYMMDDThhmmss/PnnW" <<ISO.8601.2004>> 4.4.4.5 Other complete representations, third item, allowing the expression "PnnYnnMnnDTnnHnnMnnS" to be substituted with "PnnW" <<ISO.8601.2004>> 4.4.3.2.
+
+  * "YYYYMMDDThhmmss/PnnDTnnHnnM" with the duration specified in reduced accuracy with omission of seconds as in (#cal-duration).
+
+  * "YYYYMMDDThhmmss/PnnDTnnH" with the duration specified in reduced accuracy with omission of minutes as in (#cal-duration).
+
+  * "YYYYMMDDThhmmss/PnnD" with the duration specified in reduced accuracy with omission of hours as in (#cal-duration).
+
+  In accordance with <<ISO.8601.2004>> Section 4.4.5, representations for UTC included with the
+  component preceding the solidus shall be assumed to apply to the component following the solidus,
+  unless a corresponding alternative is included.
+
+Example::
+
+    19970101T180000Z/19970102T070000Z
+    19850412T232050/19850625T103000
+    19970101T180000Z/PT5H30M
+    19850412T232050/P15DT12H30M0S
+    19850412T232050/P00010215T123000
+
+  Both components are in UTC:
+      19850412T232050Z/19850625T103000
+
+  Former component in local time, latter in UTC
+    19850412T232050/19850625T103000
+
+
+==== Normalization
+
+No normalization procedures are needed.

@@ -1,0 +1,47 @@
+=== CAL-UTC-OFFSET
+
+// This is the 5545 utc-offset
+
+Value Name::
+  CAL-UTC-OFFSET
+
+Purpose::
+  Representation of a UTC offset as described in <<RFC5545>>.
+
+Format Definition::
+
+[source,abnf]
+----
+cal-utc-offset = sign iso-time-hour iso-time-minute [iso-time-second]
+----
+
+Description:
+
+  The value can be represented in two ways:
+
+  * "±hhmm" specified in
+    <<ISO.8601.2004>> 4.2.5.1 "Difference between local time and UTC of day",
+    the first basic format.
+  * "±hhmmss" which is unique to this value type.
+
+  The PLUS SIGN character MUST be specified for positive
+  UTC offsets (i.e., ahead of UTC).  The HYPHEN-MINUS character MUST
+  be specified for negative UTC offsets (i.e., behind of UTC).
+
+  The value of "-0000" and "-000000" are not allowed. The time-second,
+  if present, MUST NOT be 60; if absent, it defaults to zero.
+
+Example::
+  The following UTC offsets are given for standard time for
+  New York (five hours behind UTC) and Geneva (one hour ahead of
+  UTC):
+
+    -0500
+    -050000
+    +0100
+    +010000
+
+
+==== Normalization
+
+No normalization procedures are needed.

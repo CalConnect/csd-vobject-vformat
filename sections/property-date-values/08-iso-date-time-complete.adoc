@@ -1,0 +1,39 @@
+=== ISO-DATE-TIME-COMPLETE
+
+// This is "TIMESTAMP" of 6350
+
+Value Name::
+  ISO-DATE-TIME-COMPLETE
+
+Purpose::
+  A complete date and time of day combination as specified in
+   <<ISO.8601.2004>>, Section 4.3.2.
+
+Format Definition::
+
+[source,abnf]
+----
+iso-date-time  = iso-date "T" iso-time
+----
+
+Description::
+  This value format accepts a complete date and time of day representation, specified in <<ISO.8601.2004>> Section 4.3.2 "Complete representations".
+
+  The value can be represented in these ways:
+
+  * "YYYYMMDDThhmmss" 4.3.2 Complete representation basic format, first entry.
+  * "YYYYMMDDThhmmssZ" 4.3.2 Complete representation basic format, second entry.
+  * "YYYYMMDDThhmmss±hhmm" 4.3.2 Complete representation basic format, third entry.
+  * "YYYYMMDDThhmmss±hh" <<ISO.8601.2004>> 4.3.2 Complete representation basic format, fourth entry.
+
+Examples::
+
+    19850412T101530
+    19850412T101530Z
+    19850412T101530+0400
+    19850412T101530+04
+
+
+==== Normalization
+
+No normalization procedures are needed.

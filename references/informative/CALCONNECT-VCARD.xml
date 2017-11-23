@@ -1,0 +1,21 @@
+<reference anchor='CALCONNECT-VCARD' target='http://calconnect.org/about/technical-committees/vcard-technical-committee'>
+  <front>
+    <title>CalConnect VCARD Technical Committee</title>
+    <author>
+      <organization>The Calendaring and Scheduling Consortium</organization>
+      <address>
+        <postal>
+         <street>4390 Chaffin Lane</street>
+         <city>McKinleyville</city>
+         <region>CA</region>
+         <code>95519-8028</code>
+         <country>United States of America</country>
+        </postal>
+        <email>contact@calconnect.org</email>
+        <uri>https://www.calconnect.org</uri>
+      </address>
+    </author>
+    <date month='March' year='2017'/>
+  </front>
+</reference>
+

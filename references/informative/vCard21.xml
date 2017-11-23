@@ -1,0 +1,11 @@
+<reference anchor='vCard21'>
+  <front>
+    <title>vCard - The Electronic Business Card Version 2.1</title>
+    <author>
+      <organization>Internet Mail Consortium</organization>
+    </author>
+    <date month='09' year='1996'/>
+  </front>
+</reference>
+
+

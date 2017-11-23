@@ -1,0 +1,138 @@
+= vObject Component
+
+A vObject is based on the representation of the "component" element. All
+vObjects is composed of at least one component element.
+
+A component is often used to model an object in the object-oriented
+sense, such as a vCard or an iCalendar object.
+
+A vObject can also contain other vObjects within and **MAY** contain
+multiple properties.
+
+A component begins with a line that begins with the "BEGIN:" text
+followed by the component name, and ends with a line that begins with
+the "END:" text followed by a component name matching the component name
+at the "BEGIN:" line.
+
+The order of components **MAY** represent order of the objects, which is
+important for example in a VPATCH <<VPATCH>> representing the patching
+order, which is not a commutative process.
+
+
+== Overview
+
+A component:
+
+* begins with line of text that starts with "BEGIN:" following with its
+  component name, ending with a line break;
+
+* ends with a line of text that starts with "END:" following with its
+  component name (matching with the "BEGIN:" line), ending with a line
+  break;
+
+* can contain properties of itself and other vObject components; and
+
+* **MUST** contain a uniqueness identifier property.
+
+
+The vCard <<RFC6350>> and iCalendar <<RFC5545>> data formats both
+conform to the vObject format, and their syntaxes are considered to be
+restricted instances of the vObject syntax.
+
+[#uniqueness-identifier]
+== Uniqueness Identifying Property
+
+As a vObject component can contain inner components, it is important
+that those inner components can be distinguished from each other.
+
+A vObject component's uniqueness identifier property is a property whose
+value can uniquely identify the immediate component that contains it.
+
+Every vObject component **MUST** contain a single, component uniqueness
+identifier property.
+The uniqueness identifier property can be different according to component
+types, and the uniqueness scope of that property **MAY** be different.
+At a minimum, the uniqueness identifier property value **MUST** be unique
+within the immediate component that contains the uniqueness identifier
+property.
+
+For example:
+
+* a `VCARD` component can be distinguished among other `VCARD`
+  components by its `UID` property value that is globally unique;
+* a `STANDARD` component of `VTIMEZONE` can be distinguished according to
+  its `DTSTART` property within the `VTIMEZONE` component that contains
+  it.
+
+The list of uniqueness identifier properties for every vObject component
+that complies with this document can be found in the IANA registry described
+in (#vobject-uid-registry).
+
+New vObject components defined adhering to this document **MUST** define a
+uniqueness identifier property for that component, and it **MUST** be
+registered in the said IANA registry.
+
+
+== Normalizing A Component
+
+=== Component Name In Uppercase
+
+The component name of a vObject **MUST** be uppercased, for both the
+"BEGIN:" and "END:" content lines.
+
+Example (even though this is not technically allowed by <<RFC6350>>):
+
+`BEGIN:vCard`
+
+Should be normalized to:
+
+`BEGIN:VCARD`
+
+=== Sorted Component Properties
+
+Properties **MUST** be first normalized and before sorted, meaning
+that the property's values, and its parameters and its values, have been
+normalized.
+
+The sorting of component properties **MUST** be performed according to the
+following order:
+
+* alphabetically by the property name. If a property spans multiple content
+  lines, the content lines **MUST NOT** be separated after sorting.
+* alphabetically by their normalized value.
+* alphabetically by treating its parameters as long strings
+
+// TODO: have to define how to sort parameters as long strings...
+
+Properties **MUST** be placed before inner components are listed.
+
+=== Sorted Inner Components
+
+Inner components within a vObject must be placed in a sorted order.
+
+The sorting between components **MUST** be performed according to the
+following order:
+
+* alphabetically according to component name, such as "VCALENDAR"; then
+* if of the same component name, alphabetically according to the
+  uniqueness identifying properties <<uniqueness-identifier>>.
+
+
+=== Normalized Inner Components
+
+An inner component **MUST** itself be normalized, meaning that its properties
+and inner components **MUST** be normalized.
+
+
+=== Maintain Validity
+
+Certain vObject formats places certain restrictions or requirements on
+property line locations. Normalization procedures **MUST NOT**
+affect the validity of the normalized vObject.
+
+For example, in the VCARD component <<RFC6350>>, the "VERSION" property
+line is **REQUIRED** to be placed immediately below the "BEGIN" line.
+
+In this case, when normalizing the VCARD component, the common normalization
+procedure **MUST** be first applied, and the "VERSION" property line **MUST**
+be restored to the valid location as required by its specifications <<RFC6350>>.

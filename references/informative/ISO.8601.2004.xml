@@ -1,0 +1,15 @@
+<reference anchor='ISO.8601.2004' target='https://www.iso.org/standard/40874.html'>
+  <front>
+    <title>ISO 8601:2004, Data elements and interchange formats -- Information interchange -- Representation of dates and times</title>
+    <author>
+      <organization>ISO/IEC</organization>
+      <address>
+        <uri>http://www.iso.org</uri>
+      </address>
+    </author>
+    <date month='December' year='2004'/>
+    <abstract><t></t></abstract>
+  </front>
+</reference>
+
+

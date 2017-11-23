@@ -1,0 +1,14 @@
+<reference anchor='IEEE.754.2008' target='https://doi.org/10.1109/IEEESTD.2008.4610935'>
+  <front>
+    <title>IEEE Standard 754, Standard for Binary Floating-Point Arithmetic</title>
+    <author>
+      <organization>Institute of Electrical and Electronics Engineers</organization>
+      <address>
+        <uri>http://www.ieee.org</uri>
+      </address>
+    </author>
+    <date month='August' year='2008'/>
+    <abstract><t></t></abstract>
+  </front>
+</reference>
+

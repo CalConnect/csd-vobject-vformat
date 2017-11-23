@@ -1,0 +1,92 @@
+=== ISO-DURATION-COMPLETE
+
+////
+ If the property permits, multiple "duration" values are
+specified by a COMMA-separated list of values.
+////
+
+Value Name::
+  ISO-DURATION-COMPLETE
+
+Purpose::
+  Representing a duration of time specified by [ISO.8604.2004] Section 4.4.3.2 complete representation basic format.
+
+Format Definition::
+
+[source,abnf]
+----
+
+iso-duration-sign = ["+"] / "-"
+iso-duration  = ( iso-duration-sign ) "P" iso-duration-value
+
+iso-duration-value =  iso-duration-date / iso-duration-week
+
+iso-duration-date   = iso-duration-day "T" iso-duration-time
+
+iso-duration-week   = 1*DIGIT "W"
+
+iso-duration-year   = 1*DIGIT "Y"
+iso-duration-month  = 1*DIGIT "M"
+iso-duration-day    = 1*DIGIT "D"
+
+iso-duration-time   = iso-duration-hour iso-duration-minute
+                      iso-duration-second
+
+iso-duration-hour   = 1*DIGIT "H"
+iso-duration-minute = 1*DIGIT "M"
+iso-duration-second = 1*DIGIT "S"
+----
+
+Description::
+
+  The value format is based on the complete representation
+  basic format specified in <<ISO.8601.2004>> Section 4.4.3.2.
+
+  It accepts the following formats ("nn" represents):
+
+  * "PnnW" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+    first basic format, for duration in weeks.
+
+  * "PnnYnnMnnDTnnHnnMnnS" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+    second basic format, for duration in years, months, days, hours, minutes and seconds.
+
+  This format differs from the specification of <<ISO.8601.2004>> Section 4.4.3.2
+  in the following areas:
+
+  * An optional, preceding "sign", element is used to indicate positive or negative
+    duration. Negative durations are useful in representing reverse scheduling,
+    such as the time to trigger an alarm before an associated time (see <<RFC5545>>).
+
+  * Reduced accuracy as defined in <<ISO.8601.2004>> Section 4.4.3.2 is not allowed.
+    Omission of the number and corresponding designator of days, hours, minutes or
+    seconds is not allowed even if any of the expressions are zero
+    (<<ISO.8601.2004>> Section 4.4.3.2 c)).
+
+  * The duration of a week or a day depends on its position in the calendar.
+
+  In the case of discontinuities in the time scale, such
+  as the change from standard time to daylight time and back, the
+  computation of the exact duration requires the subtraction or
+  addition of the change of duration of the discontinuity.  Leap
+  seconds **MUST NOT** be considered when computing an exact duration.
+
+////
+ When computing an exact duration, the greatest order time
+components **MUST** be added first, that is, the number of days **MUST**
+be added first, followed by the number of hours, number of
+minutes, and number of seconds.
+////
+
+Example::
+  A duration of 15 days, 5 hours, and 20 seconds **MAY** be represented as
+
+    P0Y0M15DT5H0M20S
+
+  A duration of 7 weeks **MAY** be represented as:
+
+    P7W
+
+
+==== Normalization
+
+No normalization procedures are needed.

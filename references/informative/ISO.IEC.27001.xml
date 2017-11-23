@@ -1,0 +1,15 @@
+<reference anchor='ISO-IEC-27001' target='http://www.iso.org/iso/iso27001'>
+  <front>
+    <title>ISO/IEC 27001:2013</title>
+    <author>
+      <organization>ISO/IEC</organization>
+      <address>
+        <uri>http://www.iso.org/iso/iso27001</uri>
+      </address>
+    </author>
+    <date month='October' year='2015'/>
+    <abstract><t>Information technology -- Security techniques -- Information security management systems -- Requirements</t></abstract>
+  </front>
+</reference>
+
+

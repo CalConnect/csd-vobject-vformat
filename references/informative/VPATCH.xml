@@ -1,0 +1,13 @@
+<reference anchor='VPATCH'>
+  <front>
+    <title>The iCalendar VPATCH Component (draft)</title>
+    <author initials="C." surname="Daboo" fullname="Cyrus Daboo">
+      <organization>Apple Inc.</organization>
+    </author>
+    <author initials="K." surname="Murchison" fullname="Ken Murchison">
+      <organization>Carnegie Mellon University</organization>
+    </author>
+    <date month='10' day='28' year='2016'/>
+  </front>
+</reference>
+
