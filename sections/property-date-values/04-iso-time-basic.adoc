@@ -37,9 +37,8 @@ Description::
 
 Example:
 
-    232050
-    232050Z
-    
+* 232050
+* 232050Z
 
 ==== Normalization
 

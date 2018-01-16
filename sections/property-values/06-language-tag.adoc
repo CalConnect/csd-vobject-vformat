@@ -15,10 +15,10 @@ Description::
 
 Examples::
 
-      de
-      en-US
-      sr-Cyrl
-      zh-yue-HK
+* de
+* en-US
+* sr-Cyrl
+* zh-yue-HK
 
 
 ==== Normalization

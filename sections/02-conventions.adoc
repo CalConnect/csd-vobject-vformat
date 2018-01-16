@@ -12,7 +12,7 @@ Definitions from <<RFC6350>> apply to this specification except when
 explicitly overridden.
 
 All names of properties, property parameters, enumerated property
-values, and property parameter values are case-insensitive.  However,
+values, and property parameter values are case-insensitive. However,
 all property values are case-sensitive, unless otherwise stated.
 
 == Definitions

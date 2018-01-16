@@ -36,10 +36,10 @@ Example::
   New York (five hours behind UTC) and Geneva (one hour ahead of
   UTC):
 
-    -0500
-    -050000
-    +0100
-    +010000
+* -0500
+* -050000
+* +0100
+* +010000
 
 
 ==== Normalization

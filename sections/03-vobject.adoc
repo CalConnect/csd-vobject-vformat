@@ -1,5 +1,5 @@
 [#vobject]
-= vObject Structure
+= vObject Data Model
 
 Both vCard <<RFC6350>> and iCalendar <<RFC5545>> data formats belong to a
 family defined as "vObject". The "vObject" format is a generalized data

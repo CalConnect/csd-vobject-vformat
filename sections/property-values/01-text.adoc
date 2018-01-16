@@ -61,5 +61,7 @@ NOTE:TC VCARD\nThe Calendaring And Scheduling Consortium\nJuly 20\, 2017
 
 ==== Normalization
 
-Values of the TEXT data type **MUST** convert all line breaks ("\n" or "\N") into
-the character sequence "\n" (BACKSLASH followed by a LATIN SMALL LETTER N (U+006E)).
+Values of the TEXT data type **MUST** convert all line breaks ("\n" or "\N")
+into the character sequence "\n" (BACKSLASH followed by a LATIN SMALL LETTER N
+(U+006E)).
+

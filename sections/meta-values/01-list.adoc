@@ -29,8 +29,8 @@ LIST(TEXT)
 When normalizing a LIST, each value of it **MUST** be normalized,
 and the values **MUST** be sorted alphabetically.
 
-For example, values of <<RFC5545>> RESOURCES, FREEBUSY, EXDATE, RDATE, CATEGORIES, **MUST**
-be sorted alphabetically when normalized.
+For example, values of <<RFC5545>> RESOURCES, FREEBUSY, EXDATE, RDATE,
+CATEGORIES, **MUST** be sorted alphabetically when normalized.
 
 
 ////

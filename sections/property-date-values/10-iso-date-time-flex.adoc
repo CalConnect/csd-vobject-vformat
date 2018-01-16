@@ -25,11 +25,11 @@ Description::
   the reduced accuracy of the time portion
   according to the requirements of <<ISO.8601.2000>>, Section 5.4.2 "Representations other than complete" part c).
 
-Example:
+Example::
 
-    19961022T150236
-    --1022T1502
-    ---22T15
+* 19961022T150236
+* --1022T1502
+* ---22T15
 
 ==== Normalization
 

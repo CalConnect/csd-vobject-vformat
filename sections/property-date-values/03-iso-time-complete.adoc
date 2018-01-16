@@ -50,11 +50,12 @@ Description::
 // TODO EXAMPLES
 Example:
 
-    140000
-    140000Z
-    140000-05
-    140000-0500
+* 140000
+* 140000Z
+* 140000-05
+* 140000-0500
 
 ==== Normalization
 
 No normalization procedures are needed.
+

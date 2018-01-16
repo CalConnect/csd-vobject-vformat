@@ -80,11 +80,11 @@ minutes, and number of seconds.
 Example::
   A duration of 15 days, 5 hours, and 20 seconds **MAY** be represented as
 
-    P0Y0M15DT5H0M20S
+* P0Y0M15DT5H0M20S
 
   A duration of 7 weeks **MAY** be represented as:
 
-    P7W
+* P7W
 
 
 ==== Normalization

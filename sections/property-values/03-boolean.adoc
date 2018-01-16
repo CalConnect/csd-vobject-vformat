@@ -22,10 +22,10 @@ Description::
 
 Examples::
 
-    TRUE
-    false
-    True
-    FaLSe
+* TRUE
+* false
+* True
+* FaLSe
 
 
 ==== Normalization

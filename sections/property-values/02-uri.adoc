@@ -22,12 +22,14 @@ Description::
 Example::
   This value for the PHOTO property of vCard:
 
-    PHOTO:http://www.example.com/pub/photos/jqpublic.gif
+----
+PHOTO:http://www.example.com/pub/photos/jqpublic.gif
 
-    PHOTO:data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
-     AQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bm
-     ljYXRpb25zIENvcnBvcmF0aW9uMRwwGgYDVQQLExNJbmZvcm1hdGlvbiBTeXN0
-     <...remainder of base64-encoded data...>
+PHOTO:data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
+ AQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bm
+ ljYXRpb25zIENvcnBvcmF0aW9uMRwwGgYDVQQLExNJbmZvcm1hdGlvbiBTeXN0
+ <...remainder of base64-encoded data...>
+----
 
 ==== Normalization
 

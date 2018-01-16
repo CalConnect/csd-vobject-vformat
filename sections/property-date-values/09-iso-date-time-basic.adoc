@@ -32,10 +32,10 @@ Description::
   property parameters, such as using the "TZID" property parameter defined in
   <<RFC5545>>.
 
-Example:
+Example::
 
-    19980118T230000
-    19980118T230000Z
+* 19980118T230000
+* 19980118T230000Z
 
 ////
  If, based on the definition of the referenced time zone, the local

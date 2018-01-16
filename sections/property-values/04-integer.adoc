@@ -14,8 +14,7 @@ specified by a COMMA-separated list of values.
 
 Value Name::
   INTEGER
-  (INTEGER-32 for storing 32-bit integer, INTEGER-64 for storing 64-bit integer)
-
+  (INTEGER-32 for storing 32-bit integer, INTEGER-64 for storing 64-bit integer) 
 Purpose::
   Representation of a signed integer value.
 
@@ -40,10 +39,10 @@ Description::
 
 Examples::
 
-      1234567890
-      -1234567890
-      +1234567890
-      432109876
+* 1234567890
+* -1234567890
+* +1234567890
+* 432109876
 
 ==== Normalization
 

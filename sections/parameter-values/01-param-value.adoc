@@ -54,8 +54,10 @@ DESCRIPTION;ALTREP="cid:part1.0001@example.org":The Fall'98 Wild
 
 ==== Normalization
 
-Values of the PARAM-VALUE parameter data type **MUST** convert all line breaks ("\n" or "\N") into
-the character sequence "\n" (BACKSLASH followed by a LATIN SMALL LETTER N (U+006E)).
+Values of the PARAM-VALUE parameter data type **MUST** convert all line breaks
+("\n" or "\N") into the character sequence "\n" (BACKSLASH followed by a LATIN
+SMALL LETTER N (U+006E)).
 
-If a value of the PARAM-VALUE type is specified as `paramtext` (i.e., not inside a quoted-string),
-the value should be down-cased.
+If a value of the PARAM-VALUE type is specified as `paramtext` (i.e., not
+inside a quoted-string), the value should be down-cased.
+

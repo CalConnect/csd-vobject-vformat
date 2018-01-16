@@ -52,13 +52,14 @@ Description::
 
 Example:
 
-    20170712
-    2017-07
-    2017
-    --0712
-    --07
-    ---12
+* 20170712
+* 2017-07
+* 2017
+* --0712
+* --07
+* ---12
 
 ==== Normalization
 
 No normalization procedures are needed.
+
