@@ -1,14 +1,17 @@
-=== ISO-TIME-BASIC
+==== ISO-TIME-BASIC
 
 // This is 5545's TIME, it does not allow a UTC offset, not directly used but in date-time
 
-Value Name::
-  ISO-TIME-BASIC
+===== Value Name
 
-Purpose::
-  Representation of a complete time of day disallowing a UTC offset <<ISO.8601.2004>>.
+ISO-TIME-BASIC
 
-Format Definition::
+===== Purpose
+
+Representation of a complete time of day disallowing a UTC offset <<ISO.8601.2004>>.
+
+===== Format Definition
+
 
 [source,abnf]
 ----
@@ -16,22 +19,23 @@ iso-time-basic = iso-time-hour iso-time-minute iso-time-second
                  [iso-time-utc]
 ----
 
-Description::
-  This value format is similar to "TIME" except it disallows the additional UTC offset,
-  (the basic formats of <<ISO.8601.2004>> Section 4.2.5.2
-  "Local time and the difference from UTC").
+===== Description
 
-  This value format accepts a time of day value specified as:
+This value format is similar to "TIME" except it disallows the additional UTC offset,
+(the basic formats of <<ISO.8601.2004>> Section 4.2.5.2
+"Local time and the difference from UTC").
 
-  * "hhmmss", the basic format of <<ISO.8601.2004>> Section 4.2.2.2 "Complete representations".
-  * "hhmmssZ", the first basic format of <<ISO.8601.2004>> Section 4.2.4 "UTC of day".
+This value format accepts a time of day value specified as:
 
-  The seconds value of 60 *MUST* only be used to account for positive "leap" seconds.
-  Fractions of a second are not supported by this format.
+* "hhmmss", the basic format of <<ISO.8601.2004>> Section 4.2.2.2 "Complete representations".
+* "hhmmssZ", the first basic format of <<ISO.8601.2004>> Section 4.2.4 "UTC of day".
 
-  This value indicates "local time" as specified in <<ISO.8601.2004>> 2.1.16.
-  To indicate UTC time, a "Z" character **MUST** be appended to the basic
-  format as described in <<ISO.8601.2004>> Section 4.2.4 "UTC of day".
+The seconds value of 60 *MUST* only be used to account for positive "leap" seconds.
+Fractions of a second are not supported by this format.
+
+This value indicates "local time" as specified in <<ISO.8601.2004>> 2.1.16.
+To indicate UTC time, a "Z" character *MUST* be appended to the basic
+format as described in <<ISO.8601.2004>> Section 4.2.4 "UTC of day".
 
 // TODO EXAMPLES
 
@@ -40,6 +44,6 @@ Example:
 * 232050
 * 232050Z
 
-==== Normalization
+===== Normalization
 
 No normalization procedures are needed.

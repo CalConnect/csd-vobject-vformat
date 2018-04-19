@@ -1,20 +1,23 @@
 [abstract]
 
-This document specifies the data format and its normalized format for
-vObject, which is a generalized data format from:
+This document specifies the vObject data model and its corresponding
+syntax vFormat.
 
-* vCard version 4.0 RFC6350: the VCARD component
-* Internet Calendaring and Scheduling Core Object Specification
-  (iCalendar) RFC5545, the VCALENDAR, VEVENT, VJOURNAL, VFREEBUSY,
-  VTIMEZONE, VALARM, VTODO, STANDARD, DAYLIGHT components
-* Calendar Availability Extensions RFC7953: the VAVAILABILITY,
-  AVAILABLE components
-* iCalendar Patching I-Ddaboo-icalendar-vpatch: the VPATCH
-  component
-* Alternative formats for iCalendar: xCal RFC6321 jCal RFC7265
-* Alternative formats for vCard: xCard RFC6351, jCard RFC7095
+vObject represents the generalized data model, and vFormat
+the generalized data format, of the following specifications
+and fully covers them:
 
-// Abstract should not contain references
+* RFC 6350, vCard version 4.0: the VCARD component;
 
-// No references allowed in the Abstract
+* RFC 5545, Internet Calendaring and Scheduling Core Object Specification (iCalendar): the VCALENDAR, VEVENT, VJOURNAL, VFREEBUSY, VTIMEZONE, VALARM, VTODO, STANDARD and DAYLIGHT components;
+
+* RFC 7953, Calendar Availability Extensions: the VAVAILABILITY and AVAILABLE components;
+
+* I-Ddaboo-icalendar-vpatch, iCalendar Patching: the VPATCH component; and
+
+* alternative formats for iCalendar and vCard, including
+RFC 6321, xCal;
+RFC 7265, jCal;
+RFC 6351, xCard; and
+RFC 7095, jCard.
 

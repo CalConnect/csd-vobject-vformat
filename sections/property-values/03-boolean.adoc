@@ -1,26 +1,28 @@
-=== BOOLEAN
+==== BOOLEAN
 
-Value Name::
-  BOOLEAN
+===== Value Name
 
-Purpose::
-  This value type is used to identify properties that contain
-  either a "TRUE" or "FALSE" Boolean value.
+BOOLEAN
 
-Format Definition::
+===== Purpose
+
+This value type is used to identify properties that contain
+either a "TRUE" or "FALSE" Boolean value.
+
+===== Format Definition
 
 [source,abnf]
 ----
 boolean    = "TRUE" / "FALSE"
 ----
 
-Description::
+===== Description
 
-  Parsing of "TRUE" and "FALSE" values **SHOULD** be case-insensitive, but
-  a writer of such value **MUST** only output of this value type in
-  uppercase.
+Parsing of "TRUE" and "FALSE" values *SHOULD* be case-insensitive, but
+a writer of such value *MUST* only output of this value type in
+uppercase.
 
-Examples::
+===== Examples
 
 * TRUE
 * false
@@ -28,7 +30,7 @@ Examples::
 * FaLSe
 
 
-==== Normalization
+===== Normalization
 
-Values of the BOOLEAN data type **MUST** be normalized to uppercase,
+Values of the BOOLEAN data type *MUST* be normalized to uppercase,
 i.e., the values "TRUE" and "FALSE".

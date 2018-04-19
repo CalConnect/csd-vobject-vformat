@@ -1,0 +1,40 @@
+
+[[vformat-property]]
+==== Property
+
+A property can be represented by one content line (a line that ends with
+a line break), but can also be "folded" (Section 3.1 of <<RFC5545>>)
+to use multiple lines.
+
+A property begins with the property name (e.g., `TEL`), followed
+by a COLON delimiter and the property's value.
+
+===== Uppercased Property Name
+
+The property name *MUST* be normalized to uppercase letters.
+
+===== Normalized Parameters
+
+The last property parameter of a property *MUST NOT* have a trailing SEMICOLON.
+
+===== Wrapped Content Line
+
+When exporting a normalized property content line, it *MUST* be folded at the
+character limit when it exceeds 75 characters. Each folded line *MUST* be delimited
+by the character sequence of a line break and a single white space (CRLF, SPACE (U+0020)).
+This rule only applies to normalized output.
+
+// TODO: figure out how to demonstrate line wrapping without overflowing!
+
+For example, the original form:
+
+----
+NOTE:This is a very long description on a long line that exceeds 75 characters.
+----
+
+When exported to normalized output *MUST* give out:
+
+----
+NOTE:This is a very long description on a long line that exceeds 75 charac
+ ters.
+----

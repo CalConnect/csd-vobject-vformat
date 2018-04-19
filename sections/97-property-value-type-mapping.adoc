@@ -1,6 +1,6 @@
-= Mapping Of Component Property Value Types For Existing RFCs
+== Mapping Of Component Property Value Types For Existing RFCs
 
-== VCARD Component (RFC 6350)
+=== VCARD Component (RFC 6350)
 
 Properties with the default data type as TEXT.
 
@@ -114,7 +114,7 @@ Properties with LANGUAGE-TAG.
 
 
 
-== VCALENDAR Component (RFC 5545)
+=== VCALENDAR Component (RFC 5545)
 
 |===
 | Property      | Default Data Type | Alt. Data Types | Original Data Type
@@ -128,7 +128,7 @@ Properties with LANGUAGE-TAG.
 |===
 
 
-== VEVENT Component (RFC 5545)
+=== VEVENT Component (RFC 5545)
 
 |===
 | Property      | Default Data Type                                               | Alt. Data Types   | Original Data Type
@@ -150,7 +150,7 @@ Properties with LANGUAGE-TAG.
 | TRANSP        | TEXT                                                            |                   | 1\*TEXT
 | URL           | URI                                                             |                   | URI
 | RECURRENCE-ID | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
-| RRULE         | RECUR                                                           |                   | RECUR
+| RRULE         | RECURMAP <<RECURMAP>>                                                           |                   | RECUR
 | DTEND         | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | DURATION      | DURATION                                                        |                   | DURATION
 | ATTACH        | URI                                                             | BINARY            | URI, BINARY
@@ -166,11 +166,8 @@ Properties with LANGUAGE-TAG.
 
 |===
 
-RRULE uses the RECUR data value type, which is a special construct
-defined in <<RFC5545>> with no equivalent in this document.
 
-
-== VTODO Component (RFC 5545)
+=== VTODO Component (RFC 5545)
 
 |===
 | Property       | Default Data Type                                               | Alt. Data Types   | Original Data Type
@@ -191,7 +188,7 @@ defined in <<RFC5545>> with no equivalent in this document.
 | STATUS         | TEXT                                                            |                   | 1\*TEXT
 | SUMMARY        | TEXT                                                            |                   | 1\*TEXT
 | URL            | URI                                                             |                   | URI
-| RRULE          | RECUR                                                           |                   | RECUR
+| RRULE          | RECURMAP <<RECURMAP>>                                                           |                   | RECUR
 | DUE            | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | DURATION       | DURATION                                                        |                   | DURATION
 | ATTACH         | URI                                                             | BINARY            | URI, BINARY
@@ -208,11 +205,9 @@ defined in <<RFC5545>> with no equivalent in this document.
 
 |===
 
-RRULE uses the RECUR data value type, which is a special construct
-defined in <<RFC5545>> with no equivalent in this document.
 
 
-== VJOURNAL Component (RFC 5545)
+=== VJOURNAL Component (RFC 5545)
 
 |===
 | Property       | Default Data Type                                               | Alt. Data Types   | Original Data Type
@@ -228,7 +223,7 @@ defined in <<RFC5545>> with no equivalent in this document.
 | STATUS         | TEXT                                                            |                   | 1\*TEXT
 | SUMMARY        | TEXT                                                            |                   | 1\*TEXT
 | URL            | URI                                                             |                   | URI
-| RRULE          | RECUR                                                           |                   | RECUR
+| RRULE          | RECURMAP <<RECURMAP>>                                                           |                   | RECUR
 | ATTACH         | URI                                                             | BINARY            | URI, BINARY
 | ATTENDEE       | URI                                                             |                   | cal-address
 | CATEGORIES     | LIST(TEXT)                                                      |                   | TEXT
@@ -243,11 +238,8 @@ defined in <<RFC5545>> with no equivalent in this document.
 
 |===
 
-RRULE uses the RECUR data value type, which is a special construct
-defined in <<RFC5545>> with no equivalent in this document.
 
-
-== VFREEBUSY Component (RFC 5545)
+=== VFREEBUSY Component (RFC 5545)
 
 |===
 | Property       | Default Data Type     | Alt. Data Types   | Original Data Type
@@ -267,7 +259,7 @@ defined in <<RFC5545>> with no equivalent in this document.
 
 |===
 
-== VTIMEZONE Component (RFC 5545)
+=== VTIMEZONE Component (RFC 5545)
 
 |===
 | Property      | Default Data Type     | Alt. Data Types | Original Data Type
@@ -280,7 +272,7 @@ defined in <<RFC5545>> with no equivalent in this document.
 |===
 
 
-== STANDARD / DAYLIGHT Components (RFC 5545)
+=== STANDARD / DAYLIGHT Components (RFC 5545)
 
 |===
 | Property      | Default Data Type                                               | Alt. Data Types   | Original Data Type
@@ -288,7 +280,7 @@ defined in <<RFC5545>> with no equivalent in this document.
 | DTSTART       | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | TZOFFSETFROM  | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
 | TZOFFSETTO    | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
-| RRULE         | RECUR                                                           |                   | RECUR
+| RRULE         | RECURMAP <<RECURMAP>>                                           |                   | RECUR
 | COMMENT       | TEXT                                                            |                   | 1\*TEXT
 | RDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
 | TZNAME        | TEXT                                                            |                   | 1\*TEXT
@@ -296,10 +288,8 @@ defined in <<RFC5545>> with no equivalent in this document.
 
 |===
 
-RRULE uses the RECUR data value type, which is a special construct
-defined in <<RFC5545>> with no equivalent in this document.
 
-== VALARM Component (RFC 5545)
+=== VALARM Component (RFC 5545)
 
 |===
 | Property      | Default Data Type | Alt. Data Types       | Original Data Type

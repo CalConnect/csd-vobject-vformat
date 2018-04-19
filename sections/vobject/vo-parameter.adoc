@@ -1,0 +1,33 @@
+
+[[vobject-property-parameter]]
+==== Property Parameter
+
+A property parameter is an attribute that applies on a property.
+
+A property parameter contains:
+
+* an identifier identifying its type;
+* the value of the property parameter.
+
+A property parameter *MAY* represent:
+
+* information about the property; or
+* information about the property value
+
+A property *MAY* have multiple property parameters, for example, the
+"TYPE" of the value or a category that applies to this value.
+
+===== Value Lists
+
+Certain property parameters allow multiple values.
+There is no defined order among property parameters in a property parameter list.
+
+In normalized form, values in a value list *MUST* be sorted alphabetically.
+
+==== Default Property Parameter Values
+
+Property parameters are allowed to have a default value.
+
+For example, in vObject formats including <<RFC5545>> and <<RFC6350>>, each property
+value has a specified data type specified as the `VALUE` property parameter.
+

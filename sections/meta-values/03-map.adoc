@@ -1,0 +1,58 @@
+==== MAP
+
+A `MAP` serves the function of a key-value table. It is realized
+using the `LIST` value type with values of the value type `KEYVALUE`.
+
+Each value in the MAP *MUST* use the `KEYVALUE` value type.
+
+There is no inherent order of the values within a MAP. Values within its
+key value pairs *MAY* be of different value types as defined.
+
+In vFormat syntax, as with `LIST`, values in a list of values *MUST* be separated
+by a delimiting character. The default delimiter character is the SEMICOLON character.
+An element within any `MAP` element *MUST NOT* contain
+an unescaped delimiter character to prevent breaking of the `MAP` syntax.
+
+===== Syntax
+
+This value type is described using the `MAP(kv_1, kv_2, ...)` function, where each
+`kv_i` represents a property of the value type KEYVALUE.
+
+In the case where a delimiter character for the MAP is not a SEMICOLON, the
+`MAP(delimiter, kv_1, kv_2)` syntax is used to define the delimiter,
+where each of its elements is of value type KEYVALUE, and the delimiting
+character is specified to be `delimiter`.
+
+===== Example
+
+The "RECUR" property of <<RFC5545>> defines its value to be a MAP,
+separated by the SEMICOLON character.
+
+In vObject notation its value type is defined to be:
+
+[source,abnf]
+----
+MAP(
+  KEYVALUE(FREQ, TEXT),
+  KEYVALUE(UNTIL, ISO-DATE-COMPLETE / ISO-DATE-TIME-BASIC),
+  KEYVALUE(COUNT, INTEGER),
+  KEYVALUE(INTERVAL, INTEGER),
+  KEYVALUE(BYSECOND, LIST(INTEGER)),
+  KEYVALUE(BYMINUTE, LIST(INTEGER)),
+  KEYVALUE(BYHOUR, LIST(INTEGER)),
+  KEYVALUE(BYDAY, LIST(INTEGER)),
+  KEYVALUE(BYMONTHDAY, LIST(INTEGER)),
+  KEYVALUE(BYYEARDAY, LIST(INTEGER)),
+  KEYVALUE(BYWEEKNO, LIST(INTEGER)),
+  KEYVALUE(BYMONTH, LIST(INTEGER)),
+  KEYVALUE(BYSETPOS, INTEGER),
+  KEYVALUE(WKST, TEXT)
+)
+----
+
+
+===== Normalizing a MAP
+
+When normalizing a MAP, each value of it *MUST* be normalized,
+and the values *MUST* be sorted alphabetically according to its `key`.
+

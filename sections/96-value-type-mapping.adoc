@@ -1,6 +1,6 @@
-=  Mapping Of Data Value Types For Existing RFCs
+== Mapping Of Data Value Types For Existing RFCs
 
-== RFC 6350
+=== RFC 6350
 
 |===
 | Data Type            | Original Data Type
@@ -21,26 +21,51 @@
 |===
 
 
-== RFC 5545
+=== RFC 5545
 
 |===
-| Data Type             | Original Data Type
+| Data Type           | Original Data Type
 
-| BOOLEAN               | BOOLEAN
-| URI                   | CAL-ADDRESS
-| ISO-DATE-COMPLETE     | DATE
+| BINARY              | BINARY
+| BOOLEAN             | BOOLEAN
+| URI                 | CAL-ADDRESS
+| ISO-DATE-COMPLETE   | DATE
 | ISO-DATE-TIME-BASIC | DATE-TIME
-| CAL-DURATION          | DURATION
-| FLOAT                 | FLOAT
-| INTEGER-32            | INTEGER
-| CAL-DURATION          | PERIOD
-| TEXT                  | TEXT
-| ISO-TIME-BASIC        | TIME
-| URI                   | URI
-| CAL-UTC-OFFSET        | UTC-OFFSET
-| N/A                   | BINARY
-| N/A                   | RECUR
+| CAL-DURATION        | DURATION
+| FLOAT               | FLOAT
+| INTEGER-32          | INTEGER
+| CAL-DURATION        | PERIOD
+| TEXT                | TEXT
+| ISO-TIME-BASIC      | TIME
+| URI                 | URI
+| CAL-UTC-OFFSET      | UTC-OFFSET
+| RECURMAP <<RECURMAP>>   | RECUR
 
 |===
 
-BINARY and RECUR do not have equivalent vObject data types.
+[[recurmap]]
+==== RECURMAP
+
+RECURMAP is shown here instead of within the tables due to space constraints.
+
+It is defined to be:
+
+[source]
+----
+RECURMAP = MAP(
+  KEYVALUE(FREQ, TEXT),
+  KEYVALUE(UNTIL, ISO-DATE-COMPLETE / ISO-DATE-TIME-BASIC),
+  KEYVALUE(COUNT, INTEGER),
+  KEYVALUE(INTERVAL, INTEGER),
+  KEYVALUE(BYSECOND, LIST(INTEGER)),
+  KEYVALUE(BYMINUTE, LIST(INTEGER)),
+  KEYVALUE(BYHOUR, LIST(INTEGER)),
+  KEYVALUE(BYDAY, LIST(INTEGER)),
+  KEYVALUE(BYMONTHDAY, LIST(INTEGER)),
+  KEYVALUE(BYYEARDAY, LIST(INTEGER)),
+  KEYVALUE(BYWEEKNO, LIST(INTEGER)),
+  KEYVALUE(BYMONTH, LIST(INTEGER)),
+  KEYVALUE(BYSETPOS, INTEGER),
+  KEYVALUE(WKST, TEXT)
+)
+----

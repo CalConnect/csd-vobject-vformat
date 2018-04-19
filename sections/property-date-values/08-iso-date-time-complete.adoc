@@ -1,30 +1,34 @@
-=== ISO-DATE-TIME-COMPLETE
+==== ISO-DATE-TIME-COMPLETE
 
 // This is "TIMESTAMP" of 6350
 
-Value Name::
-  ISO-DATE-TIME-COMPLETE
+===== Value Name
 
-Purpose::
-  A complete date and time of day combination as specified in
-   <<ISO.8601.2004>>, Section 4.3.2.
+ISO-DATE-TIME-COMPLETE
 
-Format Definition::
+===== Purpose
+
+A complete date and time of day combination as specified in
+<<ISO.8601.2004>>, Section 4.3.2.
+
+===== Format Definition
+
 
 [source,abnf]
 ----
 iso-date-time  = iso-date "T" iso-time
 ----
 
-Description::
-  This value format accepts a complete date and time of day representation, specified in <<ISO.8601.2004>> Section 4.3.2 "Complete representations".
+===== Description
 
-  The value can be represented in these ways:
+This value format accepts a complete date and time of day representation, specified in <<ISO.8601.2004>> Section 4.3.2 "Complete representations".
 
-  * "YYYYMMDDThhmmss" 4.3.2 Complete representation basic format, first entry.
-  * "YYYYMMDDThhmmssZ" 4.3.2 Complete representation basic format, second entry.
-  * "YYYYMMDDThhmmss±hhmm" 4.3.2 Complete representation basic format, third entry.
-  * "YYYYMMDDThhmmss±hh" 4.3.2 Complete representation basic format, fourth entry.
+The value can be represented in these ways:
+
+* "YYYYMMDDThhmmss" 4.3.2 Complete representation basic format, first entry.
+* "YYYYMMDDThhmmssZ" 4.3.2 Complete representation basic format, second entry.
+* "YYYYMMDDThhmmss±hhmm" 4.3.2 Complete representation basic format, third entry.
+* "YYYYMMDDThhmmss±hh" 4.3.2 Complete representation basic format, fourth entry.
 
 Examples::
 
@@ -34,6 +38,6 @@ Examples::
 * 19850412T101530+04
 
 
-==== Normalization
+===== Normalization
 
 No normalization procedures are needed.

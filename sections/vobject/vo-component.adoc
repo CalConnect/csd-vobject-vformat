@@ -1,0 +1,98 @@
+
+[[vobject-component]]
+=== Component
+
+A vObject is based on the representation of the "component" element.
+All vObjects are composed of at least one component element.
+
+A component:
+
+* *MAY* contain vObject components;
+
+* *MAY* contain properties; and
+
+* *MUST* contain a uniqueness identifier property whose value is called
+  the component's "unique identifier".
+
+A component type is identified by the component name, and every
+component instance is distinguished by the value of its
+uniqueness identifier property.
+
+A component is often used to model an object in the object-oriented
+sense, such as a vCard or an iCalendar object.
+
+The order of components *MAY* represent order of the objects, which is
+important for example in a `VPATCH` component <<VPATCH>>,
+representing the patching order, which is not a commutative process.
+
+
+[[uniqueness-identifier]]
+==== Uniqueness Identifying Property
+
+As a vObject component can contain inner components, it is important
+that those inner components can be distinguished from each other.
+
+A vObject component's uniqueness identifier property is a property whose
+value can uniquely identify the immediate component that contains it.
+
+Every vObject component *MUST* contain a single, component uniqueness
+identifier property.
+The uniqueness identifier property can be different according to component
+types, and the uniqueness scope of that property *MAY* be different.
+At a minimum, the uniqueness identifier property value *MUST* be unique
+within the immediate component that contains the uniqueness identifier
+property.
+
+For example:
+
+* a `VCARD` component can be distinguished among other `VCARD`
+  components by its `UID` property value that is globally unique;
+* a `STANDARD` component of `VTIMEZONE` can be distinguished according to
+  its `DTSTART` property within the `VTIMEZONE` component that contains
+  it.
+
+The list of uniqueness identifier properties for every vObject component
+that complies with this document can be found in the IANA registry described
+in <<vobject-uid-registry>>.
+
+New vObject components defined according to this document *MUST* define a
+uniqueness identifier property for that component, and it *MUST* be
+registered in the said IANA registry.
+
+
+==== Normalizing A Component
+
+===== Sorted Component Properties
+
+Properties *MUST* be first normalized and before sorted, meaning
+that the property's values, and its parameters and its values, have been
+normalized.
+
+The sorting of component properties *MUST* be performed according to the
+following order:
+
+* alphabetically by the property name. If a property spans multiple content
+  lines, the content lines *MUST NOT* be separated after sorting.
+* alphabetically by their normalized value.
+* alphabetically by treating its parameters as long strings
+
+// TODO: have to define how to sort parameters as long strings...
+
+===== Sorted Inner Components
+
+Inner components within a vObject must be placed in a sorted order.
+
+The sorting between components *MUST* be performed according to the
+following order:
+
+* alphabetically by component type, according to component name,
+  such as `VCALENDAR`; then
+* if of the same component name, alphabetically according to its
+  unique identifier <<uniqueness-identifier>>.
+
+===== Normalized Inner Components
+
+An inner component *MUST* itself be normalized, meaning that its properties
+and inner components *MUST* be normalized.
+
+

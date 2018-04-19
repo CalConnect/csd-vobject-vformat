@@ -1,0 +1,25 @@
+
+[[vobject-property-parameter-value]]
+==== Property Parameter Value
+
+A property parameter value **MAY* contain none, one or several property parameter values.
+
+There is generally no order enforced among the list property
+parameter value list.
+
+vObject property parameter values are strongly typed, just like vObject properties, <<RFC5545>> and
+<<RFC6350>>. Basic value types accepted in vObject property parameter values
+are defined in <<vobject-property-value-types>>.
+
+vObject compliant formats *MAY* define additional value types
+that are not provided in this document, and *MAY* require separate validation rules,
+such as the values accepted by the `FBTYPE` property parameter in iCalendar <<RFC5545>>.
+
+Each property parameter *MUST* define its accepted value type.
+While a property *MAY* accept multiple alternative value types,
+a property parameter value *MUST* only accept one value type.
+
+==== Sorted Parameter Values
+
+Property parameter values within a property parameter *MUST* be sorted
+by value.

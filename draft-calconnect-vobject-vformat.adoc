@@ -1,4 +1,4 @@
-= The vObject Model and vFormat Syntax
+= ThevObject Model and vFormat Syntax
 :doctype: internet-draft
 :name: draft-calconnect-vobject-vformat-00
 :abbrev: vObject and vFormat
@@ -7,16 +7,15 @@
 :submissionType: standard
 :area: internet
 :intended-series: full-standard
-:workgroup: Network Working Group
-:revdate: 2017-11-25T00:00:00Z
+:workgroup: Calendaring Extensions
+:revdate: 2018-04-18T00:00:00Z
 :fullname: Ronald Henry Tse
 :lastname: Tse
 :forename_initials: R. H.
 :organization: Ribose
 :street: Suite 1111, 1 Pedder Street
 :city: Central
-:region: Hong Kong
-:country: People's Republic of China
+:country: Hong Kong
 :uri: https://www.ribose.com
 :email: ronald.tse@ribose.com
 :fullname_2: Peter Kwan Yu Tam
@@ -25,8 +24,7 @@
 :organization_2: Ribose
 :street_2: Suite 1111, 1 Pedder Street
 :city_2: Central
-:region_2: Hong Kong
-:country_2: People's Republic of China
+:country_2: Hong Kong
 :uri_2: https://www.ribose.com
 :email_2: peter.tam@ribose.com
 :fullname_3: Cyrus Daboo
@@ -37,50 +35,41 @@
 :city_3: Cupertino
 :code_3: 95014
 :region_3: CA
-:country_3: USA
+:country_3: United States of America
 :uri_3: https://www.apple.com
 :email_3: cyrus@daboo.name
 :fullname_4: Kenneth Murchison
 :lastname_4: Murchison
 :forename_initials_4: K.
-:organization_4: Carnegie Mellon University
-:street_4: 5000 Forbes Avenue
-:city_4: Pittsburgh
-:code_4: 15213
-:region_4: PA
-:country_4: USA
-:uri_4: https://www.cmu.edu
-:email_4: murch@andrew.cmu.edu
-//:bibliography-database: my_database.bib
+:organization_4: FastMail Pty Ltd
+:street_4: Level 2, 114 William Street
+:city_4: Melbourne
+:code_4: 3000
+:region_4: VIC
+:country_4: Australia
+:email_4: murch@fastmailteam.com
 
-include::sections/00-abstract.adoc[leveloffset=+1]
+include::sections/00-abstract.adoc[]
 
-include::sections/01-intro.adoc[leveloffset=+1]
-include::sections/02-conventions.adoc[leveloffset=+1]
-include::sections/03-symbols.adoc[leveloffset=+1]
-
-include::sections/03-vobject.adoc[leveloffset=+1]
-include::sections/03-component.adoc[leveloffset=+1]
-include::sections/03-property.adoc[leveloffset=+1]
-include::sections/03-property-value.adoc[leveloffset=+1]
-include::sections/03-parameter.adoc[leveloffset=+1]
-include::sections/03-parameter-value.adoc[leveloffset=+1]
-include::sections/03-group.adoc[leveloffset=+1]
-include::sections/03-value-types.adoc[leveloffset=+1]
-include::sections/04-normalization.adoc[leveloffset=+1]
-include::sections/05-clients.adoc[leveloffset=+1]
-include::sections/06-carddav.adoc[leveloffset=+1]
-include::sections/07-caldav.adoc[leveloffset=+1]
-include::sections/08-alternative.adoc[leveloffset=+1]
-include::sections/09-security.adoc[leveloffset=+1]
-include::sections/10-iana.adoc[leveloffset=+1]
-include::sections/96-value-type-mapping.adoc[leveloffset=+1]
-include::sections/97-property-value-type-mapping.adoc[leveloffset=+1]
-include::sections/97-parameter-value-type-mapping.adoc[leveloffset=+1]
+include::sections/01-intro.adoc[]
+include::sections/02-conventions.adoc[]
+include::sections/03-symbols.adoc[]
+include::sections/03-vobject.adoc[]
+include::sections/03-vformat.adoc[]
+include::sections/03-value-types.adoc[]
+include::sections/04-normalization.adoc[]
+include::sections/05-clients.adoc[]
+include::sections/06-carddav.adoc[]
+include::sections/07-caldav.adoc[]
+include::sections/09-security.adoc[]
+include::sections/10-iana.adoc[]
+include::sections/96-value-type-mapping.adoc[]
+include::sections/97-property-value-type-mapping.adoc[]
+include::sections/97-parameter-value-type-mapping.adoc[]
 
 // must give references before appendix!
 
-include::sections/98-references.adoc[leveloffset=+1]
-include::sections/97-examples.adoc[leveloffset=+1]
-include::sections/99-acknowledgements.adoc[leveloffset=+1]
+include::sections/98-references.adoc[]
+include::sections/97-examples.adoc[]
+include::sections/99-acknowledgements.adoc[]
 

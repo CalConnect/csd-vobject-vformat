@@ -1,6 +1,8 @@
-= CardDAV
 
-==  Additional Server Semantics for PUT, COPY and MOVE
+[[carddav]]
+== CardDAV
+
+=== Additional Server Semantics for PUT, COPY and MOVE
 
 This specification creates an additional precondition and postcondition
 for the PUT, COPY, and MOVE methods when:
@@ -12,18 +14,21 @@ for the PUT, COPY, and MOVE methods when:
   placed into (or out of) an address book collection.
 
 
-===  Provide Normalized Output
+==== Provide Normalized Output
 
 Certain servers perform silent changes or cleanups of client provided
 vCard data when stored as address object resources, such as the order of
 property parameters or scrubbed values.
 
 The resulting vCard data stored on the server (and when returned back to
-the client) **MAY** end up different than that of the client without its
+the client) *MAY* end up different than that of the client without its
 knowledge. It is therefore necessary for the client to be reported on
 such modifications.
 
 Additional Postcondition:
 
+[source]
+----
   (CARDDAV:resource-normalized): Convert to normalized format.
+----
 

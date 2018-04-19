@@ -1,26 +1,30 @@
-=== URI
+==== URI
 
-Value Name::
-   URI
+===== Value Name
 
-Purpose::
-  This value type defines values that are represented by data referenced by
-  a uniform resource identifier (URI), the value is what the URI points to, not
-  the URI itself.
+URI
 
-Format Definition::
+===== Purpose
+This value type defines values that are represented by data referenced by
+a uniform resource identifier (URI), the value is what the URI points to, not
+the URI itself.
+
+===== Format Definition
 
 [source,abnf]
 ----
-uri = <As defined in Section 3 of <<RFC3986>>>
+uri = <As defined in Section 3 of [RFC3986]>
 ----
 
-Description::
-  When a property parameter value is a URI value type, the URI **MUST**
-  be specified as a quoted-string value.
+NOTE: `uri` is defined in <<RFC3986>>.
 
-Example::
-  This value for the PHOTO property of vCard:
+===== Description
+When a property parameter value is a URI value type, the URI *MUST*
+be specified as a quoted-string value.
+
+===== Example
+
+This value for the PHOTO property of vCard:
 
 ----
 PHOTO:http://www.example.com/pub/photos/jqpublic.gif
@@ -31,6 +35,6 @@ PHOTO:data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
  <...remainder of base64-encoded data...>
 ----
 
-==== Normalization
+===== Normalization
 
 No normalization procedures are needed.

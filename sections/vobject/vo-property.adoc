@@ -1,0 +1,27 @@
+
+[[vobject-property]]
+==== vObject Property
+
+Properties represent attributes of the vObject itself.
+
+A property:
+
+* *MUST* contain a value;
+
+* *MAY* contain one or more property parameters.
+
+vObject property value types are listed in <<vobject-property-value>>.
+
+===== Normalized Values
+
+A normalized property *MUST* have normalized values.
+
+
+===== Normalized Parameters
+
+A normalized property *MUST* have normalized property parameters.
+
+Property parameters within the same property *MUST* each be normalized, and then
+sorted by parameter name alphabetically.
+
+Property parameters of the same property *MUST* have unique names.

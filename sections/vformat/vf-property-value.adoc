@@ -1,0 +1,25 @@
+
+[[vformat-property-value]]
+==== Property Value
+
+The property's values are defined as the content after the
+property name and COLON delimiter, until the end of the
+unfolded content line.
+
+If a property accepts multiple values, the definition of delimitation
+is defined in <<vobject-property-value-types>>.
+
+vObject compliant formats that defines additional value types
+*MAY* require separate validation rules on top of vFormat syntax.
+
+If the property value type of a property value
+is not the default value type, the `VALUE` parameter *MUST* be present
+to specify the type of the property value.
+
+vFormat representation of different value types are provided in
+<<vobject-property-value-types>>.
+
+
+=== Normalizing Property Values
+
+The property value generally does not require any normalization.

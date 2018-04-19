@@ -1,33 +1,35 @@
-=== FLOAT
+==== FLOAT
 
 ////
 If the property permits, multiple "float" values are
-specified by a COMMA-separated list of values. 
+specified by a COMMA-separated list of values.
 ////
 
-Value Name::
-  FLOAT
+===== Value Name
 
-Purpose::
-  Representation of a real-number value.
+FLOAT
 
-Format Definition::
+===== Purpose
+
+Representation of a real-number value.
+
+===== Format Definition
 
 [source,abnf]
 ----
 float = (["+"] / "-") 1*DIGIT ["." 1*DIGIT]
 ----
 
-Description::
+===== Description
 
-  If a preceding sign is not specified, the value is assumed positive "+".
+If a preceding sign is not specified, the value is assumed positive "+".
 
-  Implementations **MUST** support a precision equal or better than that of
-  the IEEE "binary64" format <<IEEE.754.2008>>.
+Implementations *MUST* support a precision equal or better than that of
+the IEEE "binary64" format <<IEEE.754.2008>>.
 
-  Scientific notation is disallowed.
+Scientific notation is disallowed.
 
-Examples::
+===== Examples
 
 * 20.30
 * 1000000.0000001
@@ -35,9 +37,9 @@ Examples::
 * -3.14
 
 
-==== Normalization
+===== Normalization
 
 No normalization procedures are needed.
 
-Trailing zeros, such as `100.10000` **MUST** be kept as it indicates accuracy
+Trailing zeros, such as `100.10000` *MUST* be kept as it indicates accuracy
 of the number.

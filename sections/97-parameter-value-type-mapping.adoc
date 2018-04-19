@@ -1,6 +1,6 @@
-= Mapping Of Parameter Value Types For Existing RFCs
+== Mapping Of Parameter Value Types For Existing RFCs
 
-== RFC 6350
+=== RFC 6350
 
 |===
 | Parameter | Data Type
@@ -19,7 +19,7 @@
 
 |===
 
-== RFC 5545
+=== RFC 5545
 
 |===
 | Parameter      | Data Type

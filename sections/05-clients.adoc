@@ -1,7 +1,5 @@
-=  Client Implementations Recommendations
 
-A CUA **SHOULD** normalize the vObject upon modification of it.
+[[clients]]
+== Client Implementations Recommendations
 
-TODO
-
-==  User Experience
+A CUA *SHOULD* normalize the vObject upon modification of it.

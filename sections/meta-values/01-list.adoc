@@ -1,36 +1,70 @@
-=== LIST
+==== LIST
 
-Some properties and parameters allow an unordered list of values. Values in a
-list of values **MUST** be separated by a COMMA character. There is no
+Properties and parameters *MAY* specify its value to be an unordered list
+of values. There is no
 significance to the order of values in a list.
 
-This construct is called the "LIST". Each value in the LIST **MUST** have the same
+This construct is called the "LIST". Each value in the LIST *MUST* have the same
 value type.
 
-In vFormat syntax, an element within any LIST element **MUST NOT** contain
-an unescaped the COMMA character to prevent breaking of the LIST syntax.
+In vFormat syntax, values in a list of values *MUST* be separated by a
+delimiting character. The default delimiter character is the COMMA character.
+An element within any LIST element *MUST NOT* contain
+an unescaped delimiter character to prevent breaking of the LIST syntax.
 
-Syntax::
-  When used to describe a value type, the `LIST(value-type)` function is defined as
-  a list of elements separated by the COMMA character, where each of its elements
-  is of value type `value-type`.
+A property *MAY* specify that its LIST elements are delimited by another character
+other than the COMMA, for example, <<RFC5545>>'s `RECUR` property uses
+the SEMICOLON character. This is allowed when explicitly specified in
+the defining syntax, given the restriction that any element within does not
+contain an unescaped delimiter character (i.e., in this case, the SEMICOLON).
 
-Example::
-  The "NICKNAME" property of <<RFC6350>> defines its value to be an unordered list of TEXT.
-  In vObject notation its value type is defined to be:
+===== Syntax
+
+When used to describe a value type, the `LIST(value-type)` function is defined as
+a list of elements separated by the COMMA character, where each of its elements
+is of value type `value-type`.
+
+When used to describe a value type, the `LIST(value-type)` function is defined as
+a list of elements separated by the COMMA character, where each of its elements
+is of value type `value-type`.
+
+In the case where a delimiter character for the LIST is not a COMMA, the
+`LIST(value-type, delimiter)` syntax is used to define the delimiter,
+where each of its elements is of value type `value-type`, and the delimiting
+character is specified to be `delimiter`.
+
+===== Example 1
+
+The "NICKNAME" property of <<RFC6350>> defines its value to be an
+unordered list of TEXT.
+
+In vObject notation its value type is defined to be:
 
 [source,abnf]
 ----
 LIST(TEXT)
 ----
 
-==== Normalizing a LIST
+===== Example 2
 
-When normalizing a LIST, each value of it **MUST** be normalized,
-and the values **MUST** be sorted alphabetically.
+The "RECUR" property of <<RFC5545>> defines its value to be an
+unordered list of ASSIGN, separated by the SEMICOLON character.
+
+In vObject notation its value type is defined to be:
+
+[source,abnf]
+----
+LIST(KEYVALUE, ";")
+----
+
+
+===== Normalizing a LIST
+
+When normalizing a LIST, each value of it *MUST* be normalized,
+and the values *MUST* be sorted alphabetically.
 
 For example, values of <<RFC5545>> RESOURCES, FREEBUSY, EXDATE, RDATE,
-CATEGORIES, **MUST** be sorted alphabetically when normalized.
+CATEGORIES, *MUST* be sorted alphabetically when normalized.
 
 
 ////
@@ -38,9 +72,9 @@ CATEGORIES, **MUST** be sorted alphabetically when normalized.
 By default, the following basic value types accept LIST input
 
 6350: DATE, TIME, DATE-TIME, DATE-AND-OR-TIME, and TIMESTAMP
-  TEXT multivalue comma
-  integer
-  float
+TEXT multivalue comma
+integer
+float
 
 5545
 - value types: date, date-time, duration, float, integer, period, text, time

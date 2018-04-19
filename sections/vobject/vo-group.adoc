@@ -1,0 +1,15 @@
+
+[[vobject-property-group]]
+==== Property Group
+
+A property group (or just "group") is used to group a set of
+properties, useful to represent cases where a group of properties are
+closely related to each other.
+
+In the vCard <<RFC6350>>, the group is used to tie multiple properties
+into being displayed together.
+
+Each property *MUST* only have a maximum of one group.
+
+Groups are not ordered and group names are case-insensitive.
+

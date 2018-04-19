@@ -1,0 +1,30 @@
+
+[[vformat-property-parameter-value]]
+==== Property Parameter Value
+
+If a property parameter accepts multiple values, these value elements
+*MUST* be separated by a COMMA (U+002C).
+
+Property parameter value elements that contain the COLON (U+003A),
+SEMICOLON (U+003B), or COMMA (U+002C) character separators *MUST* be
+specified as quoted-string text values.  Property parameter values
+*MUST NOT* contain the DQUOTE (U+0022) character.  The DQUOTE character
+is used as a delimiter for parameter values that contain restricted
+characters or URI text.
+
+=== Normalizing Property Parameter Values
+
+==== Wrapped Parameter Values
+
+Property parameter values *MUST* be individually wrapped with the DQUOTE
+characters. In <<RFC6350>>, the DQUOTE character is used to delimit values
+within a list that contain restricted characters or URI text and is
+optional.
+
+Example:
+
+`TEL;TYPE=home,work;VALUE=uri:tel:+1-888-888-8888`
+
+The normalized vFormat output is:
+
+`TEL;TYPE="home","work";VALUE="uri":tel:+1-888-888-8888`

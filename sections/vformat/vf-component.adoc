@@ -1,0 +1,49 @@
+
+[[vformat-component]]
+==== Component
+
+A component:
+
+* begins with line of text that starts with `BEGIN:` following with its
+  component name, ending with a line break;
+
+* ends with a line of text that starts with `END:` following with its
+  component name (matching with the `BEGIN:` line), ending with a line
+  break.
+
+The vCard <<RFC6350>> and iCalendar <<RFC5545>> data formats both
+conform to vFormat, and their syntaxes are considered to be
+restricted instances of the vObject syntax.
+
+===== Component Name In Uppercase
+
+The component name of a vObject *MUST* be uppercased, for both the
+`BEGIN:` and `END:` content lines.
+
+Example (even though this is not technically allowed by <<RFC6350>>):
+
+`BEGIN:vCard`
+
+Should be normalized to:
+
+`BEGIN:VCARD`
+
+
+===== Order Of Inner Components And Properties
+
+Properties *MUST* be placed before inner components are listed.
+
+
+===== Maintain Validity
+
+Certain vObject formats places certain restrictions or requirements on
+property line locations. Normalization procedures *MUST NOT*
+affect the validity of the normalized vObject.
+
+For example, in the VCARD component <<RFC6350>>, the "VERSION" property
+line is *REQUIRED* to be placed immediately below the "BEGIN" line.
+
+In this case, when normalizing the VCARD component, the common normalization
+procedure *MUST* be first applied, and the "VERSION" property line *MUST*
+be restored to the valid location as required by its specifications <<RFC6350>>.
+

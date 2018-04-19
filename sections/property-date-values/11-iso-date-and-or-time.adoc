@@ -1,14 +1,17 @@
-=== ISO-DATE-AND-OR-TIME
+==== ISO-DATE-AND-OR-TIME
 
 // This is the DATE-AND-OR-TIME portion of 6350
 
-Value Name::
-  ISO-DATE-AND-OR-TIME
+===== Value Name
 
-Purpose::
-  Representation of a ISO-DATE-FLEX, ISO-TIME-FLEX or an ISO-DATE-TIME-FLEX value.
+ISO-DATE-AND-OR-TIME
 
-Format Definition::
+===== Purpose
+
+Representation of a ISO-DATE-FLEX, ISO-TIME-FLEX or an ISO-DATE-TIME-FLEX value.
+
+===== Format Definition
+
 
 [source,abnf]
 ----
@@ -17,15 +20,15 @@ iso-date-and-or-time = iso-date-flex /
                        iso-date-time-flex
 ----
 
-Description::
+===== Description
 
-  This value format accepts values of ISO-DATE-FLEX, ISO-TIME-FLEX
-  and ISO-DATE-TIME-FLEX.
+This value format accepts values of ISO-DATE-FLEX, ISO-TIME-FLEX
+and ISO-DATE-TIME-FLEX.
 
-  A stand-alone ISO-TIME value **MUST** be preceded by a "T"
-  for unambiguous interpretation.
+A stand-alone ISO-TIME value *MUST* be preceded by a "T"
+for unambiguous interpretation.
 
-Example::
+===== Example
 
 * 19961022T140000
 * --1022T1400
@@ -44,6 +47,6 @@ Example::
 * T102200-0800
 
 
-==== Normalization
+===== Normalization
 
 No normalization procedures are needed.

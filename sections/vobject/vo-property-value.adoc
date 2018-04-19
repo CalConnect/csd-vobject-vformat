@@ -1,0 +1,22 @@
+
+[[vobject-property-value]]
+==== Property Value
+
+A vObject property *MAY* have one or more values, depending on the value type.
+
+vObject property values are strongly typed, just like in <<RFC5545>> and
+<<RFC6350>>. Basic value types accepted in vObject properties are defined in
+<<vobject-property-value-types>>.
+
+vObject compliant formats *MAY* define additional value types
+that are not provided in this document, and *MAY* require separate validation rules,
+such as the "RECUR" property value type from iCalendar <<RFC5545>>.
+
+Each property *MUST* define a default value type, and *MAY* accept
+alternative, defined, value types.
+
+==== Normalization Of Property Values
+
+The property value generally does not require any normalization.
+Please consult individual normalization instructions in each value type's
+definition.

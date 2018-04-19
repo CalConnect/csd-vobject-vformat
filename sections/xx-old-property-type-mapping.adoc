@@ -1,6 +1,6 @@
-=  Existing Property Data Type Mapping
+== Existing Property Data Type Mapping
 
-== RFC 6350 Property Mapping
+=== RFC 6350 Property Mapping
 
 Properties with the default data type as TEXT.
 
@@ -59,7 +59,7 @@ CLIENTPIDMAP | FIELDSET(INTEGER-64, URI) | | TEXT
 6350 ADR: structured text, separated by ";"
 6350 ORG: structured text split by ";"
 6350 CLIENTPIDMAP: semicolon-separated pair of values, first is integer, second is uri
- 
+
 ////
 
 Properties with LIST.
@@ -93,7 +93,7 @@ LANG | LANGUAGE-TAG | | language-tag
 
 
 
-== RFC 5545 Property Mapping
+=== RFC 5545 Property Mapping
 
 Properties with the default data type as TEXT.
 
