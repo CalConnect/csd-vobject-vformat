@@ -4,8 +4,8 @@
 
 The ubiquitous vCard <<RFC6350>> and iCalendar <<RFC5545>> standards are
 known as the "vObject" or "VCOMPONENT" family of standards. Named by the
-convention where each component started with the letter "v", all of them use
-very similar, if not identical, syntax.
+convention where the component type identifiers usually start with the
+letter "v", all of them use very similar, if not identical, syntax.
 
 Yet due to diverged implementations of these "vObject" standards,
 different implementations often generate different
@@ -13,15 +13,15 @@ output even when given identical content, causing interoperability concerns and
 the general inability to determine equivalence of vObjects for integrity
 concerns (Section 2.1.2 of <<RFC3552>>).
 
-This document defines the "vObject" data model ("VDM"), which is the data model
-implied by these standards, and the "vFormat" serialization syntax which
-is the generalized serialization syntax of all vObject-compliant
+This document defines the "vObject" data model that is a generalized
+model that fully covers the needs of these standards, and the "vFormat"
+serialization syntax that is the generalized syntax of all vObject-compliant
 serialization formats.
 
-This document also describes the normalization form of the vObject
-data model and the process to normalize vFormat syntax.
+This document also describes the normalized form of the vObject
+data model and the normalization process for vFormat syntax.
 
 This work is produced by the CalConnect TC-VCARD committee
-<<CALCONNECT-VCARD>>. The normalization form and method described in this
-document is compatible with the vCard 4.0 <<RFC6350>> and iCalendar
-<<RFC5545>> standards.
+<<CALCONNECT-VCARD>>. The normalized forms and normalization methods described
+in this document are fully compatible with the vCard 4.0 <<RFC6350>> and
+iCalendar <<RFC5545>> specifications.

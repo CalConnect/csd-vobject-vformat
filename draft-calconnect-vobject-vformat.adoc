@@ -1,4 +1,4 @@
-= ThevObject Model and vFormat Syntax
+= The vObject Model and vFormat Syntax
 :doctype: internet-draft
 :name: draft-calconnect-vobject-vformat-00
 :abbrev: vObject and vFormat

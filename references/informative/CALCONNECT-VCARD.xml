@@ -1,4 +1,4 @@
-<reference anchor='CALCONNECT-VCARD' target='http://calconnect.org/about/technical-committees/vcard-technical-committee'>
+<reference anchor='CALCONNECT-VCARD' target='http://www.calconnect.org/about/technical-committees/vcard-technical-committee'>
   <front>
     <title>CalConnect VCARD Technical Committee</title>
     <author>
@@ -15,7 +15,7 @@
         <uri>https://www.calconnect.org</uri>
       </address>
     </author>
-    <date month='March' year='2017'/>
+    <date month='April' year='2018'/>
   </front>
 </reference>
 
