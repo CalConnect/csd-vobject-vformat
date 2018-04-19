@@ -21,7 +21,9 @@ serialization formats.
 This document also describes the normalized form of the vObject
 data model and the normalization process for vFormat syntax.
 
-This work is produced by the CalConnect TC-VCARD committee
-<<CALCONNECT-VCARD>>. The normalized forms and normalization methods described
+The normalized forms and normalization methods described
 in this document are fully compatible with the vCard 4.0 <<RFC6350>> and
 iCalendar <<RFC5545>> specifications.
+
+This work is produced by the CalConnect TC-VCARD <<CALCONNECT-VCARD>>
+and TC-CALENDAR <<CALCONNECT-CALENDAR>> committees.

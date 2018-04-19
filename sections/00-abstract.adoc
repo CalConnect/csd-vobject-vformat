@@ -21,5 +21,4 @@ RFC 7265, jCal;
 RFC 6351, xCard; and
 RFC 7095, jCard.
 
-This work is produced by the CalConnect TC-VCARD and TC-CALENDAR committees
-<<CALCONNECT-VCARD>>.
+This work is produced by the CalConnect TC-VCARD and TC-CALENDAR committees.

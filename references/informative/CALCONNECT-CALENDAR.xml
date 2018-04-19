@@ -1,0 +1,21 @@
+<reference anchor='CALCONNECT-CALENDAR' target='https://www.calconnect.org/about/technical-committees/calendar-technical-committee'>
+  <front>
+    <title>CalConnect CALENDAR Technical Committee</title>
+    <author>
+      <organization>The Calendaring and Scheduling Consortium</organization>
+      <address>
+        <postal>
+         <street>4390 Chaffin Lane</street>
+         <city>McKinleyville</city>
+         <region>CA</region>
+         <code>95519-8028</code>
+         <country>United States of America</country>
+        </postal>
+        <email>contact@calconnect.org</email>
+        <uri>https://www.calconnect.org</uri>
+      </address>
+    </author>
+    <date month='April' year='2018'/>
+  </front>
+</reference>
+
