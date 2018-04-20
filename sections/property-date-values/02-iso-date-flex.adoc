@@ -1,9 +1,10 @@
-==== ISO-DATE-FLEX
 
-// This is 6350 DATE
+==== ISO-DATE-FLEX
 
 Representation of a calendar date <<ISO.8601.2004>> that does not require
 complete representation.
+
+This corresponds to the DATE value type in <<RFC6350,4.3.1>>.
 
 
 ===== Value Name
@@ -41,18 +42,18 @@ iso-date-truncated-day-only   =  "---" iso-date-mday
 
 This value format accepts:
 
-* a complete calendar date, specified in <<ISO.8601.2004>> Section 4.1.2.2 "Complete representations",
-* a reduced accuracy calendar date, specified in <<ISO.8601.2004>> Section 4.1.2.3 "Representations with reduced accuracy", and
-* a truncated representation calendar date, specified in <<ISO.8601.2000>> Section 5.2.1.3 "Truncated representations".
+* a complete calendar date, specified in <<ISO.8601.2004,4.1.2.2>> "Complete representations",
+* a reduced accuracy calendar date, specified in <<ISO.8601.2004,4.1.2.3>> "Representations with reduced accuracy", and
+* a truncated representation calendar date, specified in <<ISO.8601.2000,5.2.1.3>> "Truncated representations".
 
 The value can be represented in these ways:
 
-* "YYYYMMDD" Complete representation basic format, specified in <<ISO.8601.2004>> 4.1.2.2.
-* "YYYY-MM" Reduced accuracy representation, specified in <<ISO.8601.2004>> 4.1.2.3 a).
-* "YYYY" Reduced accuracy representation, specified in <<ISO.8601.2004>> 4.1.2.3 b).
-* "--MMDD" Truncated representation for a specific day of a month in the implied year, basic format, specified in <<ISO.8601.2000>> Section 5.2.1.3 d).
-* "--MM" Truncated representation for a specific month in the implied year, basic format, specified in <<ISO.8601.2000>> Section 5.2.1.3 e).
-* "---DD" Truncated representation for a specific day in the implied month, basic format, specified in <<ISO.8601.2000>> Section 5.2.1.3 f).
+* "YYYYMMDD" Complete representation basic format, specified in <<ISO.8601.2004,4.1.2.2>>.
+* "YYYY-MM" Reduced accuracy representation, specified in <<ISO.8601.2004,4.1.2.3 a)>>.
+* "YYYY" Reduced accuracy representation, specified in <<ISO.8601.2004,4.1.2.3 b)>>.
+* "--MMDD" Truncated representation for a specific day of a month in the implied year, basic format, specified in <<ISO.8601.2000,5.2.1.3 d)>>.
+* "--MM" Truncated representation for a specific month in the implied year, basic format, specified in <<ISO.8601.2000,5.2.1.3 e)>>.
+* "---DD" Truncated representation for a specific day in the implied month, basic format, specified in <<ISO.8601.2000,5.2.1.3 f)>>.
 
 Example:
 

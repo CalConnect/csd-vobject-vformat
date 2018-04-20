@@ -1,3 +1,4 @@
+
 ==== LIST
 
 Properties and parameters *MAY* specify its value to be an unordered list
@@ -13,8 +14,8 @@ An element within any LIST element *MUST NOT* contain
 an unescaped delimiter character to prevent breaking of the LIST syntax.
 
 A property *MAY* specify that its LIST elements are delimited by another character
-other than the COMMA, for example, <<RFC5545>>'s `RECUR` property uses
-the SEMICOLON character. This is allowed when explicitly specified in
+other than the COMMA, for example, the `RECUR` property of <<RFC5545>> uses
+the SEMICOLON character as a delimiter. This is allowed when explicitly specified in
 the defining syntax, given the restriction that any element within does not
 contain an unescaped delimiter character (i.e., in this case, the SEMICOLON).
 

@@ -2,17 +2,20 @@
 [[vobject]]
 == vObject Data Model
 
-The vObject data model is the generalized data model behind
-vCard <<RFC6350>> and iCalendar <<RFC5545>>.
+The vObject data model is the generalized data model from the implied
+data models of vCard <<RFC6350>> and iCalendar <<RFC5545>>.
 
-Both vCard <<RFC6350>> and iCalendar <<RFC5545>> data formats belong to a
-family defined here as "vFormat". The "vFormat" format is a generalized data
-format of both vCard and iCalendar standards, and both these formats adhere
-to the vFormat requirements.
+While both vCard <<RFC6350>> and iCalendar <<RFC5545>> specify data formats for different purposes,
+the data model behind them follow an identical logical structure (using
+components, properties and parameters) with similar requirements.
 
-=== vObject compliant models
+By creating a generalized data model ("vObject") that is compatible with both,
+we are able to ensure that newly developed data modification techniques
+for vObject would be interoperable on all other vObject-compliant models.
 
-These formats are vObject "compliant formats" as they adhere to the rules of vObject:
+=== vObject-compliant models
+
+The implied data models behind these formats are compliant to the vObject data model:
 
 * vCard version 4.0 <<RFC6350>>: the VCARD component
 * Internet Calendaring and Scheduling Core Object Specification
@@ -25,7 +28,7 @@ These formats are vObject "compliant formats" as they adhere to the rules of vOb
 
 === Elements
 
-Data within a vObject is arranged through a hierarchy that is composed of
+Data within a vObject is arranged through a logical hierarchy composed of
 the following elements:
 
 * component;

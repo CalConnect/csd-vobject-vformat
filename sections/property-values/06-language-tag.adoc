@@ -1,15 +1,22 @@
+
 ==== LANGUAGE-TAG
 
+This corresponds to the LANGUAGE-TAG value type in <<RFC6350,4.8>>.
+
 ===== Value Name
+
 LANGUAGE-TAG
 
 ===== Purpose
+
 Representing a language tag, as defined in <<RFC5646>>.
 
 ===== Format Definition
+
 Defined in <<RFC5646>>.
 
 ===== Description
+
 A single language tag
 
 ===== Examples
@@ -23,7 +30,7 @@ A single language tag
 ===== Normalization
 
 The normalization procedure of the LANGUAGE-TAG data type follows
-the procedure described in Section 2.1.1 of <<RFC5646>>.
+the procedure described in <<RFC5646,2.1.1>>.
 
 * language codes *MUST* be written in lowercase ('mn' Mongolian)
 * script codes *MUST* be in lowercase when the initial letter capitalized ('Cyrl' Cyrillic)

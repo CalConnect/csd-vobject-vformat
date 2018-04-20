@@ -1,7 +1,8 @@
+
 [[cal-duration]]
 ==== CAL-DURATION
 
-// This is the 5545 DURATION.
+This corresponds to the DURATION value type in <<RFC5545,3.3.6>>.
 
 ===== Value Name
 
@@ -9,7 +10,7 @@ CAL-DURATION
 
 ===== Purpose
 
-Representing a duration of time specified by [ISO.8604.2004] Section 4.4.3.2 complete representation basic format, simiar to ISO-DURATION, but with syntax tailored to calendaring.
+Representing a duration of time specified by <<ISO.8601.2004,4.4.3.2>> complete representation basic format, similar to ISO-DURATION, but with syntax tailored to calendaring.
 
 ===== Format Definition
 
@@ -40,15 +41,15 @@ cal-duration-day    = 1*DIGIT "D"
 ===== Description
 
 The value format is similar to ISO-DURATION and based on the complete representation
-basic format specified in <<ISO.8601.2004>> Section 4.4.3.2, but given extra flexibility
+basic format specified in <<ISO.8601.2004,4.4.3.2>>, but given extra flexibility
 to calendaring usage.
 
 It accepts the following formats ("nn" represents):
 
-* "PnnW" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+* "PnnW" <<ISO.8601.2004,4.4.3.2>>, complete representation,
   first basic format, for duration in weeks.
 
-* "PnnDTnnHnnMnnS" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+* "PnnDTnnHnnMnnS" <<ISO.8601.2004,4.4.3.2>>, complete representation,
   second basic format, with the omission of years and months,
   for duration in days, hours, minutes and seconds.
 
@@ -59,7 +60,7 @@ It accepts the following formats ("nn" represents):
 * "PnnD" Reduced accuracy with omission of hours.
 
 
-This format differs from the specification of <<ISO.8601.2004>> Section 4.4.3.2
+This format differs from the specification of <<ISO.8601.2004,4.4.3.2>>
 in the following areas:
 
 * Years and months are not accepted in this syntax.

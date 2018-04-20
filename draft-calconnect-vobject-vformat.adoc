@@ -1,6 +1,6 @@
 = The vObject Model and vFormat Syntax
 :doctype: internet-draft
-:name: draft-calconnect-vobject-vformat-00
+:name: draft-calconnect-vobject-vformat-01
 :abbrev: vObject and vFormat
 :status: info
 :ipr: trust200902
@@ -8,7 +8,8 @@
 :area: internet
 :intended-series: full-standard
 :workgroup: Calendaring Extensions
-:revdate: 2018-04-18T00:00:00Z
+:revdate: 2018-04-19T00:00:00Z
+:updates: 5545,6321,6350,6351,7953,7265,7095
 :fullname: Ronald Henry Tse
 :lastname: Tse
 :forename_initials: R. H.
@@ -69,7 +70,7 @@ include::sections/97-parameter-value-type-mapping.adoc[]
 
 // must give references before appendix!
 
-include::sections/98-references.adoc[]
-include::sections/97-examples.adoc[]
+include::sections/97-references.adoc[]
+include::sections/98-examples.adoc[]
 include::sections/99-acknowledgements.adoc[]
 

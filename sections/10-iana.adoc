@@ -89,23 +89,23 @@ The following table has been used to initialize the registry.
 |===
 | Component     | Property     | Scope         | Reference
 
-| VCALENDAR     | UID          | Global | <<RFC7986>>, Section 5.3
-| VCARD         | UID          | Global | <<RFC6350>>, Section 6.7.6
-| VEVENT        | UID          | Global | <<RFC5545>>, Section 3.6.1
-| VTODO         | UID          | Global | <<RFC5545>>, Section 3.6.2
-| VJOURNAL      | UID          | Global | <<RFC5545>>, Section 3.6.3
-| VFREEBUSY     | UID          | Global | <<RFC5545>>, Section 3.6.4
-| VTIMEZONE     | TZID         | Global | <<RFC5545>>, Section 3.6.5
-| STANDARD      | DTSTART      | Parent | <<RFC5545>>, Section 3.6.5
-| DAYLIGHT      | DTSTART      | Parent | <<RFC5545>>, Section 3.6.5
-| VALARM        | UID          | Global | <<I-D.daboo-valarm-extensions>>, Section 4
-| VAVAILABILITY | UID          | Global | <<RFC7953>>, Section 3.1
-| AVAILABLE     | UID          | Global | <<RFC7953>>, Section 3.1
-| VPOLL         | UID          | Parent | <<I-D.york-vpoll>>, Section 4.5.1
-| VVOTER        | VOTER        | Parent | <<I-D.york-vpoll>>, Section 4.5.2
-| VOTE          | POLL-ITEM-ID | Parent | <<I-D.york-vpoll>>, Section 4.5.3
+| VCALENDAR     | UID          | Global | <<RFC7986,5.3>>
+| VCARD         | UID          | Global | <<RFC6350,6.7.6>>
+| VEVENT        | UID          | Global | <<RFC5545,3.6.1>>
+| VTODO         | UID          | Global | <<RFC5545,3.6.2>>
+| VJOURNAL      | UID          | Global | <<RFC5545,3.6.3>>
+| VFREEBUSY     | UID          | Global | <<RFC5545,3.6.4>>
+| VTIMEZONE     | TZID         | Global | <<RFC5545,3.6.5>>
+| STANDARD      | DTSTART      | Parent | <<RFC5545,3.6.5>>
+| DAYLIGHT      | DTSTART      | Parent | <<RFC5545,3.6.5>>
+| VALARM        | UID          | Global | <<I-D.daboo-valarm-extensions,4>>
+| VAVAILABILITY | UID          | Global | <<RFC7953,3.1>>
+| AVAILABLE     | UID          | Global | <<RFC7953,3.1>>
+| VPOLL         | UID          | Parent | <<I-D.york-vpoll,4.5.1>>
+| VVOTER        | VOTER        | Parent | <<I-D.york-vpoll,4.5.2>>
+| VOTE          | POLL-ITEM-ID | Parent | <<I-D.york-vpoll,4.5.3>>
 
 // TODO: daboo-icalendar-vpatch is not yet available
-// VPATCH        | UID            | Global        | [I-D.daboo-icalendar-vpatch], Section 10.1
-// PATCH         | TODO: Add UID? | Global        | [I-D.daboo-icalendar-vpatch], Section 10.1.1
+// VPATCH        | UID            | Global        | <<I-D.daboo-icalendar-vpatch,10.1>>
+// PATCH         | TODO: Add UID? | Global        | <<I-D.daboo-icalendar-vpatch,10.1>>
 |===

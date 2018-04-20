@@ -1,6 +1,7 @@
+
 ==== CAL-UTC-OFFSET
 
-// This is the 5545 utc-offset
+This corresponds to the UTC-OFFSET value type in <<RFC5545,3.3.14>>.
 
 ===== Value Name
 
@@ -22,7 +23,7 @@ cal-utc-offset = sign iso-time-hour iso-time-minute [iso-time-second]
 The value can be represented in two ways:
 
 * "±hhmm" specified in
-<<ISO.8601.2004>> 4.2.5.1 "Difference between local time and UTC of day",
+<<ISO.8601.2004,4.2.5.1>> "Difference between local time and UTC of day",
 the first basic format.
 * "±hhmmss" which is unique to this value type.
 

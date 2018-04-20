@@ -4,8 +4,8 @@
 
 === Meta Value Types
 
-include::meta-values/01-list.adoc[]
-include::meta-values/02-fieldset.adoc[]
+include::meta-values/01-fieldset.adoc[]
+include::meta-values/02-list.adoc[]
 include::meta-values/03-map.adoc[]
 
 

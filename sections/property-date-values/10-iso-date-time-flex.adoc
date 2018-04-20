@@ -1,4 +1,7 @@
+
 ==== ISO-DATE-TIME-FLEX
+
+This corresponds to the DATE-TIME value type in <<RFC6350,4.3.3>>.
 
 // (This is date-time used in 6350, it's actually not used there directly but for date-and-or-time)
 
@@ -9,7 +12,7 @@ DATE-TIME-FLEX
 ===== Purpose
 
 This value type defines a date and time of day combination as specified in
-<<ISO.8601.2004>> Section 4.3 and <<ISO.8601.2000>>, Section 5.4.2 c).
+<<ISO.8601.2004,4.3>> and <<ISO.8601.2000,5.4.2 c>>).
 
 ===== Format Definition
 
@@ -28,9 +31,9 @@ This value format allows for the:
 
 * truncation of the date portion and
 * the reduced accuracy of the time portion
-* according to the requirements of <<ISO.8601.2000>>, Section 5.4.2 "Representations other than complete" part c).
+* according to the requirements of <<ISO.8601.2000,5.4.2>> "Representations other than complete" part c).
 
-Example::
+===== Examples
 
 * 19961022T150236
 * --1022T1502

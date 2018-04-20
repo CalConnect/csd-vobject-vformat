@@ -1,18 +1,23 @@
 [[vformat]]
 == vFormat Syntax
 
-vFormat (the native vObject format) is the syntax originated from the textual
-representation of the iCalendar <<RFC5545>> and vCard <<RFC6350>> formats.
-Its syntax is mostly traceable back to the original vCard and iCalendar
-documents <<vCard21>>.
+The "vFormat" format is the generalized syntax from the vCard <<RFC6350>>
+and iCalendar <<RFC5545>> formats, and is the native format for vObject
+serialization ("vObject native format").
 
-Parsing and modification operations that work on vFormat
-*SHOULD* work on all its downstream formats, including
-iCalendar <<RFC5545>> and vCard <<RFC6350>>.
+vFormat is called the "native" format for vObjects to distinguish it from
+alternative representations of vObject data, such as their XML (xCal, xCard)
+or JSON (jCal, jCard) representations.
 
-This is called the "native" format to distinguish it from
-alternative representations of vObject data,
-such as those in XML or in JSON.
+Its syntax originated from the textual representation of the iCalendar
+and vCard formats, and is mostly traceable back to the original vCard
+and iCalendar specifications <<vCard21>>.
+
+Both of these formats are considered "instances" (or "downstream formats")
+of vFormat, and fully adhere to vFormat requirements.
+
+Parsing and modification operations that work on vFormat *SHOULD* work on
+all its instances, including iCalendar <<RFC5545>> and vCard <<RFC6350>>.
 
 
 === ABNF Format Definition
@@ -49,7 +54,7 @@ prop-structured = prop-value *(";" prop-value)
 
 contentline = [group "."] prop-name params ":" prop-values CRLF
   ; Folding and unfolding procedures described in Section 3.2 of
-  ; <<RFC6350>> applies:
+  ; [RFC6350] applies:
   ;   * When parsing a content line, folded lines *MUST* first be
   ;     unfolded accordingly.
   ;   * When generating a content line, lines longer than 75

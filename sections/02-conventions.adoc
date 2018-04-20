@@ -27,23 +27,23 @@ all property values are case-sensitive, unless otherwise stated.
 
 === Definitions
 
-vObject, VCOMPONENT::
-  a generalized format of the vCard component (VCARD) and iCalendar
-  (VCALENDAR) component.
+vObject::
+  the generalized data model of the vCard component (VCARD) and iCalendar
+  (VCALENDAR) component defined in this document
 
 vFormat::
-  the textual format representation using the `BEGIN:` and `END:`
-  component keywords
+  the native serialization format of vObject, which is the textual format
+  representation using the `BEGIN:` and `END:` component keywords
 
 inner vObject, sub-component::
-  a vObject located within a vObject.
+  a vObject located within a vObject
 
 outer vObject, super-component::
-  a vObject that this vObject is located within.
+  a vObject that this vObject is located within
 
 Client User Application (CUA)::
   the vObject client implementation that interfaces with the user
 
-Calendar Date::
-  as defined in <<ISO.8601.2004>> 2.1.8
+calendar date::
+  as defined in <<ISO.8601.2004,2.1.8>>
 

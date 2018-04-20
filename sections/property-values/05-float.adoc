@@ -1,4 +1,7 @@
+
 ==== FLOAT
+
+This corresponds to the FLOAT value types in <<RFC5545,3.3.7>> and <<RFC6350,4.6>>.
 
 ////
 If the property permits, multiple "float" values are

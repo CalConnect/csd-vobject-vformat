@@ -1,10 +1,14 @@
+
 ==== URI
+
+This corresponds to the URI value type in <<RFC6350,4.2>> and <<RFC5545,3.3.13>>.
 
 ===== Value Name
 
 URI
 
 ===== Purpose
+
 This value type defines values that are represented by data referenced by
 a uniform resource identifier (URI), the value is what the URI points to, not
 the URI itself.
@@ -19,6 +23,7 @@ uri = <As defined in Section 3 of [RFC3986]>
 NOTE: `uri` is defined in <<RFC3986>>.
 
 ===== Description
+
 When a property parameter value is a URI value type, the URI *MUST*
 be specified as a quoted-string value.
 

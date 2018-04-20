@@ -1,6 +1,7 @@
+
 ==== ISO-DATE-COMPLETE
 
-// This is the 5545 DATE
+This corresponds to the DATE value type in <<RFC5545,3.3.4>>.
 
 ===== Value Name
 
@@ -26,7 +27,7 @@ iso-date-mday          = 2DIGIT   ;01-28, 01-29, 01-30, 01-31
 ===== Description
 
 This value format is based on the "basic format" calendar date
-(specified in <<ISO.8601.2004>> Section 4.1.2.2 "Complete representations").
+(specified in <<ISO.8601.2004,4.1.2.2>> "Complete representations").
 
 The value *MUST* be represented textually as "YYYYMMDD", with its components
 "YYYY" a four-digit year, "MM" a two-digit month, and "DD" a two-digit day

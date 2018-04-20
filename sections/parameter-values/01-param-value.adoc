@@ -1,9 +1,12 @@
+
 ==== PARAM-VALUE
 
 ===== Value Name
+
 PARAM-VALUE
 
 ===== Purpose
+
 This parameter value type is the basic value type for parameter values.
 
 ===== Format Definition

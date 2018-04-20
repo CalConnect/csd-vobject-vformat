@@ -1,4 +1,7 @@
+
 ==== ISO-TIME-FLEX
+
+This corresponds to the TIME value type in <<RFC6350,4.3.2>>.
 
 // This is TIME in 6350, not directly used but for date-and-or-time
 
@@ -40,34 +43,34 @@ iso-time-truncated-second-only = "--" iso-time-second
 
 This value format accepts:
 
-* a complete time of day, specified in <<ISO.8601.2004>> Section 4.2.2.2 "Complete representations",
-* a reduced accuracy time of day, specified in <<ISO.8601.2004>> Section 4.2.2.3 "Representations with reduced accuracy",
-* and a truncated representation time of day, specified in <<ISO.8601.2000>> Section 5.3.1.4 "Truncated representations".
+* a complete time of day, specified in <<ISO.8601.2004,4.2.2.2>> "Complete representations",
+* a reduced accuracy time of day, specified in <<ISO.8601.2004,4.2.2.3>> "Representations with reduced accuracy",
+* and a truncated representation time of day, specified in <<ISO.8601.2000,5.3.1.4>> "Truncated representations".
 
 The value can be represented in these ways:
 
-* "hhmmss" Complete representation basic format, specified in <<ISO.8601.2004>> 4.2.2.2.
-* "hhmm" Reduced accuracy representation basic format for a specific hour and minute, specified in <<ISO.8601.2004>> 4.2.2.3 a).
-* "hh" Reduced accuracy representation basic format for a specific hour, specified in <<ISO.8601.2004>> 4.2.2.3 b).
-* "-mmss" Truncated representation for a specific minute and second of the implied hour, specified in <<ISO.8601.2000>> Sections 5.3.1.4 a).
-* "-mm" Truncated representation for a specific minute of the implied hour, specified in <<ISO.8601.2000>> Sections 5.3.1.4 b).
-* "--ss" Truncated representation for a specific second of the implied minute, specified in <<ISO.8601.2000>> Sections 5.3.1.4 c).
+* "hhmmss" Complete representation basic format, specified in <<ISO.8601.2004,4.2.2.2>>.
+* "hhmm" Reduced accuracy representation basic format for a specific hour and minute, specified in <<ISO.8601.2004,4.2.2.3 a)>>.
+* "hh" Reduced accuracy representation basic format for a specific hour, specified in <<ISO.8601.2004,4.2.2.3 b)>>.
+* "-mmss" Truncated representation for a specific minute and second of the implied hour, specified in <<ISO.8601.2000,5.3.1.4 a)>>.
+* "-mm" Truncated representation for a specific minute of the implied hour, specified in <<ISO.8601.2000,5.3.1.4 b)>>.
+* "--ss" Truncated representation for a specific second of the implied minute, specified in <<ISO.8601.2000,5.3.1.4 c)>>.
 
 The seconds value of 60 *MUST* only be used to account for positive "leap" seconds.
 Fractions of a second are not supported by this format.
 
-This value indicates "local time" as specified in <<ISO.8601.2004>> 2.1.16.
+This value indicates "local time" as specified in <<ISO.8601.2004,2.1.16>>.
 To indicate UTC time, a "Z" character *MUST* be appended to the basic
-format as described in <<ISO.8601.2004>> Section 4.2.4 "UTC of day".
+format as described in <<ISO.8601.2004,4.2.4>> "UTC of day".
 
-This format requires the midnight hour to be represented by "00" (<<ISO.8601.2004>>, Section 4.2.3 a)), not "24" (<<ISO.8601.2004>>, Section 4.2.3 b)).
+This format requires the midnight hour to be represented by "00" (<<ISO.8601.2004,4.2.3 a)>>), not "24" (<<ISO.8601.2004,4.2.3 b)>>).
 
 This format supports the specificiation of UTC offsets for the
 complete representation basic format
-(defined in <<ISO.8601.2004>>, Section 4.2.5.2 basic format),
+(defined in <<ISO.8601.2004,4.2.5.2>> basic format),
 in the form of "hhmmss±HHMM".
 "HHMM" is the hour and minute of UTC offset, defined in
-<<ISO.8601.2004>>, Section 4.2.5.1 basic format.
+<<ISO.8601.2004,4.2.5.1>> basic format.
 
 Example:
 

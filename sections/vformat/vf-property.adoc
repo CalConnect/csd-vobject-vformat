@@ -3,7 +3,7 @@
 ==== Property
 
 A property can be represented by one content line (a line that ends with
-a line break), but can also be "folded" (Section 3.1 of <<RFC5545>>)
+a line break), but can also be "folded" (<<RFC5545,3.1>>)
 to use multiple lines.
 
 A property begins with the property name (e.g., `TEL`), followed

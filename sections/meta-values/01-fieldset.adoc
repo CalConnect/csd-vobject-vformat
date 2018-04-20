@@ -1,3 +1,4 @@
+
 ==== FIELDSET
 
 Some properties and parameters require values defined in terms of multiple parts.
@@ -10,6 +11,7 @@ In vFormat syntax, an element within any FIELDSET field *MUST NOT* contain
 an unescaped the SEMICOLON character to prevent breaking of the FIELDSET syntax.
 
 ===== Syntax
+
 When used to describe a value type, the `FIELDSET(field-1-value-type, ...)` function
 is defined as a structure of fields separated by the SEMICOLON character, where each
 of its fields is of value type `field-i-value-type`, where `i` represents the index

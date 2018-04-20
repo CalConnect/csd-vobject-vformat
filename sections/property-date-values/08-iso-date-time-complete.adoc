@@ -1,6 +1,7 @@
+
 ==== ISO-DATE-TIME-COMPLETE
 
-// This is "TIMESTAMP" of 6350
+This corresponds to the TIMESTAMP value type in <<RFC6350,4.3.5>>.
 
 ===== Value Name
 
@@ -9,10 +10,9 @@ ISO-DATE-TIME-COMPLETE
 ===== Purpose
 
 A complete date and time of day combination as specified in
-<<ISO.8601.2004>>, Section 4.3.2.
+<<ISO.8601.2004,4.3.2>>
 
 ===== Format Definition
-
 
 [source,abnf]
 ----
@@ -21,7 +21,7 @@ iso-date-time  = iso-date "T" iso-time
 
 ===== Description
 
-This value format accepts a complete date and time of day representation, specified in <<ISO.8601.2004>> Section 4.3.2 "Complete representations".
+This value format accepts a complete date and time of day representation, specified in <<ISO.8601.2004,4.3.2>> "Complete representations".
 
 The value can be represented in these ways:
 
@@ -30,7 +30,7 @@ The value can be represented in these ways:
 * "YYYYMMDDThhmmss±hhmm" 4.3.2 Complete representation basic format, third entry.
 * "YYYYMMDDThhmmss±hh" 4.3.2 Complete representation basic format, fourth entry.
 
-Examples::
+===== Examples
 
 * 19850412T101530
 * 19850412T101530Z

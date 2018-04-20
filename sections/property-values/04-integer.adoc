@@ -1,15 +1,12 @@
+
 ==== INTEGER
+
+The INTEGER-64 and INTEGER-32 value types corresponds to the INTEGER
+value types in <<RFC6350,4.5>> and in <<RFC5545,3.3.8>> respectively.
 
 ////
 If the property permits, multiple "integer" values are
 specified by a COMMA-separated list of values.
-////
-
-////
-
-6350 uses 64-bit integer
-5545 uses 32-bit integer
-
 ////
 
 ===== Value Name

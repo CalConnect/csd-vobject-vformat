@@ -1,4 +1,7 @@
+
 ==== TEXT
+
+This corresponds to the TEXT value type in <<RFC6350,4.1>> and <<RFC5545,3.3.11>>.
 
 ===== Value Name
 

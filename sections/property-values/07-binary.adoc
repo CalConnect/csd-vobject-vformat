@@ -1,6 +1,7 @@
+
 ==== Binary
 
-// (From RFC 5545)
+This corresponds to the BINARY value type in <<RFC5545,3.3.1>>.
 
 ===== Value Name
 

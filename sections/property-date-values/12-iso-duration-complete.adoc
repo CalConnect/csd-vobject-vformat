@@ -1,4 +1,7 @@
+
 ==== ISO-DURATION-COMPLETE
+
+This corresponds to the values accepted by "duration" as specified in <<ISO.8601.2004>>.
 
 ////
  If the property permits, multiple "duration" values are
@@ -11,7 +14,7 @@ ISO-DURATION-COMPLETE
 
 ===== Purpose
 
-Representing a duration of time specified by [ISO.8604.2004] Section 4.4.3.2 complete representation basic format.
+Representing a duration of time specified by <<ISO.8601.2004,4.4.3.2>> complete representation basic format.
 
 ===== Format Definition
 
@@ -39,30 +42,30 @@ iso-duration-minute = 1*DIGIT "M"
 iso-duration-second = 1*DIGIT "S"
 ----
 
-Description::
+===== Description
 
 The value format is based on the complete representation
-basic format specified in <<ISO.8601.2004>> Section 4.4.3.2.
+basic format specified in <<ISO.8601.2004,4.4.3.2.>>
 
 It accepts the following formats ("nn" represents):
 
-* "PnnW" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+* "PnnW" <<ISO.8601.2004,4.4.3.2>>, complete representation,
 first basic format, for duration in weeks.
 
-* "PnnYnnMnnDTnnHnnMnnS" <<ISO.8601.2004>> Section 4.4.3.2, complete representation,
+* "PnnYnnMnnDTnnHnnMnnS" <<ISO.8601.2004,4.4.3.2>>, complete representation,
 second basic format, for duration in years, months, days, hours, minutes and seconds.
 
-This format differs from the specification of <<ISO.8601.2004>> Section 4.4.3.2
+This format differs from the specification of <<ISO.8601.2004,4.4.3.2>>
 in the following areas:
 
 * An optional, preceding "sign", element is used to indicate positive or negative
 duration. Negative durations are useful in representing reverse scheduling,
 such as the time to trigger an alarm before an associated time (see <<RFC5545>>).
 
-* Reduced accuracy as defined in <<ISO.8601.2004>> Section 4.4.3.2 is not allowed.
+* Reduced accuracy as defined in <<ISO.8601.2004,4.4.3.2>> is not allowed.
 Omission of the number and corresponding designator of days, hours, minutes or
 seconds is not allowed even if any of the expressions are zero
-(<<ISO.8601.2004>> Section 4.4.3.2 c)).
+(<<ISO.8601.2004,4.4.3.2>> c)).
 
 * The duration of a week or a day depends on its position in the calendar.
 
@@ -79,7 +82,7 @@ be added first, followed by the number of hours, number of
 minutes, and number of seconds.
 ////
 
-===== Example
+===== Examples
 
 A duration of 15 days, 5 hours, and 20 seconds *MAY* be represented as
 

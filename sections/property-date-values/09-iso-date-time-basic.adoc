@@ -1,5 +1,7 @@
+
 ==== ISO-DATE-TIME-BASIC
 
+This corresponds to the DATE-TIME value type in <<RFC5545,3.3.5>>.
 // 5545-Date-Time, without UTC offset
 
 ===== Value Name
@@ -9,7 +11,7 @@ ISO-DATE-TIME-BASIC
 ===== Purpose
 
 A date and time of day combination without non-UTC timezone as specified in
-<<ISO.8601.2004>>, Section 4.3.2.
+<<ISO.8601.2004,4.3.2>>
 
 ===== Format Definition
 
@@ -22,7 +24,7 @@ iso-date-time-no-zone  = iso-date "T" iso-time-basic
 ===== Description
 
 This value format accepts a complete date and time of day representation,
-specified in <<ISO.8601.2004>> Section 4.3.2 "Complete representations",
+specified in <<ISO.8601.2004,4.3.2>> "Complete representations",
 identical with ISO-DATE-TIME-COMPLETE, except that the "utc-offset" portion is
 disallowed.
 
@@ -36,7 +38,7 @@ Due to the lack of "utc-offset", properties that use this value type
 property parameters, such as using the "TZID" property parameter defined in
 <<RFC5545>>.
 
-Example::
+===== Examples
 
 * 19980118T230000
 * 19980118T230000Z
@@ -60,7 +62,7 @@ positive leap second.  For example:
 19970630T235960Z
 
 Implementations that do not support leap seconds SHOULD interpret
-the second 60 as equivalent to the second 59. 
+the second 60 as equivalent to the second 59.
 ////
 
 

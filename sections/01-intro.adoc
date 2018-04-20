@@ -11,7 +11,7 @@ Yet due to diverged implementations of these "vObject" standards,
 different implementations often generate different
 output even when given identical content, causing interoperability concerns and
 the general inability to determine equivalence of vObjects for integrity
-concerns (Section 2.1.2 of <<RFC3552>>).
+concerns (<<RFC3552,2.1.2>>).
 
 This document defines the "vObject" data model that is a generalized
 model that fully covers the needs of these standards, and the "vFormat"
