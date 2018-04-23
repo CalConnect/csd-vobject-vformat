@@ -60,7 +60,7 @@ In accordance with <<ISO.8601.2004,4.4.5>>:
 * representations for UTC included with the component preceding the solidus shall be assumed to apply to
 the component following the solidus, unless a corresponding alternative is included.
 
-Example::
+===== Examples
 
 * 19850412T232050/P1Y2M15DT12H30M0S
 * 19850412T232050Z/P1Y2M15DT12H30M0S

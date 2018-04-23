@@ -8,9 +8,20 @@ described in this document, and any
 exceptions or further instructions for normalization *MUST* be
 described.
 
+=== Common vObject Registries
+
+The IANA has created and will maintain the following registries for
+vObject elements with pointers to appropriate reference documents. The
+registries are grouped together under the heading
+"vObject Common Elements".
+
+
+[[vobject-uid-registry]]
+=== vObject Component Uniqueness Identifiers Registry
+
 // TODO: Create a registry for components, for properties, for parameters, for values types, etc?
 
-=== vObject Component Uniqueness Properties Registration Procedure
+==== Registration Procedure
 
 This section defines the process to register new or modified
 uniqueness properties for vObject components with IANA.
@@ -47,7 +58,7 @@ appealed to the IESG Applications Area Director, then to the IESG.
 They follow the normal appeals procedure for IESG decisions.
 
 
-==== Registration Template for vObject Component Uniqueness Properties
+==== Registration Template
 
 A registration for a vObject Component Uniqueness Property is defined by
 completing the following template.
@@ -77,8 +88,7 @@ One or more examples of instances of the component need
 to be specified.
 
 
-[[vobject-uid-registry]]
-==== Initial vObject Component Uniqueness Identifiers Registry
+==== Initial Registrations
 
 The IANA created and maintains this registry for vObject Component Uniqueness
 Identifiers with pointers to appropriate reference documents.
