@@ -2,6 +2,16 @@
 [[vobject-property-value-types]]
 == vObject Value Types
 
+vObject value types are identically defined for both:
+
+* vObject property values; and
+* vObject property parameter values.
+
+Implementation differences in <<vformat>> for the same value type
+are described in <<vformat-property-value>> and
+<<vformat-property-parameter-value>>.
+
+
 === Meta Value Types
 
 include::meta-values/01-fieldset.adoc[]
@@ -42,13 +52,3 @@ include::property-date-values/12-iso-duration-complete.adoc[]
 include::property-date-values/13-cal-duration.adoc[]
 include::property-date-values/14-iso-interval-complete.adoc[]
 include::property-date-values/15-cal-interval.adoc[]
-
-
-=== Parameter Value Types
-
-TODO: vFormat URI in parameter values should be wrapped with DQUOTES.
-
-include::parameter-values/01-param-value.adoc[]
-include::parameter-values/02-param-conversion.adoc[]
-
-

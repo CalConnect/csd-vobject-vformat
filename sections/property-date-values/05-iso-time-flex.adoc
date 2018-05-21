@@ -65,7 +65,7 @@ format as described in <<ISO.8601.2004,4.2.4>> "UTC of day".
 
 This format requires the midnight hour to be represented by "00" (<<ISO.8601.2004,4.2.3 a)>>), not "24" (<<ISO.8601.2004,4.2.3 b)>>).
 
-This format supports the specificiation of UTC offsets for the
+This format supports the specification of UTC offsets for the
 complete representation basic format
 (defined in <<ISO.8601.2004,4.2.5.2>> basic format),
 in the form of "hhmmss±HHMM".

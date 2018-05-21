@@ -13,28 +13,24 @@ Representation of a key-value pair: a key `key` linked to a value of value type 
 
 [source,abnf]
 ----
-assign-key    = *(TSAFE-CHAR)
-assign-value  = prop-values
-
-assign        = assign-key "=" assign-value
+assign-key   = *(TSAFE-CHAR)
+assign-value = prop-values
 ----
 
 ===== Description
 
-The separation delimiter between the key and value is the EQUAL sign character, `=`.
-The value of `KEYVALUE` *MUST NOT* contain the unescaped EQUAL sign character
-for the avoidance of doubt.
+This value type is a core component of the `MAP` value type.
 
 If the `KEYVALUE` value is accepted within a list, the `key` value must be
 unique amongst the list.
 
-This value type is also a core component of the `MAP` value type.
 
 ===== Examples
 
-* `FREQ=WEEKLY`
-* `BYHOUR=3,6,9`
-* `BYWEEKNO=MO,TU,WE,TH,FR,SA`
+* key: `FREQ`; value: `WEEKLY`
+* key: `BYHOUR`; value: `3,6,9`
+* key: `BYWEEKNO`; value: `MO,TU,WE,TH,FR,SA`
+
 
 
 ===== Normalization

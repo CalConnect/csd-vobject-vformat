@@ -1,6 +1,6 @@
 
 [[vformat-property-parameter]]
-==== Property Parameter
+=== Property Parameter
 
 Property parameters exist between the property name
 and the COLON delimiter in a property line.
@@ -12,18 +12,18 @@ The property parameter name and the property parameter value is separated with a
 equal sign ("=").
 
 
-===== Multiple Property Parameters
+==== Multiple Property Parameters
 
 If the property accepts multiple property parameters values, they *MUST* be
 separated by a SEMICOLON character as a list.
 
-===== Expanded Form Of Property Parameter Value List
+==== Expanded Form Of Property Parameter Value List
 
 When there are multiple instances of a property parameter on the same property,
 such as in "TYPE=home;TYPE=work", it is considered equivalent to "TYPE=home\,work".
 
 
-===== Uppercased Property Parameter Names
+==== Uppercased Property Parameter Names
 
 The property parameter name *MUST* be normalized into uppercase letters
 in form of a Unicode string (<<RFC8259,7>>).
@@ -40,7 +40,7 @@ The normalized form is:
 `TEL;TYPE="home";VALUE="uri":tel:+1-888-888-8888`
 
 
-===== Join Identical Property Parameter Names
+==== Join Identical Property Parameter Names
 
 If a property parameter occurs more than once within a property, the
 property parameter is considered to contain a list of property parameter

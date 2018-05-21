@@ -1,0 +1,13 @@
+
+[[vobject-compliant]]
+=== vObject-compliant Models
+
+The implied data models behind these formats are compliant to the vObject data model:
+
+* vCard version 4.0 <<RFC6350>>: the VCARD component
+* Internet Calendaring and Scheduling Core Object Specification
+  (iCalendar) <<RFC5545>>, the VCALENDAR, VEVENT, VJOURNAL, VFREEBUSY,
+  VTIMEZONE, VALARM, VTODO, STANDARD, DAYLIGHT components
+* Calendar Availability Extensions <<RFC7953>>: the VAVAILABILITY,
+  AVAILABLE components
+* iCalendar Patching <<VPATCH>>: the VPATCH component

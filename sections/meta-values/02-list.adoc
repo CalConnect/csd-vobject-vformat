@@ -1,4 +1,5 @@
 
+[[value-type-list]]
 ==== LIST
 
 Properties and parameters *MAY* specify its value to be an unordered list
@@ -8,32 +9,13 @@ significance to the order of values in a list.
 This construct is called the "LIST". Each value in the LIST *MUST* have the same
 value type.
 
-In vFormat syntax, values in a list of values *MUST* be separated by a
-delimiting character. The default delimiter character is the COMMA character.
-An element within any LIST element *MUST NOT* contain
-an unescaped delimiter character to prevent breaking of the LIST syntax.
-
-A property *MAY* specify that its LIST elements are delimited by another character
-other than the COMMA, for example, the `RECUR` property of <<RFC5545>> uses
-the SEMICOLON character as a delimiter. This is allowed when explicitly specified in
-the defining syntax, given the restriction that any element within does not
-contain an unescaped delimiter character (i.e., in this case, the SEMICOLON).
-
 ===== Syntax
 
-When used to describe a value type, the `LIST(value-type)` function is defined as
-a list of elements separated by the COMMA character, where each of its elements
-is of value type `value-type`.
+The `LIST(value-type)` notation is used to describe this value type, of
+a list of elements, where each of its elements is of value type `value-type`.
 
-When used to describe a value type, the `LIST(value-type)` function is defined as
-a list of elements separated by the COMMA character, where each of its elements
-is of value type `value-type`.
 
-In the case where a delimiter character for the LIST is not a COMMA, the
-`LIST(value-type, delimiter)` syntax is used to define the delimiter,
-where each of its elements is of value type `value-type`, and the delimiting
-character is specified to be `delimiter`.
-
+[[value-type-list-example1]]
 ===== Example 1
 
 The "NICKNAME" property of <<RFC6350>> defines its value to be an
@@ -46,10 +28,11 @@ In vObject notation its value type is defined to be:
 LIST(TEXT)
 ----
 
+[[value-type-list-example2]]
 ===== Example 2
 
 The "RECUR" property of <<RFC5545>> defines its value to be an
-unordered list of ASSIGN, separated by the SEMICOLON character.
+unordered list of ASSIGN.
 
 In vObject notation its value type is defined to be:
 

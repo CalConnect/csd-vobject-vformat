@@ -1,30 +1,104 @@
 
 [[vformat-property-parameter-value]]
-==== Property Parameter Value
+=== Property Parameter Value
 
-If a property parameter accepts multiple values, these value elements
-*MUST* be separated by a COMMA (U+002C).
+While a property parameter value may accept any vObject value type,
+the serialization rules of a vFormat property value and
+a vFormat property parameter value are different, due to
+further limitations of allowed characters in property parameter values.
 
-Property parameter value elements that contain the COLON (U+003A),
-SEMICOLON (U+003B), or COMMA (U+002C) character separators *MUST* be
-specified as quoted-string text values.  Property parameter values
-*MUST NOT* contain the DQUOTE (U+0022) character.  The DQUOTE character
-is used as a delimiter for parameter values that contain restricted
-characters or URI text.
+==== Format Definition
 
-=== Normalizing Property Parameter Values
+[source,abnf]
+----
+param-value   = paramtext / quoted-string
 
-==== Wrapped Parameter Values
+paramtext     = *SAFE-CHAR
+quoted-string = DQUOTE *QSAFE-CHAR DQUOTE
 
-Property parameter values *MUST* be individually wrapped with the DQUOTE
-characters. In <<RFC6350>>, the DQUOTE character is used to delimit values
-within a list that contain restricted characters or URI text and is
-optional.
+QSAFE-CHAR    = WSP / %x21 / %x23-7E / NON-US-ASCII
+    ; Any character except CONTROL and DQUOTE
 
-Example:
+SAFE-CHAR     = WSP / %x21 / %x23-2B / %x2D-39 / %x3C-7E
+             / NON-US-ASCII
+    ; Any character except CONTROL, DQUOTE, ";", ":", ","
+
+NON-US-ASCII  = UTF8-2 / UTF8-3 / UTF8-4
+     ; UTF8-2, UTF8-3, and UTF8-4 are defined in [RFC3629]
+
+CONTROL       = %x00-08 / %x0A-1F / %x7F
+     ; All the controls except HTAB
+----
+
+
+==== Description
+
+In vFormat, if a property parameter accepts multiple values,
+these value elements *MUST* be separated by a COMMA (U+002C).
+
+The DQUOTE character is used as a delimiter for parameter values that contain
+restricted characters or URI text.
+
+Property parameter values that contain the
+COLON (U+003A),
+SEMICOLON (U+003B) (such as the `LIST` and `MAP` value types), or
+COMMA (U+002C)
+character separators *MUST* be specified as quoted-string text values.
+
+Property parameter values that contain the DQUOTE (U+0022) character
+*MUST* be escaped and specified as quoted-string text values.
+
+An intentional line break *MUST* be represented by the sequence of "\n" or "\N"
+(BACKSLASH followed by a LATIN SMALL LETTER N (U+006E) or
+a LATIN CAPITAL LETTER N (U+004E)).
+
+Property parameter values that are not in quoted-strings are case-insensitive.
+
+
+==== Example
+
+The value `cid:part1.0001@example.org` in the parameter `ALTREP` within a
+`DESCRIPTION` property in iCalendar can be specified like this:
+
+----
+DESCRIPTION;ALTREP="cid:part1.0001@example.org":The Fall'98 Wild
+ Wizards Conference - - Las Vegas\, NV\, USA
+----
+
+////
+==== Serializing vObject Values
+
+The following primitives are defined in order to serialize vObject values
+into acceptable vFormat property parameter values:
+
+* `DISALLOW-DQUOTES`: converts a vObject value type to reject DQUOTES
+  within its value
+
+* `WRAP-DQUOTES`: converts a vObject value type to require outermost
+  DQUOTES at the beginning and at the end of its value
+////
+
+
+==== Normalization of Line Breaks
+
+In vFormat, vObject property parameter values *MUST* convert all line breaks
+("\n" or "\N") into the character sequence "\n" (BACKSLASH followed by a LATIN
+SMALL LETTER N (U+006E)).
+
+If a value is specified as `paramtext` (i.e., not inside a quoted-string),
+the value *SHOULD* be down-cased.
+
+
+==== Normalizing Parameter Values Via DQOUTE Wrapping
+
+vFormat property parameter values *SHOULD* be individually wrapped with the
+DQUOTE characters.
+
+This is an example application of the rule from <<RFC6350>>:
 
 `TEL;TYPE=home,work;VALUE=uri:tel:+1-888-888-8888`
 
 The normalized vFormat output is:
 
 `TEL;TYPE="home","work";VALUE="uri":tel:+1-888-888-8888`
+

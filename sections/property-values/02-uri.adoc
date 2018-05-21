@@ -29,12 +29,19 @@ be specified as a quoted-string value.
 
 ===== Example
 
-This value for the PHOTO property of vCard:
+This following values for the PHOTO property of vCard are valid.
+
+
+Example 1:
 
 ----
-PHOTO:http://www.example.com/pub/photos/jqpublic.gif
+http://www.example.com/pub/photos/jqpublic.gif
+----
 
-PHOTO:data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
+Example 2:
+
+----
+data:image/jpeg;base64,MIICajCCAdOgAwIBAgICBEUwDQYJKoZIhv
  AQEEBQAwdzELMAkGA1UEBhMCVVMxLDAqBgNVBAoTI05ldHNjYXBlIENvbW11bm
  ljYXRpb25zIENvcnBvcmF0aW9uMRwwGgYDVQQLExNJbmZvcm1hdGlvbiBTeXN0
  <...remainder of base64-encoded data...>

@@ -1,4 +1,5 @@
 
+[[value-type-text]]
 ==== TEXT
 
 This corresponds to the TEXT value type in <<RFC6350,4.1>> and <<RFC5545,3.3.11>>.
@@ -15,60 +16,23 @@ This value type defines values that contain free-form, human-readable text.
 
 [source,abnf]
 ----
-text       = *(TSAFE-CHAR / ":" / DQUOTE / ESCAPED-CHAR)
-  ; Folded according to description above
-
-ESCAPED-CHAR = ("\\" / "\;" / "\," / "\N" / "\n")
-  ; \\ encodes \, \N or \n encodes newline
-  ; \; encodes ;, \, encodes ,
-
-TSAFE-CHAR = WSP / %x21 / %x23-2B / %x2D-39 / %x3C-5B /
-            %x5D-7E / NON-US-ASCII
-  ; Any character except CONTROLs not needed by the current
-  ; character set, DQUOTE, ";", ":", "\", ","
+text = VALUE-CHAR
 ----
-
-===== Description
-
-For historic reasons, the COMMA and SEMICOLON characters *MUST*
-be escaped with a preceding BACKSLASH character (U+005C). The historic usage
-of the "text" value type accepting multiple values *MUST NOT* be used unless
-the multiple values are provided through a LIST.
-
-An intentional line break *MUST* be represented by the sequence of "\n" or "\N"
-(BACKSLASH followed by a LATIN SMALL LETTER N (U+006E) or
-a LATIN CAPITAL LETTER N (U+004E)).
 
 ===== Associated parameters
 
 * Language in which the text is represented can be controlled by
   the "LANGUAGE" property parameter.
 
+
+[[value-type-text-example]]
 ===== Example
 
-This multiple line value for the NOTE value of vCard:
+This multiple line value is a valid value for the NOTE property of vCard:
 
 ----
 TC VCARD
 The Calendaring And Scheduling Consortium
 July 20, 2017
 ----
-
-requires application of the following formatting rules:
-
-* representing line breaks as "\n"
-* line folding with CRLF and the folded-line beginning with a single space
-* escaping of the COMMA character
-
-and therefore *SHOULD* be represented as:
-
-----
-NOTE:TC VCARD\nThe Calendaring And Scheduling Consortium\nJuly 20\, 2017
-----
-
-===== Normalization
-
-Values of the TEXT data type *MUST* convert all line breaks ("\n" or "\N")
-into the character sequence "\n" (BACKSLASH followed by a LATIN SMALL LETTER N
-(U+006E)).
 

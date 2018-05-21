@@ -1,0 +1,58 @@
+
+[[vobject-elements]]
+=== Elements
+
+Data within a vObject is arranged through a logical hierarchy composed of
+the following elements:
+
+* component;
+* property;
+* property parameter;
+* property value;
+* property parameter value; and
+* property group.
+
+The property group is optional and *MAY* not be accepted by all vObject-compliant
+models.
+
+[[diagram-vobject-hierarchy]]
+.vObject Data Model Hierarchy
+[align=center]
+====
+[align=center]
+....
+
++-------------------+
+| vObject Component |
++-------------------+
+    |
+/ - - - - - - - - - - - - - - \
+|   |              (Optional) |
+    |   +----------------+
+|   +---| Property Group |    |
+    |   +----------------+
+|   |                         |
+\ - - - - - - - - - - - - - - /
+    |   +----------+
+    +---| Property |
+        +----------+
+            |
+            |   +----------------+
+            +---| Property Value |
+            |   +----------------+
+            |
+            |   +--------------------+
+            +---| Property Parameter |
+                +--------------------+
+                    |
+                    |   +--------------------------+
+                    +---| Property Parameter Value |
+                        +--------------------------+
+....
+====
+
+
+==== Equivalence
+
+Two vObjects are considered identical in content if their normalized
+forms are textually equivalent.

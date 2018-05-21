@@ -46,6 +46,6 @@ VERSION:4.0
 KIND:individual
 FN:Martin Van Buren
 N:Van Buren;Martin;;;Hon.
-TEL;VALUE=uri;PREF=1;TYPE="voice,home":tel:+1-888-888-8888;ext=8888
+TEL;VALUE=uri;PREF=1;TYPE="voice","home":tel:+1-888-888-8888;ext=8888
 END:VCARD
 ----

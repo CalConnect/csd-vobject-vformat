@@ -1,6 +1,6 @@
 
 [[vformat-component]]
-==== Component
+=== Component
 
 A component:
 
@@ -15,7 +15,7 @@ The vCard <<RFC6350>> and iCalendar <<RFC5545>> data formats both
 conform to vFormat, and their syntaxes are considered to be
 restricted instances of the vObject syntax.
 
-===== Component Name In Uppercase
+==== Component Name In Uppercase
 
 The component name of a vObject *MUST* be uppercased, for both the
 `BEGIN:` and `END:` content lines.
@@ -29,12 +29,12 @@ Should be normalized to:
 `BEGIN:VCARD`
 
 
-===== Order Of Inner Components And Properties
+==== Order Of Inner Components And Properties
 
 Properties *MUST* be placed before inner components are listed.
 
 
-===== Maintain Validity
+==== Maintain Validity
 
 Certain vObject formats places certain restrictions or requirements on
 property line locations. Normalization procedures *MUST NOT*

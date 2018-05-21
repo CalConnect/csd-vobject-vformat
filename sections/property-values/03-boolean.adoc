@@ -16,7 +16,7 @@ either a "TRUE" or "FALSE" Boolean value.
 
 [source,abnf]
 ----
-boolean    = "TRUE" / "FALSE"
+boolean = "TRUE" / "FALSE"
 ----
 
 ===== Description

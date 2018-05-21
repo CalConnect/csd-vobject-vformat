@@ -1,4 +1,5 @@
 
+[[value-type-map]]
 ==== MAP
 
 A `MAP` serves the function of a key-value table. It is realized
@@ -9,25 +10,15 @@ Each value in the MAP *MUST* use the `KEYVALUE` value type.
 There is no inherent order of the values within a MAP. Values within its
 key value pairs *MAY* be of different value types as defined.
 
-In vFormat syntax, as with `LIST`, values in a list of values *MUST* be separated
-by a delimiting character. The default delimiter character is the SEMICOLON character.
-An element within any `MAP` element *MUST NOT* contain
-an unescaped delimiter character to prevent breaking of the `MAP` syntax.
-
 ===== Syntax
 
 This value type is described using the `MAP(kv_1, kv_2, ...)` function, where each
 `kv_i` represents a property of the value type KEYVALUE.
 
-In the case where a delimiter character for the MAP is not a SEMICOLON, the
-`MAP(delimiter, kv_1, kv_2)` syntax is used to define the delimiter,
-where each of its elements is of value type KEYVALUE, and the delimiting
-character is specified to be `delimiter`.
-
+[[value-type-map-example]]
 ===== Example
 
-The "RECUR" property of <<RFC5545>> defines its value to be a MAP,
-separated by the SEMICOLON character.
+The Recurrence Rule property ("RECUR") of <<RFC5545>> defines its value to be a MAP.
 
 In vObject notation its value type is defined to be:
 

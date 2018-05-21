@@ -1,8 +1,8 @@
 
 [[vformat-property-group]]
-==== Property Group
+=== Property Group
 
-The syntax of a property group is defined in <<vformat>>.
+The syntax of a property group is defined in <<vformat-abnf>>.
 
 Property groups *MUST NOT* be removed during normalization. This is contrary
 to <<RFC6350>> that allows stripping off groups.

@@ -1,6 +1,6 @@
 
 [[vformat-property]]
-==== Property
+=== Property
 
 A property can be represented by one content line (a line that ends with
 a line break), but can also be "folded" (<<RFC5545,3.1>>)
@@ -9,15 +9,15 @@ to use multiple lines.
 A property begins with the property name (e.g., `TEL`), followed
 by a COLON delimiter and the property's value.
 
-===== Uppercased Property Name
+==== Uppercased Property Name
 
 The property name *MUST* be normalized to uppercase letters.
 
-===== Normalized Parameters
+==== Normalized Parameters
 
 The last property parameter of a property *MUST NOT* have a trailing SEMICOLON.
 
-===== Wrapped Content Line
+==== Wrapped Content Line
 
 When exporting a normalized property content line, it *MUST* be folded at the
 character limit when it exceeds 75 characters. Each folded line *MUST* be delimited

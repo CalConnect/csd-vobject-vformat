@@ -1,14 +1,11 @@
 
+[[value-type-fieldset]]
 ==== FIELDSET
 
 Some properties and parameters require values defined in terms of multiple parts.
 
 This construct of multiple structured values is called a "FIELDSET".
-These structured property values *MUST* have their value parts separated by a
-SEMICOLON character. Each value in FIELDSET *MUST* have the same value type as defined.
-
-In vFormat syntax, an element within any FIELDSET field *MUST NOT* contain
-an unescaped the SEMICOLON character to prevent breaking of the FIELDSET syntax.
+Each value in FIELDSET *MUST* have the same value type as defined.
 
 ===== Syntax
 
@@ -17,10 +14,10 @@ is defined as a structure of fields separated by the SEMICOLON character, where 
 of its fields is of value type `field-i-value-type`, where `i` represents the index
 of the specific field.
 
+[[value-type-fieldset-example1]]
 ===== Example 1
 
-The "CLIENTPIDMAP" property of <<RFC6350>> takes a tuple of "INTEGER" and "URI" separated
-by a SEMICOLON.
+The "CLIENTPIDMAP" property of <<RFC6350>> takes a tuple of "INTEGER" and "URI".
 
 The notation in vObject given for its value type would be this
 indicating that the first value is an INTEGER, while the latter value
@@ -31,6 +28,7 @@ is a URI:
 FIELDSET(INTEGER, URI)
 ----
 
+[[value-type-fieldset-example2]]
 ===== Example 2
 
 The "N" property of <<RFC6350>> defines its value of having 5 values at once, and
