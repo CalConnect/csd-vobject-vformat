@@ -28,27 +28,27 @@
 :country_2: Hong Kong
 :uri_2: https://www.ribose.com
 :email_2: peter.tam@ribose.com
-:fullname_3: Cyrus Daboo
-:lastname_3: Daboo
-:forename_initials_3: C.
-:organization_3: Apple Inc.
-:street_3: 1 Infinite Loop
-:city_3: Cupertino
-:code_3: 95014
-:region_3: CA
-:country_3: United States of America
-:uri_3: https://www.apple.com
-:email_3: cyrus@daboo.name
-:fullname_4: Kenneth Murchison
-:lastname_4: Murchison
-:forename_initials_4: K.
-:organization_4: FastMail Pty Ltd
-:street_4: Level 2, 114 William Street
-:city_4: Melbourne
-:code_4: 3000
-:region_4: VIC
-:country_4: Australia
-:email_4: murch@fastmailteam.com
+:fullname_3: Kenneth Murchison
+:lastname_3: Murchison
+:forename_initials_3: K.
+:organization_3: FastMail Pty Ltd
+:street_3: Level 2, 114 William Street
+:city_3: Melbourne
+:code_3: 3000
+:region_3: VIC
+:country_3: Australia
+:email_3: murch@fastmailteam.com
+:fullname_4: Mike
+:lastname_4: Douglass
+:forename_initials_4: M.
+:organization_4: Spherical Cow Group
+:street_4: 226 3rd Street
+:city_4: Troy
+:code_4: 12180
+:region_4: NY
+:country_4: United States of America
+:uri_4: http://sphericalcowgroup.com
+:email_4: mdouglass@sphericalcowgroup.com
 
 include::sections/00-abstract.adoc[]
 
