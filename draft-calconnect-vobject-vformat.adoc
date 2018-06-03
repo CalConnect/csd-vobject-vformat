@@ -1,6 +1,6 @@
 = The vObject Model and vFormat Syntax
 :doctype: internet-draft
-:name: draft-calconnect-vobject-vformat-03
+:name: draft-calconnect-vobject-vformat-04
 :abbrev: vObject and vFormat
 :status: info
 :ipr: trust200902

@@ -155,7 +155,7 @@ Properties with LANGUAGE-TAG.
 | TRANSP        | TEXT                                                            |                   | 1\*TEXT
 | URL           | URI                                                             |                   | URI
 | RECURRENCE-ID | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
-| RRULE         | RECURMAP <<recurmap>>                                                           |                   | RECUR
+| RRULE         | RECURMAP (<<recurmap>>)                                                           |                   | RECUR
 | DTEND         | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | DURATION      | DURATION                                                        |                   | DURATION
 | ATTACH        | URI                                                             | BINARY            | URI, BINARY
@@ -193,7 +193,7 @@ Properties with LANGUAGE-TAG.
 | STATUS         | TEXT                                                            |                   | 1\*TEXT
 | SUMMARY        | TEXT                                                            |                   | 1\*TEXT
 | URL            | URI                                                             |                   | URI
-| RRULE          | RECURMAP <<recurmap>>                                                           |                   | RECUR
+| RRULE          | RECURMAP (<<recurmap>>)                                                           |                   | RECUR
 | DUE            | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | DURATION       | DURATION                                                        |                   | DURATION
 | ATTACH         | URI                                                             | BINARY            | URI, BINARY
@@ -228,7 +228,7 @@ Properties with LANGUAGE-TAG.
 | STATUS         | TEXT                                                            |                   | 1\*TEXT
 | SUMMARY        | TEXT                                                            |                   | 1\*TEXT
 | URL            | URI                                                             |                   | URI
-| RRULE          | RECURMAP <<recurmap>>                                                           |                   | RECUR
+| RRULE          | RECURMAP (<<recurmap>>)                                                           |                   | RECUR
 | ATTACH         | URI                                                             | BINARY            | URI, BINARY
 | ATTENDEE       | URI                                                             |                   | cal-address
 | CATEGORIES     | LIST(TEXT)                                                      |                   | TEXT
@@ -285,7 +285,7 @@ Properties with LANGUAGE-TAG.
 | DTSTART       | ISO-DATE-TIME-BASIC                                           | ISO-DATE-COMPLETE | DATE-TIME, DATE
 | TZOFFSETFROM  | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
 | TZOFFSETTO    | CAL-UTC-OFFSET                                                  |                   | UTC-OFFSET
-| RRULE         | RECURMAP <<recurmap>>                                           |                   | RECUR
+| RRULE         | RECURMAP (<<recurmap>>)                                           |                   | RECUR
 | COMMENT       | TEXT                                                            |                   | 1\*TEXT
 | RDATE         | LIST( ISO-DATE-TIME-BASIC / ISO-DATE-COMPLETE / CAL-INTERVAL) |                   | DATE-TIME, DATE, PERIOD
 | TZNAME        | TEXT                                                            |                   | 1\*TEXT

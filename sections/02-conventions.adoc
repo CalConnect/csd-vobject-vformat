@@ -46,4 +46,3 @@ Client User Application (CUA)::
 
 calendar date::
   as defined in <<ISO.8601.2004,2.1.8>>
-

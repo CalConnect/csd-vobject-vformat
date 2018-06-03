@@ -44,7 +44,7 @@ vObject value type notation (see <<vo-value-type-notation>>).
 | ISO-TIME-BASIC      | TIME
 | URI                 | URI
 | CAL-UTC-OFFSET      | UTC-OFFSET
-| RECURMAP <<recurmap>>   | RECUR
+| RECURMAP (<<recurmap>>)   | RECUR
 
 |===
 
