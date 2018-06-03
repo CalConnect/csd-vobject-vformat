@@ -5,7 +5,7 @@ This corresponds to the TIME value type in <<RFC6350,4.3.2>>.
 
 // This is TIME in 6350, not directly used but for date-and-or-time
 
-===== Value Name
+===== Value Type Notation
 
 ISO-TIME-FLEX
 

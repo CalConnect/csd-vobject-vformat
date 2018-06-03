@@ -1,5 +1,0 @@
-
-[[caldav]]
-== CalDAV
-
-TODO.

@@ -1,9 +1,14 @@
+
+[[mapping-rfc-parameter-value-types]]
 == Mapping Of Parameter Value Types For Existing RFCs
+
+The value types in this section are described using
+vObject value type notation (see <<vo-value-type-notation>>).
 
 === RFC 6350
 
 |===
-| Parameter | Data Type
+| Parameter | Value Type
 
 | LANGUAGE  | LANGUAGE-TAG
 | VALUE     | TEXT
@@ -22,7 +27,7 @@
 === RFC 5545
 
 |===
-| Parameter      | Data Type
+| Parameter      | Value Type
 
 | ALTREP         | URI
 | CN             | TEXT

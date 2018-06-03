@@ -9,7 +9,7 @@ If the property permits, multiple "integer" values are
 specified by a COMMA-separated list of values.
 ////
 
-===== Value Name
+===== Value Type Notation
 
 INTEGER
 

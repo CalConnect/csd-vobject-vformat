@@ -7,9 +7,9 @@ Some properties and parameters require values defined in terms of multiple parts
 This construct of multiple structured values is called a "FIELDSET".
 Each value in FIELDSET *MUST* have the same value type as defined.
 
-===== Syntax
+===== Value Type Notation
 
-When used to describe a value type, the `FIELDSET(field-1-value-type, ...)` function
+When used to describe a value type, the `FIELDSET(field-1-value-type, ...)` notation
 is defined as a structure of fields separated by the SEMICOLON character, where each
 of its fields is of value type `field-i-value-type`, where `i` represents the index
 of the specific field.

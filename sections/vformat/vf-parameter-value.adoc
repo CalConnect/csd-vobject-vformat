@@ -11,7 +11,8 @@ further limitations of allowed characters in property parameter values.
 
 [source,abnf]
 ----
-param-value   = paramtext / quoted-string
+param-value          = param-single-value *("," param-single-value)
+param-single-value   = paramtext / quoted-string
 
 paramtext     = *SAFE-CHAR
 quoted-string = DQUOTE *QSAFE-CHAR DQUOTE

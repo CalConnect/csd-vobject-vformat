@@ -7,7 +7,7 @@ This corresponds to the UTC-OFFSET value type in <<RFC6350,4.7>>.
 // 5545 supports hhmm and hhmmss, but 6350 supports hhmm and hh
 
 
-===== Value Name
+===== Value Type Notation
 
 ISO-UTC-OFFSET
 

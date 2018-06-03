@@ -8,7 +8,7 @@ If the property permits, multiple "float" values are
 specified by a COMMA-separated list of values.
 ////
 
-===== Value Name
+===== Value Type Notation
 
 FLOAT
 

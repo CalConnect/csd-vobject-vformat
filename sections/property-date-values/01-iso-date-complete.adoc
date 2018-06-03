@@ -3,7 +3,7 @@
 
 This corresponds to the DATE value type in <<RFC5545,3.3.4>>.
 
-===== Value Name
+===== Value Type Notation
 
 ISO-DATE-COMPLETE
 

@@ -5,7 +5,7 @@ This corresponds to the TIME value type in <<RFC5545,3.3.12>>.
 
 // This does not allow a UTC offset, not directly used but in date-time
 
-===== Value Name
+===== Value Type Notation
 
 ISO-TIME-BASIC
 

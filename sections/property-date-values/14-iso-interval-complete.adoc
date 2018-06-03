@@ -3,7 +3,7 @@
 
 This corresponds to the values accepted by "time interval" as specified in <<ISO.8601.2004>>.
 
-===== Value Name
+===== Value Type Notation
 
 ISO-INTERVAL-COMPLETE
 

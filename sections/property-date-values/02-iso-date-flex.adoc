@@ -7,7 +7,7 @@ complete representation.
 This corresponds to the DATE value type in <<RFC6350,4.3.1>>.
 
 
-===== Value Name
+===== Value Type Notation
 
 ISO-DATE-FLEX
 

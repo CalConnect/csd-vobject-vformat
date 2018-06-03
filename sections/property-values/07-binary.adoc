@@ -3,7 +3,7 @@
 
 This corresponds to the BINARY value type in <<RFC5545,3.3.1>>.
 
-===== Value Name
+===== Value Type Notation
 
 BINARY
 

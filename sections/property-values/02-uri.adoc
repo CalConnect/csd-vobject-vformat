@@ -3,7 +3,7 @@
 
 This corresponds to the URI value type in <<RFC6350,4.2>> and <<RFC5545,3.3.13>>.
 
-===== Value Name
+===== Value Type Notation
 
 URI
 

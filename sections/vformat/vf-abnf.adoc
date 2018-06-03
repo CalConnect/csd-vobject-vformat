@@ -51,9 +51,6 @@ param = name "=" param-value *("," param-value)
 
 name = 1*(ALPHA / DIGIT / "-")
 
-param-value = *SAFE-CHAR / DQUOTE *QSAFE-CHAR DQUOTE
-param-values = param-value *("," param-single-value)
-
 NON-ASCII = UTF8-2 / UTF8-3 / UTF8-4
   ; UTF8-{2,3,4} are defined in <<RFC3629>>
   ; TODO: generalize this to UTF-32

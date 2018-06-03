@@ -4,9 +4,7 @@ The authors wish to thank their families and the following parties who
 helped this materialize and for their support of a better and
 vObject-enabled world:
 
-* CalConnect TC-VCARD committee
+* The CalConnect TC-VCARD and TC-CALENDAR committees
 * Marten Gajda
-* members and the Board of Directors of CalConnect
-
-This specification was developed by the CalConnect TC-VCARD committee.
-
+* The CalConnect Technical Coordination Committee ("TCC")
+* Members and the Board of Directors of CalConnect

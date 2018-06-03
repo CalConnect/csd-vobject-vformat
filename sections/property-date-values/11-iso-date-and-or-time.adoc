@@ -5,7 +5,7 @@ This corresponds to the DATE-AND-OR-TIME value type in <<RFC6350,4.3.4>>.
 
 // This is the DATE-AND-OR-TIME portion of 6350
 
-===== Value Name
+===== Value Type Notation
 
 ISO-DATE-AND-OR-TIME
 

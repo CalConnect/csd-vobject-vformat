@@ -1,9 +1,14 @@
+
+[[mapping-rfc-data-value-types]]
 == Mapping Of Data Value Types For Existing RFCs
+
+The vObject value types in this section are described using
+vObject value type notation (see <<vo-value-type-notation>>).
 
 === RFC 6350
 
 |===
-| Data Type            | Original Data Type
+| vObject Value Type  | Original Value Type
 
 | BOOLEAN              | BOOLEAN
 | ISO-DATE-FLEX        | DATE
@@ -24,7 +29,7 @@
 === RFC 5545
 
 |===
-| Data Type           | Original Data Type
+| vObject Value Type | Original Value Type
 
 | BINARY              | BINARY
 | BOOLEAN             | BOOLEAN
@@ -39,7 +44,7 @@
 | ISO-TIME-BASIC      | TIME
 | URI                 | URI
 | CAL-UTC-OFFSET      | UTC-OFFSET
-| RECURMAP <<RECURMAP>>   | RECUR
+| RECURMAP <<recurmap>>   | RECUR
 
 |===
 
@@ -48,7 +53,7 @@
 
 RECURMAP is shown here instead of within the tables due to space constraints.
 
-It is defined to be:
+It is defined to be the value type of the following vObject value type:
 
 [source]
 ----

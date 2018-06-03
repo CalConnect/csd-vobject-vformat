@@ -31,4 +31,3 @@ clean:
 
 open:
 	open $(TXT)
-

@@ -3,7 +3,7 @@
 
 This corresponds to the UTC-OFFSET value type in <<RFC5545,3.3.14>>.
 
-===== Value Name
+===== Value Type Notation
 
 CAL-UTC-OFFSET
 

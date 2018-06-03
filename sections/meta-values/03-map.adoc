@@ -10,9 +10,9 @@ Each value in the MAP *MUST* use the `KEYVALUE` value type.
 There is no inherent order of the values within a MAP. Values within its
 key value pairs *MAY* be of different value types as defined.
 
-===== Syntax
+===== Value Type Notation
 
-This value type is described using the `MAP(kv_1, kv_2, ...)` function, where each
+This value type is described using the `MAP(kv_1, kv_2, ...)` notation, where each
 `kv_i` represents a property of the value type KEYVALUE.
 
 [[value-type-map-example]]

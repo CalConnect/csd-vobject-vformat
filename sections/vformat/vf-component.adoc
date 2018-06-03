@@ -20,13 +20,15 @@ restricted instances of the vObject syntax.
 The component name of a vObject *MUST* be uppercased, for both the
 `BEGIN:` and `END:` content lines.
 
-Example (even though this is not technically allowed by <<RFC6350>>):
+Example:
 
 `BEGIN:vCard`
 
 Should be normalized to:
 
 `BEGIN:VCARD`
+
+NOTE: In vCard 4.0 <<RFC6350>>, only capital letters are allowed for component names.
 
 
 ==== Order Of Inner Components And Properties

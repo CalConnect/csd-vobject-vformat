@@ -3,7 +3,7 @@
 
 This corresponds to the BOOLEAN value types in <<RFC6350,4.4>> and <<RFC5545,3.3.2>>.
 
-===== Value Name
+===== Value Type Notation
 
 BOOLEAN
 

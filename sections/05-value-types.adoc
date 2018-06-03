@@ -1,24 +1,47 @@
 
 [[vobject-property-value-types]]
-== vObject Value Types
+== vObject Value Types And Notation Syntax
 
 vObject value types are identically defined for both:
 
 * vObject property values; and
 * vObject property parameter values.
 
-Implementation differences in <<vformat>> for the same value type
+[[vo-value-type-notation]]
+=== Value Type Notation
+
+The vObject value type notation is used for defining the accepted values
+within a vObject property or parameter values. It fully covers all
+complete and exhaustive amongst all vObject-compliant standards.
+
+This notation syntax allows a vObject specification to define complex value types
+by using one or more value primitives defined in the sections below.
+
+The purpose of this syntax is to provide a mechanism to all vObject value
+definitions, such that any new vObject mechanism (such as, a method that
+can be applied to any vObject) can ensure uniform applicability on vObject
+values.
+
+Value type mappings provided in <<mapping-rfc-data-value-types>>,
+<<mapping-rfc-parameter-value-types>>, and <<mapping-rfc-property-value-types>>
+are denoted using the vObject value type syntax.
+
+Implementation differences within <<vformat>> of the same value type
 are described in <<vformat-property-value>> and
 <<vformat-property-parameter-value>>.
 
 
 === Meta Value Types
 
+Meta value types are used in conjunction with
+basic value types (<<vo-basic-value-types>>).
+
 include::meta-values/01-fieldset.adoc[]
 include::meta-values/02-list.adoc[]
 include::meta-values/03-map.adoc[]
 
 
+[[vo-basic-value-types]]
 === Basic Value Types
 
 include::property-values/01-text.adoc[]
@@ -34,8 +57,6 @@ include::property-values/08-keyvalue.adoc[]
 === Date and Time Value Types
 
 These date and time related value types are based on <<ISO.8601.2004>> and <<ISO.8601.2000>>.
-
-Multiple of such values can be specified using the comma-separated notation.
 
 include::property-date-values/01-iso-date-complete.adoc[]
 include::property-date-values/02-iso-date-flex.adoc[]

@@ -3,7 +3,7 @@
 
 This corresponds to the TIMESTAMP value type in <<RFC6350,4.3.5>>.
 
-===== Value Name
+===== Value Type Notation
 
 ISO-DATE-TIME-COMPLETE
 

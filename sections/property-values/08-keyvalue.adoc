@@ -1,7 +1,7 @@
 
 ==== KEYVALUE
 
-===== Value Name
+===== Value Type Notation
 
 `KEYVALUE(key, value-type)`
 

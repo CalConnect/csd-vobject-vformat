@@ -7,23 +7,28 @@ known as the "vObject" or "VCOMPONENT" family of standards. Named by the
 convention where the component type identifiers usually start with the
 letter "v", all of them use very similar, if not identical, syntax.
 
-Yet due to diverged implementations of these "vObject" standards,
-different implementations often generate different
+While the origin of these formats have a shared history,
+due to diverged implementations of "vObject" standards,
+the serialization of such formats often generate different
 output even when given identical content, causing interoperability concerns and
 the general inability to determine equivalence of vObjects for integrity
 concerns (<<RFC3552,2.1.2>>).
 
-This document defines the "vObject" data model that is a generalized
-model that fully covers the needs of these standards, and the "vFormat"
-serialization syntax that is the generalized syntax of all vObject-compliant
-serialization formats.
+This document:
 
-This document also describes the normalized form of the vObject
-data model and the normalization process for vFormat syntax.
+* defines the "vObject" data model, a generalization of the
+  implied data models of vObject-compliant standards;
+* defines the "vFormat" serialization syntax, a generalized syntax
+  of vObject-compliant serialization formats;
+* provides the "vObject Value Type" notation syntax, a method to define value schema
+  of all properties in vObject-compliant standards; and
+* describes the normalized form of the vObject data model and the
+  normalization process for vFormat syntax.
 
 The normalized forms and normalization methods described
-in this document are fully compatible with the vCard 4.0 <<RFC6350>> and
-iCalendar <<RFC5545>> specifications.
+in this document are fully compatible with the vObject-compliant
+standards, including vCard 4.0 <<RFC6350>> and
+iCalendar <<RFC5545>>.
 
-This work is produced by the CalConnect TC-VCARD <<CALCONNECT-VCARD>>
+This is a work product of the CalConnect TC-VCARD <<CALCONNECT-VCARD>>
 and TC-CALENDAR <<CALCONNECT-CALENDAR>> committees.

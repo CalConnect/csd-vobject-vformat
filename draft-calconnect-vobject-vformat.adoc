@@ -1,6 +1,6 @@
 = The vObject Model and vFormat Syntax
 :doctype: internet-draft
-:name: draft-calconnect-vobject-vformat-02
+:name: draft-calconnect-vobject-vformat-03
 :abbrev: vObject and vFormat
 :status: info
 :ipr: trust200902
@@ -8,7 +8,7 @@
 :area: internet
 :intended-series: full-standard
 :workgroup: Calendaring Extensions
-:revdate: 2018-05-21T00:00:00Z
+:revdate: 2018-06-03T00:00:00Z
 :updates: 5545, 6321, 6350, 6351, 7953, 7265, 7095
 :fullname: Ronald Henry Tse
 :lastname: Tse
@@ -55,17 +55,17 @@ include::sections/00-abstract.adoc[]
 include::sections/01-intro.adoc[]
 include::sections/02-conventions.adoc[]
 include::sections/03-vobject.adoc[]
-include::sections/03-vformat.adoc[]
-include::sections/03-value-types.adoc[]
-include::sections/04-normalization.adoc[]
-include::sections/05-clients.adoc[]
-include::sections/06-carddav.adoc[]
-include::sections/07-caldav.adoc[]
-include::sections/09-security.adoc[]
-include::sections/10-iana.adoc[]
-include::sections/96-value-type-mapping.adoc[]
-include::sections/97-property-value-type-mapping.adoc[]
-include::sections/97-parameter-value-type-mapping.adoc[]
+include::sections/04-vformat.adoc[]
+include::sections/05-value-types.adoc[]
+include::sections/06-normalization.adoc[]
+include::sections/07-clients.adoc[]
+include::sections/08-carddav.adoc[]
+include::sections/09-caldav.adoc[]
+include::sections/10-security.adoc[]
+include::sections/11-iana.adoc[]
+include::sections/90-value-type-mapping.adoc[]
+include::sections/91-property-value-type-mapping.adoc[]
+include::sections/92-parameter-value-type-mapping.adoc[]
 
 // must give references before appendix!
 

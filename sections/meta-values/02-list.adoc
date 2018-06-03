@@ -9,7 +9,7 @@ significance to the order of values in a list.
 This construct is called the "LIST". Each value in the LIST *MUST* have the same
 value type.
 
-===== Syntax
+===== Value Type Notation
 
 The `LIST(value-type)` notation is used to describe this value type, of
 a list of elements, where each of its elements is of value type `value-type`.

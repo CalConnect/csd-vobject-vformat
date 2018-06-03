@@ -3,7 +3,7 @@
 
 This corresponds to the LANGUAGE-TAG value type in <<RFC6350,4.8>>.
 
-===== Value Name
+===== Value Type Notation
 
 LANGUAGE-TAG
 
