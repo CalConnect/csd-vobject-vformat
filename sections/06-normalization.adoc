@@ -82,7 +82,7 @@ The steps are generally described below.
 ... Perform the same function as (1)
 
 
-=== Alternative vCard representations
+=== Application on alternative serializations
 
 The normalization procedure applies to alternative vObject
 representations as well, including:

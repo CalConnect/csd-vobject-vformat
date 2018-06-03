@@ -32,5 +32,5 @@ Additional Postcondition:
 
 [source]
 ----
-  (CALDAV:resource-normalized): Convert to normalized format.
+(CALDAV:resource-normalized): Convert to normalized format.
 ----

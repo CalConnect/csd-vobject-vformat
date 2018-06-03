@@ -29,6 +29,6 @@ Additional Postcondition:
 
 [source]
 ----
-  (CARDDAV:resource-normalized): Convert to normalized format.
+(CARDDAV:resource-normalized): Convert to normalized format.
 ----
 

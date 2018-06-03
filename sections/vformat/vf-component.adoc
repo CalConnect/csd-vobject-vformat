@@ -48,4 +48,3 @@ line is *REQUIRED* to be placed immediately below the "BEGIN" line.
 In this case, when normalizing the VCARD component, the common normalization
 procedure *MUST* be first applied, and the "VERSION" property line *MUST*
 be restored to the valid location as required by its specifications <<RFC6350>>.
-
