@@ -2,13 +2,12 @@
 :doctype: internet-draft
 :name: draft-calconnect-vobject-vformat-04
 :abbrev: vObject and vFormat
-:status: info
+:status: standard
 :ipr: trust200902
-:submissionType: standard
 :area: internet
 :intended-series: full-standard
 :workgroup: Calendaring Extensions
-:revdate: 2018-06-03T00:00:00Z
+:revdate: 2018-06-08T00:00:00Z
 :updates: 5545, 6321, 6350, 6351, 7953, 7265, 7095
 :fullname: Ronald Henry Tse
 :lastname: Tse
@@ -38,7 +37,7 @@
 :region_3: VIC
 :country_3: Australia
 :email_3: murch@fastmailteam.com
-:fullname_4: Mike
+:fullname_4: Mike Douglass
 :lastname_4: Douglass
 :forename_initials_4: M.
 :organization_4: Spherical Cow Group
