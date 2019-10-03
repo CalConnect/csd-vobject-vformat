@@ -1,0 +1,29 @@
+
+[[conventions]]
+== Terms and Definitions
+
+=== vObject
+
+the generalized data model of the vCard component (VCARD) and iCalendar
+(VCALENDAR) component defined in this document
+
+=== vFormat
+
+the native serialization format of vObject, which is the textual format
+representation using the `BEGIN:` and `END:` component keywords
+
+=== inner vObject, sub-component
+
+a vObject located within a vObject
+
+=== outer vObject, super-component
+
+a vObject that this vObject is located within
+
+=== Client User Application (CUA)
+
+the vObject client implementation that interfaces with the user
+
+=== calendar date
+
+as defined in <<ISO.8601.2004,2.1.8>>

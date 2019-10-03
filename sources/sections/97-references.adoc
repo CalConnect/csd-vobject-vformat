@@ -1,0 +1,34 @@
+
+[bibliography]
+== Bibliography
+
+* [[[CALCONNECT-VCARD,CalConnect TC VCARD]]] _CalConnect VCARD Technical Committee_
+* [[[CALCONNECT-CALENDAR,CalConnect TC CALENDAR]]] _CalConnect CALENDAR Technical Committee_
+
+* [[[IEEE.754.2008,IEEE 754:2008]]], _IEEE Standard 754, Standard for Binary Floating-Point Arithmetic_
+
+* [[[ISO.8601.2000,ISO 8601:2000]]], _AUTOFILL_
+* [[[ISO.8601.2004,ISO 8601:2004]]], _AUTOFILL_
+
+* [[[RFC2045,IETF RFC 2045]]], _AUTOFILL_
+* [[[RFC3552,IETF RFC 3552]]], _AUTOFILL_
+* [[[RFC3629,IETF RFC 3629]]], _AUTOFILL_
+* [[[RFC4648,IETF RFC 4648]]], _AUTOFILL_
+* [[[RFC4791,IETF RFC 4791]]], _AUTOFILL_
+* [[[RFC5234,IETF RFC 5234]]], _AUTOFILL_
+* [[[RFC5789,IETF RFC 5789]]], _AUTOFILL_
+* [[[RFC6321,IETF RFC 6321]]], _AUTOFILL_
+* [[[RFC6351,IETF RFC 6351]]], _AUTOFILL_
+* [[[RFC6352,IETF RFC 6352]]], _AUTOFILL_
+* [[[RFC7095,IETF RFC 7095]]], _AUTOFILL_
+* [[[RFC7265,IETF RFC 7265]]], _AUTOFILL_
+* [[[RFC7953,IETF RFC 7953]]], _AUTOFILL_
+* [[[RFC7986,IETF RFC 7986]]], _AUTOFILL_
+* [[[RFC8259,IETF RFC 8259]]], _AUTOFILL_
+
+* [[[VPATCH,VPATCH]]], _The iCalendar VPATCH Component (draft)_
+* [[[vCard21,vCard 2.1]]], _vCard - The Electronic Business Card Version 2.1_
+
+* [[[I-D.daboo-valarm-extensions,IETF I-D.daboo-valarm-extensions]]], _VALARM Extensions for iCalendar_
+* [[[I-D.york-vpoll,IETF I-D.york-vpoll]]], _VPOLL: Consensus Scheduling Component for iCalendar_
+

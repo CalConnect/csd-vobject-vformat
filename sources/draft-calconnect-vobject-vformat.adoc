@@ -48,11 +48,14 @@
 :country_4: United States of America
 :uri_4: http://sphericalcowgroup.com
 :email_4: mdouglass@sphericalcowgroup.com
+:docfile: draft-calconnect-vobject-vformat.adoc
+:mn-document-class: ietf
+:mn-output-extensions: xmlrfc2,txt,html
 
 include::sections/00-abstract.adoc[]
 
 include::sections/01-intro.adoc[]
-include::sections/02-conventions.adoc[]
+include::sections-ietf/02-conventions.adoc[]
 include::sections/03-vobject.adoc[]
 include::sections/04-vformat.adoc[]
 include::sections/05-value-types.adoc[]
@@ -68,7 +71,7 @@ include::sections/92-parameter-value-type-mapping.adoc[]
 
 // must give references before appendix!
 
-include::sections/97-references.adoc[]
+include::sections-ietf/97-references.adoc[]
 include::sections/98-examples.adoc[]
 include::sections/99-acknowledgements.adoc[]
 

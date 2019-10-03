@@ -1,0 +1,61 @@
+= vObject -- vObject Model and vFormat Syntax
+:docnumber: 56008
+:copyright-year: 2019
+:language: en
+:doctype: standard
+:edition: 1
+:status: working-draft
+:revdate: 2018-06-08
+:published-date: 2019-06-05
+:script: Latn
+:technical-committee: VCARD
+:fullname: Ronald Tse
+:surname: Tse
+:givenname: Ronald
+:fullname_2: Peter Kwan Yu
+:surname_2: Tam
+:givenname_2: Jeffrey
+:fullname_3: Kenneth Murchison
+:surname_3: Murchison
+:givenname_3: Kenneth
+:fullname_4: Mike Douglass
+:surname_4: Douglass
+:givenname_4: Mike
+:draft:
+:toc:
+:stem:
+:xrefstyle: short
+:docfile: cc-56008.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+:sectnums!:
+
+include::sections/00-abstract.adoc[]
+include::sections/01-intro.adoc[]
+
+:sectnums:
+
+include::sections/02-normrefs.adoc[]
+include::sections/03-terms.adoc[]
+include::sections/03-vobject.adoc[]
+include::sections/04-vformat.adoc[]
+include::sections/05-value-types.adoc[]
+include::sections/06-normalization.adoc[]
+include::sections/07-clients.adoc[]
+include::sections/08-carddav.adoc[]
+include::sections/09-caldav.adoc[]
+include::sections/10-security.adoc[]
+include::sections/11-iana.adoc[]
+include::sections/90-value-type-mapping.adoc[]
+include::sections/91-property-value-type-mapping.adoc[]
+include::sections/92-parameter-value-type-mapping.adoc[]
+
+// must give references before appendix!
+
+include::sections/98-examples.adoc[]
+include::sections/99-acknowledgements.adoc[]
+
+include::sections/97-references.adoc[]
