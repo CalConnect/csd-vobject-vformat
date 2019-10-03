@@ -4,5 +4,5 @@ metanorma:
     email: "travis-ci@metanorma.org"
 relaton:
   collection:
-    name: vObject Internationalization
+    name: vObject and vFormat
     organization: CalConnect/IETF
