@@ -1,8 +1,8 @@
 ---
 metanorma:
   deploy:
-    email: "travis-ci@metanorma.org"
+    email: "ci@metanorma.org"
 relaton:
   collection:
-    name: vObject and vFormat
-    organization: CalConnect/IETF
+    name: TC-VCARD
+    organization: CalConnect
