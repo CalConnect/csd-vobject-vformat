@@ -5,7 +5,7 @@
 * [[[CALCONNECT-VCARD,CalConnect TC VCARD]]] _CalConnect VCARD Technical Committee_
 * [[[CALCONNECT-CALENDAR,CalConnect TC CALENDAR]]] _CalConnect CALENDAR Technical Committee_
 
-* [[[IEEE.754.2008,IEEE 754:2008]]], _IEEE Standard 754, Standard for Binary Floating-Point Arithmetic_
+* [[[IEEE.754.2008,IEEE 754-2008]]], _IEEE Standard 754, Standard for Binary Floating-Point Arithmetic_
 
 * [[[ISO.8601.2000,ISO 8601:2000]]], _AUTOFILL_
 * [[[ISO.8601.2004,ISO 8601:2004]]], _AUTOFILL_
