@@ -12,66 +12,80 @@
 :fullname: Ronald Henry Tse
 :lastname: Tse
 :forename_initials: R. H.
-:organization: Ribose
-:street: Suite 1111, 1 Pedder Street
-:city: Central
-:country: Hong Kong
-:uri: https://www.ribose.com
+:affiliation: Ribose
+:address: Suite 1109, 1 Pedder Street + \
+Central + \
+Hong Kong
+:contributor-uri: https://www.ribose.com
 :email: ronald.tse@ribose.com
-:fullname_2: Peter Kwan Yu Tam
-:lastname_2: Tam
-:forename_initials_2: P.
-:organization_2: Ribose
-:street_2: Suite 1111, 1 Pedder Street
-:city_2: Central
-:country_2: Hong Kong
-:uri_2: https://www.ribose.com
-:email_2: peter.tam@ribose.com
+:fullname_2: Jeffrey Lau
+:lastname_2: Lau
+:forename_initials_2: J.
+:affiliation_2: Ribose
+:address_2: Suite 1109, 1 Pedder Street + \
+Central + \
+Hong Kong
+:contributor-uri_2: https://www.ribose.com
+:email_2: jeffrey.lau@ribose.com
 :fullname_3: Kenneth Murchison
 :lastname_3: Murchison
 :forename_initials_3: K.
-:organization_3: FastMail Pty Ltd
-:street_3: Level 2, 114 William Street
-:city_3: Melbourne
-:code_3: 3000
-:region_3: VIC
-:country_3: Australia
+:affiliation_3: FastMail Pty Ltd
+:address_3: Level 2, 114 William Street + \
+Melbourne + \
+3000 VIC + \
+Australia
 :email_3: murch@fastmailteam.com
-:fullname_4: Mike Douglass
-:lastname_4: Douglass
-:forename_initials_4: M.
-:organization_4: Spherical Cow Group
-:street_4: 226 3rd Street
-:city_4: Troy
-:code_4: 12180
-:region_4: NY
-:country_4: United States of America
-:uri_4: http://sphericalcowgroup.com
+:fullname_3: Mike Douglass
+:lastname_3: Douglass
+:forename_initials_3: M.
+:affiliation_3: Spherical Cow Group
+:address_3: 226 3rd Street + \
+Troy + \
+NY 12180 + \
+United States of America
+:contributor-uri_4: http://sphericalcowgroup.com
 :email_4: mdouglass@sphericalcowgroup.com
-:docfile: draft-calconnect-vobject-vformat.adoc
 :mn-document-class: ietf
 :mn-output-extensions: xmlrfc2,txt,html
+:local-cache-only:
+:data-uri-image:
 
 include::sections/00-abstract.adoc[]
 
 include::sections/01-intro.adoc[]
+
 include::sections-ietf/02-conventions.adoc[]
+
 include::sections/03-vobject.adoc[]
+
 include::sections/04-vformat.adoc[]
+
 include::sections/05-value-types.adoc[]
+
 include::sections/06-normalization.adoc[]
+
 include::sections/07-clients.adoc[]
+
 include::sections/08-carddav.adoc[]
+
 include::sections/09-caldav.adoc[]
+
 include::sections/10-security.adoc[]
+
 include::sections/11-iana.adoc[]
+
 include::sections/90-value-type-mapping.adoc[]
+
 include::sections/91-property-value-type-mapping.adoc[]
+
 include::sections/92-parameter-value-type-mapping.adoc[]
 
 // must give references before appendix!
 
 include::sections-ietf/97-references.adoc[]
+
 include::sections/98-examples.adoc[]
-include::sections/99-acknowledgements.adoc[]
+
+//include::sections/99-acknowledgements.adoc[]
 

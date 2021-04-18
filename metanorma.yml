@@ -1,8 +1,10 @@
 ---
 metanorma:
-  deploy:
-    email: "ci@metanorma.org"
-relaton:
+  source:
+    files:
+      - sources/cc-56008.adoc
+      - sources/draft-calconnect-vobject-vformat.adoc
+
   collection:
-    name: TC-VCARD
+    name: vObject i18n
     organization: CalConnect
