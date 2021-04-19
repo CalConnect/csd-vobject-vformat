@@ -1,43 +1,55 @@
 = Internet-Draft: CalConnect vObject Model and vFormat Syntax
 
-image:https://img.shields.io/travis/riboseinc/rfc-in-asciidoc-template/master.svg[
-	Build Status, link="https://travis-ci.org/riboseinc/rfc-in-asciidoc-template"]
+image:https://github.com/CalConnect/csd-vobject-vformat/workflows/docker/badge.svg["Build Status", link="https://github.com/CalConnect/csd-vobject-vformat/actions?workflow=docker"]
 
-This Internet-Draft is written in pure AsciiDoc using the excellent
-https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
+This document is available in its rendered forms here:
+
+* https://CalConnect.github.io/csd-vobject-vformat/[HTML]
+
 
 == Fetching the document
 
 [source,sh]
 ----
-git clone https://github.com/calconnect/rfc-in-asciidoc-template
+git clone https://github.com/CalConnect/csd-vobject-vformat/
 ----
 
 == Installing Build Tools
 
-You will need Ruby, `xml2rfc` and `idnits` (for submission preflight).
+See https://www.metanorma.com/author/topics/install/
 
-=== On macOS
+
+== Running via Docker or locally
+
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
+
+If you don't want to deal with local dependencies, use the docker:
 
 [source,sh]
 ----
-brew install idnits
-brew install python
-easy_install pip
-pip install -r requirements.txt
-gem install bundler
-bundle install
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/mn metanorma site generate --agree-to-terms
 ----
+
 
 == Building The Document
 
 [source,sh]
 ----
-make all
-# or
-export ID_NAME=calconnect-vobject-vformat
-make draft-${ID_NAME}.txt
+metanorma site generate --agree-to-terms
 ----
+
+The generated documents are accessible under `site/`.
+
+
+== Iterating the document
+
+[source,sh]
+----
+metanorma site generate --agree-to-terms
+open site/index.html
+----
+
 
 == Checking Against idnits
 
@@ -50,23 +62,6 @@ prevent it complaining about the location.
 
 [source,sh]
 ----
-export ID_NAME=calconnect-vobject-vformat
-make draft-${ID_NAME}.nits
-----
-
-== Checking for invalid / unicode characters
-
-[source,sh]
-----
-export ID_NAME=calconnect-vobject-vformat
-pcregrep --color='auto' -n "[\x80-\xFF]" draft-${ID_NAME}.xml
-----
-
-== Iterating the document
-
-[source,sh]
-----
-export ID_NAME=calconnect-vobject-vformat
-make clean all; open draft-${ID_NAME}.txt
+idnits draft-calconnect-vobject-vformat.nits
 ----
 
