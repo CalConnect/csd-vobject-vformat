@@ -4,7 +4,7 @@
 :abbrev: vObject and vFormat
 :status: standard
 :ipr: trust200902
-:area: internet
+:area: Internet
 :intended-series: full-standard
 :workgroup: Calendaring Extensions
 :revdate: 2018-06-08T00:00:00Z
@@ -47,7 +47,7 @@ United States of America
 :contributor-uri_4: http://sphericalcowgroup.com
 :email_4: mdouglass@sphericalcowgroup.com
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc2,txt,html
+:mn-output-extensions: rfc,xml,txt,html
 :local-cache-only:
 :data-uri-image:
 
